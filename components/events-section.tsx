@@ -1,0 +1,79 @@
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import Link from "next/link"
+import { CalendarIcon, MapPinIcon, ClockIcon } from "lucide-react"
+
+export default function EventsSection() {
+  const upcomingEvents = [
+    {
+      id: 1,
+      title: "Startup Pitch Night",
+      date: "June 15, 2025",
+      time: "6:00 PM - 9:00 PM",
+      location: "OpenSV Hub, Palo Alto",
+    },
+    {
+      id: 2,
+      title: "AI in Healthcare Workshop",
+      date: "June 22, 2025",
+      time: "1:00 PM - 4:00 PM",
+      location: "Virtual Event",
+    },
+    {
+      id: 3,
+      title: "Founder Fireside Chat",
+      date: "July 8, 2025",
+      time: "5:30 PM - 7:30 PM",
+      location: "OpenSV Hub, Palo Alto",
+    },
+  ]
+
+  return (
+    <div className="container mx-auto px-4">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl font-bold mb-4">Upcoming Events</h2>
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          Join us for our upcoming events where you can connect with fellow entrepreneurs, learn new skills, and be
+          inspired by innovation.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {upcomingEvents.map((event) => (
+          <Card key={event.id}>
+            <CardHeader>
+              <CardTitle>{event.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <CalendarIcon className="h-5 w-5 text-muted-foreground" />
+                  <span>{event.date}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <ClockIcon className="h-5 w-5 text-muted-foreground" />
+                  <span>{event.time}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <MapPinIcon className="h-5 w-5 text-muted-foreground" />
+                  <span>{event.location}</span>
+                </div>
+              </div>
+            </CardContent>
+            <CardFooter>
+              <Button variant="outline" className="w-full">
+                Register
+              </Button>
+            </CardFooter>
+          </Card>
+        ))}
+      </div>
+
+      <div className="text-center mt-12">
+        <Button asChild size="lg">
+          <Link href="/events">View All Events</Link>
+        </Button>
+      </div>
+    </div>
+  )
+}
