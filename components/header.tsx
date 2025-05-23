@@ -100,28 +100,33 @@ export default function Header() {
               Events
             </Link>
             <div className="relative group" ref={programsRef}>
-              <button
-                onClick={togglePrograms}
-                className="text-sm font-medium hover:text-primary flex items-center"
-                aria-expanded={isProgramsOpen}
-                aria-haspopup="true"
-              >
-                Programs
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center">
+                <Link href="/programs" className="text-sm font-medium hover:text-primary mr-1">
+                  Programs
+                </Link>
+                <button
+                  onClick={togglePrograms}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isProgramsOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Programs menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isProgramsOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-4 z-50 animate-in fade-in-50 slide-in-from-top-5">
                   <Link
@@ -156,28 +161,33 @@ export default function Header() {
               )}
             </div>
             <div className="relative group" ref={initiativesRef}>
-              <button
-                onClick={toggleInitiatives}
-                className="text-sm font-medium hover:text-primary flex items-center"
-                aria-expanded={isInitiativesOpen}
-                aria-haspopup="true"
-              >
-                Initiatives
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center">
+                <Link href="/initiatives" className="text-sm font-medium hover:text-primary mr-1">
+                  Initiatives
+                </Link>
+                <button
+                  onClick={toggleInitiatives}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isInitiativesOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Initiatives menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isInitiativesOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-4 z-50 animate-in fade-in-50 slide-in-from-top-5">
                   <Link
@@ -212,28 +222,33 @@ export default function Header() {
               )}
             </div>
             <div className="relative group" ref={membersRef}>
-              <button
-                onClick={toggleMembers}
-                className="text-sm font-medium hover:text-primary flex items-center"
-                aria-expanded={isMembersOpen}
-                aria-haspopup="true"
-              >
-                Members
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center">
+                <Link href="/members" className="text-sm font-medium hover:text-primary mr-1">
+                  Members
+                </Link>
+                <button
+                  onClick={toggleMembers}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isMembersOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Members menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isMembersOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-4 z-50 animate-in fade-in-50 slide-in-from-top-5">
                   <Link
@@ -268,28 +283,33 @@ export default function Header() {
               )}
             </div>
             <div className="relative group" ref={aboutRef}>
-              <button
-                onClick={toggleAbout}
-                className="text-sm font-medium hover:text-primary flex items-center"
-                aria-expanded={isAboutOpen}
-                aria-haspopup="true"
-              >
-                About
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center">
+                <Link href="/about" className="text-sm font-medium hover:text-primary mr-1">
+                  About
+                </Link>
+                <button
+                  onClick={toggleAbout}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isAboutOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle About menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isAboutOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-4 z-50 animate-in fade-in-50 slide-in-from-top-5">
                   <Link
@@ -394,23 +414,33 @@ export default function Header() {
               Events
             </Link>
             <div>
-              <button onClick={togglePrograms} className="text-sm font-medium hover:text-primary flex items-center">
-                Programs
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center justify-between">
+                <Link href="/programs" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                  Programs
+                </Link>
+                <button
+                  onClick={togglePrograms}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isProgramsOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Programs menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isProgramsOpen && (
                 <div className="mt-2 ml-4 space-y-2">
                   <Link
@@ -457,23 +487,33 @@ export default function Header() {
               )}
             </div>
             <div>
-              <button onClick={toggleInitiatives} className="text-sm font-medium hover:text-primary flex items-center">
-                Initiatives
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center justify-between">
+                <Link href="/initiatives" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                  Initiatives
+                </Link>
+                <button
+                  onClick={toggleInitiatives}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isInitiativesOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Initiatives menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isInitiativesOpen && (
                 <div className="mt-2 ml-4 space-y-2">
                   <Link
@@ -520,23 +560,33 @@ export default function Header() {
               )}
             </div>
             <div>
-              <button onClick={toggleMembers} className="text-sm font-medium hover:text-primary flex items-center">
-                Members
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center justify-between">
+                <Link href="/members" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                  Members
+                </Link>
+                <button
+                  onClick={toggleMembers}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isMembersOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle Members menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isMembersOpen && (
                 <div className="mt-2 ml-4 space-y-2">
                   <Link
@@ -583,23 +633,33 @@ export default function Header() {
               )}
             </div>
             <div>
-              <button onClick={toggleAbout} className="text-sm font-medium hover:text-primary flex items-center">
-                About
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={`ml-1 transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+              <div className="flex items-center justify-between">
+                <Link href="/about" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                  About
+                </Link>
+                <button
+                  onClick={toggleAbout}
+                  className="p-1 hover:text-primary"
+                  aria-expanded={isAboutOpen}
+                  aria-haspopup="true"
+                  aria-label="Toggle About menu"
                 >
-                  <path d="m6 9 6 6 6-6" />
-                </svg>
-              </button>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className={`transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+                  >
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+              </div>
               {isAboutOpen && (
                 <div className="mt-2 ml-4 space-y-2">
                   <Link
