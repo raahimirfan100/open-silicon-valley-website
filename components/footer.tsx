@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Facebook, Twitter, Linkedin, Instagram, ArrowRight, Mail, MapPin, Phone } from "lucide-react"
+import { Facebook, Twitter, Linkedin, Instagram, Mail, MapPin, Phone } from "lucide-react"
 import Image from "next/image"
 
 export default function Footer() {
@@ -9,265 +9,180 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4">
-        {/* Newsletter Section */}
-        <div className="py-12 border-b border-gray-800">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Stay Connected</h2>
-            <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter to receive updates on events, programs, and innovation news from Silicon
-              Valley.
-            </p>
-
-            <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+        {/* Compact Newsletter Section */}
+        <div className="py-8 border-b border-gray-800">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+            <div className="text-center md:text-left">
+              <h2 className="text-xl font-bold mb-2">Stay Connected</h2>
+              <p className="text-gray-400 text-sm">
+                Get updates on events, programs, and innovation news from Silicon Valley.
+              </p>
+            </div>
+            <form className="flex gap-3 w-full md:w-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full bg-gray-800 border border-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 md:w-64 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
                 required
               />
-              <Button type="submit" className="rounded-full px-6">
-                Subscribe <ArrowRight className="ml-2 h-4 w-4" />
+              <Button type="submit" size="sm" className="rounded-lg px-4">
+                Subscribe
               </Button>
             </form>
           </div>
         </div>
 
-        {/* Main Footer Content */}
-        <div className="py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center mb-6">
+        {/* Compact Main Footer Content */}
+        <div className="py-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            {/* Organization Info - Spans 2 columns on large screens */}
+            <div className="lg:col-span-2">
+              <div className="flex items-center mb-4">
                 <Image
-                  src="/placeholder.svg?height=40&width=40&text=OPEN"
+                  src="/placeholder.svg?height=32&width=32&text=OPEN"
                   alt="OPEN Silicon Valley Logo"
-                  width={40}
-                  height={40}
+                  width={32}
+                  height={32}
                   className="mr-3"
                 />
-                <h3 className="font-bold text-xl">OPEN Silicon Valley</h3>
+                <h3 className="font-bold text-lg">OPEN Silicon Valley</h3>
               </div>
-              <p className="text-gray-400 mb-6 leading-relaxed">
+              <p className="text-gray-400 mb-4 text-sm leading-relaxed">
                 A chapter of the global OPEN network, connecting Pakistani entrepreneurs, investors, and professionals
                 with opportunities in Silicon Valley.
               </p>
 
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3">
-                  <MapPin className="h-5 w-5 text-primary mt-0.5" />
-                  <address className="not-italic text-gray-400">
-                    123 Innovation Way
-                    <br />
-                    Palo Alto, CA 94301
-                  </address>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                  <span className="text-gray-400">Palo Alto, CA</span>
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <Phone className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 text-primary flex-shrink-0" />
                   <a href="tel:+16505551234" className="text-gray-400 hover:text-white transition-colors">
                     (650) 555-1234
                   </a>
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <Mail className="h-5 w-5 text-primary" />
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-primary flex-shrink-0" />
                   <a href="mailto:info@opensv.org" className="text-gray-400 hover:text-white transition-colors">
                     info@opensv.org
                   </a>
                 </div>
               </div>
 
-              <div className="flex space-x-4">
+              <div className="flex space-x-3">
                 <Link
                   href="#"
-                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-full hover:bg-gray-800"
+                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Facebook"
                 >
-                  <Facebook size={18} />
+                  <Facebook size={16} />
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-full hover:bg-gray-800"
+                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Twitter"
                 >
-                  <Twitter size={18} />
+                  <Twitter size={16} />
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-full hover:bg-gray-800"
+                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="LinkedIn"
                 >
-                  <Linkedin size={18} />
+                  <Linkedin size={16} />
                 </Link>
                 <Link
                   href="#"
-                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-full hover:bg-gray-800"
+                  className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Instagram"
                 >
-                  <Instagram size={18} />
+                  <Instagram size={16} />
                 </Link>
               </div>
             </div>
 
+            {/* Programs */}
             <div>
-              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Programs</h4>
+              <h4 className="font-semibold mb-4 text-sm">Programs</h4>
               <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/programs/women-forum"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Women Forum
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programs/annual-forum"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Annual Forum
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programs/mentorship"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Mentorship
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programs/workshops"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Workshops
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programs/career-development"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Career Development
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/programs/launchpad"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Launchpad
-                  </Link>
-                </li>
+                {[
+                  { name: "Women Forum", href: "/programs/women-forum" },
+                  { name: "Annual Forum", href: "/programs/annual-forum" },
+                  { name: "Mentorship", href: "/programs/mentorship" },
+                  { name: "Workshops", href: "/programs/workshops" },
+                  { name: "Career Development", href: "/programs/career-development" },
+                  { name: "Launchpad", href: "/programs/launchpad" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
+            {/* Initiatives */}
             <div>
-              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Initiatives</h4>
+              <h4 className="font-semibold mb-4 text-sm">Initiatives</h4>
               <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="https://opensvconnect.org/"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> SV Connect
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://www.startupconnect.io/"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Startup Connect
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/initiatives/trusted-partners-network"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Trusted Partners Network
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/initiatives/non-profit-awareness"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Non Profit Awareness
-                  </Link>
-                </li>
+                {[
+                  { name: "SV Connect", href: "https://opensvconnect.org/" },
+                  { name: "Startup Connect", href: "https://www.startupconnect.io/" },
+                  { name: "Trusted Partners Network", href: "/initiatives/trusted-partners-network" },
+                  { name: "Non Profit Awareness", href: "/initiatives/non-profit-awareness" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
+            {/* Quick Links & CTA */}
             <div>
-              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="/about"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/events"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Events
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/volunteer-with-us"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Volunteer
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Contact Us
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/privacy-policy"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                  >
-                    <ArrowRight className="h-3 w-3" /> Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://www.openglobalweb.org/"
-                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ArrowRight className="h-3 w-3" /> OPEN Global
-                  </Link>
-                </li>
+              <h4 className="font-semibold mb-4 text-sm">Quick Links</h4>
+              <ul className="space-y-2 mb-4">
+                {[
+                  { name: "About Us", href: "/about" },
+                  { name: "Events", href: "/events" },
+                  { name: "Volunteer", href: "/volunteer-with-us" },
+                  { name: "Contact", href: "/contact" },
+                  { name: "Privacy Policy", href: "/privacy-policy" },
+                  { name: "OPEN Global", href: "https://www.openglobalweb.org/" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
 
-              <div className="mt-6">
-                <Button asChild className="rounded-full w-full">
-                  <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
-                </Button>
-              </div>
+              <Button asChild size="sm" className="w-full rounded-lg">
+                <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
+              </Button>
             </div>
           </div>
         </div>
 
-        {/* Footer Bottom */}
-        <div className="py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-400">© {currentYear} OPEN Silicon Valley. All Rights Reserved.</p>
-          <p className="text-sm text-gray-400 mt-4 md:mt-0">
+        {/* Compact Footer Bottom */}
+        <div className="py-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+          <p>© {currentYear} OPEN Silicon Valley. All Rights Reserved.</p>
+          <p className="mt-2 md:mt-0">
             Powered By:{" "}
             <a href="http://www.discretelogix.com" className="hover:text-primary transition-colors duration-300">
               Discretelogix
