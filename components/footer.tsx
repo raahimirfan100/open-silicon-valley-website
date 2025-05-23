@@ -149,10 +149,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Quick Links & CTA */}
+            {/* Quick Links */}
             <div>
               <h4 className="font-semibold mb-4 text-sm">Quick Links</h4>
-              <ul className="space-y-2 mb-4">
+              <ul className="space-y-2">
                 {[
                   { name: "About Us", href: "/about" },
                   { name: "Events", href: "/events" },
@@ -171,21 +171,17 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
-
-              <Button asChild size="sm" className="w-full rounded-lg">
-                <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
-              </Button>
             </div>
           </div>
-        </div>
+        </div>        
 
         {/* Compact Footer Bottom */}
         <div className="py-4 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
           <p>© {currentYear} OPEN Silicon Valley. All Rights Reserved.</p>
           <p className="mt-2 md:mt-0">
-            Powered By:{" "}
-            <a href="http://www.discretelogix.com" className="hover:text-primary transition-colors duration-300">
-              Discretelogix
+            Built By:{" "}
+            <a href="http://www.linkedin.com/in/raahimirfan100" className="hover:text-primary transition-colors duration-300">
+              Raahim Irfan
             </a>
           </p>
         </div>
