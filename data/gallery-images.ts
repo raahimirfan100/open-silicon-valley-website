@@ -1,7 +1,7 @@
 export interface GalleryImage {
-  src: string
-  alt: string
-  className: string
+  src: string;
+  alt: string;
+  className: string;
 }
 
 export const galleryImages: GalleryImage[] = [
@@ -35,4 +35,4 @@ export const galleryImages: GalleryImage[] = [
     alt: "Startup Pitch - Entrepreneurs presenting their business ideas to potential investors",
     className: "col-span-1 row-span-1",
   },
-]
+];

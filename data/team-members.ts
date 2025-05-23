@@ -1,16 +1,17 @@
 export interface TeamMember {
-  name: string
-  role: string
-  description: string
-  image: string
-  linkedin: string
+  name: string;
+  role: string;
+  description: string;
+  image: string;
+  linkedin: string;
 }
 
 export const leadershipTeam: TeamMember[] = [
   {
     name: "Amer Haider",
     role: "President",
-    description: "Amer helps lead the organization and set strategic direction.",
+    description:
+      "Amer helps lead the organization and set strategic direction.",
     image: "/placeholder.svg?height=400&width=400&text=AH",
     linkedin: "https://linkedin.com/in/amerhaider",
   },
@@ -31,25 +32,28 @@ export const leadershipTeam: TeamMember[] = [
   {
     name: "Andaleeb Ahmed",
     role: "Head of Sponsorships",
-    description: "Andaleeb helps members by raising funding that fuels the org.",
+    description:
+      "Andaleeb helps members by raising funding that fuels the org.",
     image: "/placeholder.svg?height=400&width=400&text=AA",
     linkedin: "https://linkedin.com/in/andaleebahmed",
   },
   {
     name: "Areeba Yasin",
     role: "Head of Spring Forum",
-    description: "Areeba helps members by creating a networking and learning space",
+    description:
+      "Areeba helps members by creating a networking and learning space",
     image: "/placeholder.svg?height=400&width=400&text=AY",
     linkedin: "https://linkedin.com/in/areebayasin",
   },
   {
     name: "Adeel Rasheed",
     role: "Co-head of Marketing",
-    description: "Adeel helps other teams with marketing strategy and execution",
+    description:
+      "Adeel helps other teams with marketing strategy and execution",
     image: "/placeholder.svg?height=400&width=400&text=AR",
     linkedin: "https://linkedin.com/in/adeelrasheed",
   },
-]
+];
 
 export const boardMembers: TeamMember[] = [
   {
@@ -115,4 +119,4 @@ export const boardMembers: TeamMember[] = [
     image: "/placeholder.svg?height=300&width=300&text=SK",
     linkedin: "https://linkedin.com/in/shamakhan",
   },
-]
+];

@@ -1,9 +1,18 @@
-import { Users, DollarSign, Building, TrendingUp, Award, Briefcase, Target, Crown } from "lucide-react"
+import {
+  Users,
+  DollarSign,
+  Building,
+  TrendingUp,
+  Award,
+  Briefcase,
+  Target,
+  Crown,
+} from "lucide-react";
 
 export interface Stat {
-  label: string
-  value: string
-  icon: any // Using any for Lucide icon components
+  label: string;
+  value: string;
+  icon: any; // Using any for Lucide icon components
 }
 
 export const networkStats: Stat[] = [
@@ -19,4 +28,4 @@ export const networkStats: Stat[] = [
   { label: "Millionaires", value: "100+", icon: DollarSign },
   { label: "Capital Raised", value: "$2B", icon: TrendingUp },
   { label: "Exits", value: "$13B", icon: Award },
-]
+];

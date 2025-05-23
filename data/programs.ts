@@ -1,10 +1,16 @@
-import { Users, BookOpen, Briefcase, Lightbulb, GraduationCap } from "lucide-react"
+import {
+  Users,
+  BookOpen,
+  Briefcase,
+  Lightbulb,
+  GraduationCap,
+} from "lucide-react";
 
 export interface Program {
-  title: string
-  description: string
-  icon: any // Using any for Lucide icon components
-  link: string
+  title: string;
+  description: string;
+  icon: any; // Using any for Lucide icon components
+  link: string;
 }
 
 export const programs: Program[] = [
@@ -43,4 +49,4 @@ export const programs: Program[] = [
     icon: GraduationCap,
     link: "/programs/career-development",
   },
-]
+];

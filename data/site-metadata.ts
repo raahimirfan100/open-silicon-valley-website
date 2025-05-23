@@ -13,4 +13,4 @@ export const siteMetadata = {
     url: "https://opensv.org",
     logo: "/images/logo.png",
   },
-}
+};

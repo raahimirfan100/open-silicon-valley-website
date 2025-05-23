@@ -1,22 +1,34 @@
 export interface Sponsor {
-  name: string
-  url: string
-  image: string
+  name: string;
+  url: string;
+  image: string;
 }
 
 export interface SponsorLevel {
-  level: string
-  sponsors: Sponsor[]
+  level: string;
+  sponsors: Sponsor[];
 }
 
 export const sponsorLevels: SponsorLevel[] = [
   {
     level: "Platinum",
-    sponsors: [{ name: "Azhar Aziz Foundation", url: "#", image: "/placeholder.svg?height=75&width=150&text=Sponsor" }],
+    sponsors: [
+      {
+        name: "Azhar Aziz Foundation",
+        url: "#",
+        image: "/placeholder.svg?height=75&width=150&text=Sponsor",
+      },
+    ],
   },
   {
     level: "Gold",
-    sponsors: [{ name: "Oracle", url: "#", image: "/placeholder.svg?height=75&width=150&text=Oracle" }],
+    sponsors: [
+      {
+        name: "Oracle",
+        url: "#",
+        image: "/placeholder.svg?height=75&width=150&text=Oracle",
+      },
+    ],
   },
   {
     level: "Silver",
@@ -31,7 +43,11 @@ export const sponsorLevels: SponsorLevel[] = [
         url: "https://lucidmotors.com/",
         image: "/placeholder.svg?height=10&width=150&text=Lucid",
       },
-      { name: "Pillsbury", url: "#", image: "/placeholder.svg?height=75&width=150&text=Pillsbury" },
+      {
+        name: "Pillsbury",
+        url: "#",
+        image: "/placeholder.svg?height=75&width=150&text=Pillsbury",
+      },
       {
         name: "Turkish Airlines",
         url: "#",
@@ -39,4 +55,4 @@ export const sponsorLevels: SponsorLevel[] = [
       },
     ],
   },
-]
+];
