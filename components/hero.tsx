@@ -39,18 +39,18 @@ export default function Hero() {
               </Button>
             </div>
 
-            <div className="pt-4 grid grid-cols-3 gap-4">
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">15+</span>
-                <span className="text-sm text-gray-500">Global Chapters</span>
+            <div className="pt-8 grid grid-cols-3 gap-6">
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+                <span className="text-2xl md:text-3xl font-bold text-primary">15+</span>
+                <span className="text-xs md:text-sm text-gray-600 text-center">Global Chapters</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">24+</span>
-                <span className="text-sm text-gray-500">Years of Impact</span>
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+                <span className="text-2xl md:text-3xl font-bold text-primary">24+</span>
+                <span className="text-xs md:text-sm text-gray-600 text-center">Years of Impact</span>
               </div>
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">100K+</span>
-                <span className="text-sm text-gray-500">Network Size</span>
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+                <span className="text-2xl md:text-3xl font-bold text-primary">100K+</span>
+                <span className="text-xs md:text-sm text-gray-600 text-center">Network Size</span>
               </div>
             </div>
           </div>

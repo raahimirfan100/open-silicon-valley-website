@@ -2,9 +2,42 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Calendar } from "lucide-react"
-import { galleryImages } from "@/data/gallery-images"
 
 export default function EventsGallery() {
+  // Define specific grid layouts for better control
+  const galleryImages = [
+    {
+      src: "/placeholder.svg?height=600&width=800&text=Annual+Forum",
+      alt: "Annual Forum - OPEN Silicon Valley's flagship event bringing together entrepreneurs and investors",
+      gridClass: "col-span-2 row-span-2",
+    },
+    {
+      src: "/placeholder.svg?height=400&width=600&text=Networking+Event",
+      alt: "Networking Event - Professionals connecting at an OPEN Silicon Valley networking session",
+      gridClass: "col-span-1 row-span-1",
+    },
+    {
+      src: "/placeholder.svg?height=400&width=600&text=Workshop",
+      alt: "Workshop - Hands-on learning session for entrepreneurs and professionals",
+      gridClass: "col-span-1 row-span-1",
+    },
+    {
+      src: "/placeholder.svg?height=800&width=600&text=Seminar",
+      alt: "Seminar - Educational presentation on business and technology topics",
+      gridClass: "col-span-1 row-span-2",
+    },
+    {
+      src: "/placeholder.svg?height=400&width=600&text=Panel+Discussion",
+      alt: "Panel Discussion - Industry experts sharing insights and experiences",
+      gridClass: "col-span-1 row-span-1",
+    },
+    {
+      src: "/placeholder.svg?height=400&width=600&text=Startup+Pitch",
+      alt: "Startup Pitch - Entrepreneurs presenting their business ideas to potential investors",
+      gridClass: "col-span-1 row-span-1",
+    },
+  ]
+
   return (
     <section aria-labelledby="gallery-heading" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -21,18 +54,20 @@ export default function EventsGallery() {
           </p>
         </div>
 
-        {/* Modern Masonry Gallery Layout */}
+        {/* Improved Grid Layout */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[minmax(180px,auto)] gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[150px] md:auto-rows-[200px] gap-4 events-gallery-mobile md:events-gallery-desktop">
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className={`${image.className} overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 border border-gray-100`}
+                className={`${image.gridClass} overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 group`}
               >
-                <Link href="/events-directory/events-gallery" className="block h-full w-full relative group">
+                <Link href="/events-directory/events-gallery" className="block h-full w-full relative">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-end">
-                    <div className="p-4 w-full">
-                      <span className="text-white font-medium text-sm md:text-base">{image.alt}</span>
+                    <div className="p-3 md:p-4 w-full">
+                      <span className="text-white font-medium text-xs md:text-sm leading-tight">
+                        {image.alt.split(" - ")[0]}
+                      </span>
                     </div>
                   </div>
                   <div className="h-full w-full relative">
@@ -41,7 +76,7 @@ export default function EventsGallery() {
                       alt={image.alt}
                       fill
                       className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 20vw"
                     />
                   </div>
                 </Link>

@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="bg-gray-900 text-white">
       <div className="container mx-auto px-4">
         {/* Newsletter Section */}
-        <div className="py-16 border-b border-gray-800">
+        <div className="py-12 border-b border-gray-800">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Stay Connected</h2>
             <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
@@ -33,8 +33,8 @@ export default function Footer() {
         </div>
 
         {/* Main Footer Content */}
-        <div className="py-16">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+        <div className="py-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center mb-6">
                 <Image
@@ -47,8 +47,8 @@ export default function Footer() {
                 <h3 className="font-bold text-xl">OPEN Silicon Valley</h3>
               </div>
               <p className="text-gray-400 mb-6 leading-relaxed">
-                Organization of Pakistani Entrepreneurs - A global network of entrepreneurs, investors, and
-                professionals connecting talent with opportunity.
+                A chapter of the global OPEN network, connecting Pakistani entrepreneurs, investors, and professionals
+                with opportunities in Silicon Valley.
               </p>
 
               <div className="space-y-3 mb-6">
@@ -109,8 +109,8 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg mb-6 border-b border-gray-800 pb-2">Programs</h4>
-              <ul className="space-y-3">
+              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Programs</h4>
+              <ul className="space-y-2">
                 <li>
                   <Link
                     href="/programs/women-forum"
@@ -151,12 +151,20 @@ export default function Footer() {
                     <ArrowRight className="h-3 w-3" /> Career Development
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/programs/launchpad"
+                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
+                  >
+                    <ArrowRight className="h-3 w-3" /> Launchpad
+                  </Link>
+                </li>
               </ul>
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg mb-6 border-b border-gray-800 pb-2">Initiatives</h4>
-              <ul className="space-y-3">
+              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Initiatives</h4>
+              <ul className="space-y-2">
                 <li>
                   <Link
                     href="https://opensvconnect.org/"
@@ -193,8 +201,8 @@ export default function Footer() {
             </div>
 
             <div>
-              <h4 className="font-semibold text-lg mb-6 border-b border-gray-800 pb-2">Quick Links</h4>
-              <ul className="space-y-3">
+              <h4 className="font-semibold text-lg mb-4 border-b border-gray-800 pb-2">Quick Links</h4>
+              <ul className="space-y-2">
                 <li>
                   <Link
                     href="/about"
@@ -221,7 +229,7 @@ export default function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="/contact-us"
+                    href="/contact"
                     className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
                   >
                     <ArrowRight className="h-3 w-3" /> Contact Us
@@ -235,13 +243,29 @@ export default function Footer() {
                     <ArrowRight className="h-3 w-3" /> Privacy Policy
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="https://www.openglobalweb.org/"
+                    className="text-gray-400 hover:text-primary transition-colors duration-300 flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ArrowRight className="h-3 w-3" /> OPEN Global
+                  </Link>
+                </li>
               </ul>
+
+              <div className="mt-6">
+                <Button asChild className="rounded-full w-full">
+                  <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="py-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+        <div className="py-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-400">© {currentYear} OPEN Silicon Valley. All Rights Reserved.</p>
           <p className="text-sm text-gray-400 mt-4 md:mt-0">
             Powered By:{" "}
@@ -249,11 +273,6 @@ export default function Footer() {
               Discretelogix
             </a>
           </p>
-          <div className="mt-6 md:mt-0">
-            <Button asChild className="rounded-full">
-              <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
-            </Button>
-          </div>
         </div>
       </div>
     </footer>

@@ -89,7 +89,6 @@ export default function Header() {
               </div>
               <span className="hidden sm:inline">OPEN Silicon Valley</span>
             </Link>
-            <div className="ml-4 text-xs text-gray-600 hidden md:block">Organization of Pakistani Entrepreneurs</div>
           </div>
 
           {/* Desktop Navigation */}

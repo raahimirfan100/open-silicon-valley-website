@@ -87,35 +87,33 @@ export default function UpcomingEvents() {
           </div>
 
           <div className="bg-gray-50 rounded-2xl p-8 shadow-sm">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-              <div className="md:w-1/2">
-                <h3 className="text-2xl font-bold mb-2">OPEN Silicon Valley Events Calendar</h3>
-                <p className="text-gray-600 mb-4">
-                  Stay updated with all our upcoming events. Subscribe to our calendar to never miss an opportunity to
-                  connect and grow.
-                </p>
-                <Button asChild className="rounded-full">
-                  <Link
-                    href="https://calendar.google.com/calendar/u/0?cid=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
-                    className="flex items-center gap-2"
-                    aria-label="Subscribe to OPEN Silicon Valley events calendar"
-                  >
-                    Subscribe to Calendar <ArrowRight className="h-4 w-4" aria-hidden="true" />
-                  </Link>
-                </Button>
-              </div>
+            <div className="text-center mb-8">
+              <h3 className="text-2xl font-bold mb-2">OPEN Silicon Valley Events Calendar</h3>
+              <p className="text-gray-600 mb-6">
+                Stay updated with all our upcoming events. Subscribe to our calendar to never miss an opportunity to
+                connect and grow.
+              </p>
+              <Button asChild className="rounded-full">
+                <Link
+                  href="https://calendar.google.com/calendar/u/0?cid=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20"
+                  className="flex items-center gap-2"
+                  aria-label="Subscribe to OPEN Silicon Valley events calendar"
+                >
+                  Subscribe to Calendar <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </Link>
+              </Button>
+            </div>
 
-              <div className="md:w-1/2 bg-white rounded-xl overflow-hidden shadow-sm h-64 md:h-auto">
-                <iframe
-                  src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&src=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679"
-                  style={{ border: 0 }}
-                  width="100%"
-                  height="300"
-                  frameBorder="0"
-                  scrolling="no"
-                  title="OPEN Silicon Valley Events Calendar"
-                />
-              </div>
+            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+              <iframe
+                src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679"
+                style={{ border: 0 }}
+                width="100%"
+                height="600"
+                frameBorder="0"
+                scrolling="no"
+                title="OPEN Silicon Valley Events Calendar"
+              />
             </div>
           </div>
 
