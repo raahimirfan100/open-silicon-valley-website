@@ -100,13 +100,13 @@ export default function BoardMembersPage() {
                 <Card className="border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
                   <CardContent className="p-0">
                     <div className="flex flex-col lg:flex-row">
-                      <div className="lg:w-1/3 relative">
-                        <div className="aspect-[4/3] lg:h-full relative">
+                      <div className="lg:w-1/3 relative">                        
+                      <div className="aspect-square lg:h-full relative">
                           <Image
                             src={member.image || "/placeholder.svg"}
                             alt={`Photo of ${member.name}`}
                             fill
-                            className="object-cover"
+                            className="object-contain"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         </div>
