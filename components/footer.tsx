@@ -73,28 +73,28 @@ export default function Footer() {
 
               <div className="flex space-x-3">
                 <Link
-                  href="#"
+                  href="https://www.facebook.com/opensiliconvalley"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Facebook"
                 >
                   <Facebook size={16} />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.twitter.com/opensiliconvalley"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Twitter"
                 >
                   <Twitter size={16} />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.linkedin.com/company/opensiliconvalley"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={16} />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/opensiliconvalley"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Instagram"
                 >

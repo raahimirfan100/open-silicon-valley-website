@@ -332,6 +332,54 @@ export default function ProgramsPage() {
         </div>
       </section>
 
+      {/* Conferences Section */}
+      <section id="conferences" className="py-12 md:py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Conferences</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Our conferences bring together thought leaders, industry experts, and innovators to discuss key trends, share insights, and foster collaboration. Expect impactful keynotes, in-depth panel discussions, and valuable networking opportunities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seminars Section */}
+      <section id="seminars" className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Seminars</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              OPEN SV seminars offer focused learning experiences on specific topics, led by experienced professionals. These sessions are designed to provide practical knowledge and actionable insights for attendees.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Webinars Section */}
+      <section id="webinars" className="py-12 md:py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Webinars</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Access expert knowledge from anywhere with OPEN SV webinars. We cover a range of topics relevant to entrepreneurs and professionals, featuring live Q&A sessions with speakers.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Networking Section */}
+      <section id="networking" className="py-12 md:py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-bold mb-6">Networking Events</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Building connections is key. OPEN SV hosts various networking events, providing opportunities to connect with peers, mentors, investors, and potential partners in a supportive environment.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Join CTA */}
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4">
