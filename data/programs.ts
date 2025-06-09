@@ -17,9 +17,9 @@ export const programs: Program[] = [
   {
     title: "Women Forum",
     description:
-      "Networking events for accomplished entrepreneurs, professionals, and investors to interact and learn from each other.",
+      "A platform for women entrepreneurs and professionals to connect and grow.",
     icon: Users,
-    link: "/programs/women-forum",
+    link: "https://opensvforums.org",
   },
   {
     title: "Workshops",

@@ -1,12 +1,11 @@
-import ComingSoon from "@/components/coming-soon"
+import { notFound } from "next/navigation";
+import ComingSoon from "@/components/coming-soon";
 
-export default function CatchAllPage({ params }: { params: { slug: string[] } }) {
-  const path = params.slug.join("/")
-
-  return (
-    <ComingSoon
-      title="Coming Soon"
-      description={`The ${path} page is currently under development. Please check back later.`}
-    />
-  )
+export default function CatchAllPage({
+  params,
+}: {
+  params: { slug: string[] };
+}) {
+  // Trigger the 404 page for any undefined routes
+  notFound();
 }

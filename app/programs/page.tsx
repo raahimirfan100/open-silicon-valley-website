@@ -1,33 +1,53 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, BookOpen, Calendar } from "lucide-react"
-import { programs } from "@/data/programs"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardFooter,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Users, BookOpen, Calendar } from "lucide-react";
+import { programs } from "@/data/programs";
 
 export const metadata: Metadata = {
   title: "Programs | OPEN Silicon Valley",
-  description: "Explore OPEN Silicon Valley's programs supporting entrepreneurs and professionals",
-}
+  description:
+    "Explore OPEN Silicon Valley's programs supporting entrepreneurs and professionals",
+};
 
 export default function ProgramsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-        <div className="absolute inset-0 islamic-pattern opacity-30" aria-hidden="true"></div>
+        <div
+          className="absolute inset-0 islamic-pattern opacity-30"
+          aria-hidden="true"
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Programs</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Our Programs
+            </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Supporting entrepreneurs, professionals, and students at every stage of their journey with targeted
-              programs designed to foster growth, innovation, and success.
+              Supporting entrepreneurs, professionals, and students at every
+              stage of their journey with targeted programs designed to foster
+              growth, innovation, and success.
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 text-white" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto">
+        <div
+          className="absolute bottom-0 left-0 right-0 text-white"
+          aria-hidden="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 100"
+            className="w-full h-auto"
+          >
             <path
               fill="currentColor"
               fillOpacity="1"
@@ -43,7 +63,10 @@ export default function ProgramsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {programs.map((program, index) => (
-                <Card key={index} className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card
+                  key={index}
+                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                >
                   <CardHeader className="pb-2">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                       <program.icon className="h-6 w-6 text-primary" />
@@ -55,7 +78,10 @@ export default function ProgramsPage() {
                   </CardContent>
                   <CardFooter>
                     <Button asChild variant="outline" className="w-full">
-                      <Link href={program.link} className="flex items-center justify-center gap-2">
+                      <Link
+                        href={program.link}
+                        className="flex items-center justify-center gap-2"
+                      >
                         Learn More <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>
@@ -67,99 +93,35 @@ export default function ProgramsPage() {
         </div>
       </section>
 
-      {/* Annual Forum */}
+      {/* Forums */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row gap-12 items-center">
-              <div className="md:w-1/2">
-                <div className="relative rounded-xl overflow-hidden">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="relative overflow-hidden rounded-2xl">
+                <div className="aspect-w-16 aspect-h-9">
                   <Image
-                    src="/placeholder.svg?height=600&width=800&text=Annual+Forum"
-                    alt="OPEN Silicon Valley Annual Forum"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
+                    src="/placeholder.svg?height=400&width=600&text=Forums"
+                    alt="OPEN Silicon Valley Forums"
+                    fill
+                    className="object-cover"
                   />
                 </div>
               </div>
-              <div className="md:w-1/2">
-                <div className="inline-block px-4 py-1.5 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-                  Flagship Event
-                </div>
-                <h2 className="text-3xl font-bold mb-6">Annual Forum</h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  Our annual forum brings together entrepreneurs, investors, and professionals for a day of learning,
-                  networking, and inspiration with keynote speakers and panel discussions.
+              <div className="flex flex-col justify-center">
+                <h2 className="text-3xl font-bold mb-6">Forums</h2>
+                <p className="text-lg text-gray-600 mb-8">
+                  Join our community of entrepreneurs, investors, and
+                  professionals at our forums. Visit our dedicated forums
+                  website for more information and to register for upcoming
+                  events.
                 </p>
-                <p className="text-lg text-gray-600 mb-6">
-                  The forum features keynote speeches from successful entrepreneurs, panel discussions on emerging
-                  trends, networking opportunities, and a startup showcase.
-                </p>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-primary" />
-                    <span>Annual Event</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-primary" />
-                    <span>500+ Attendees</span>
-                  </div>
-                </div>
-                <Button asChild className="rounded-full">
-                  <Link href="/programs/annual-forum" className="flex items-center gap-2">
-                    Learn More <ArrowRight className="h-4 w-4" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Women Forum */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
-              <div className="md:w-1/2">
-                <div className="relative rounded-xl overflow-hidden">
-                  <Image
-                    src="/placeholder.svg?height=600&width=800&text=Women+Forum"
-                    alt="OPEN Silicon Valley Women Forum"
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                  />
-                </div>
-              </div>
-              <div className="md:w-1/2">
-                <div className="inline-block px-4 py-1.5 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
-                  Quarterly Event
-                </div>
-                <h2 className="text-3xl font-bold mb-6">Women Forum</h2>
-                <p className="text-lg text-gray-600 mb-6">
-                  These networking events are arranged every quarter in which accomplished entrepreneurs, seasoned
-                  professionals, students, business leaders, and investors get a chance to interact and learn from each
-                  other.
-                </p>
-                <p className="text-lg text-gray-600 mb-6">
-                  The Women Forum provides a platform for women entrepreneurs and professionals to connect, share
-                  experiences, and support each other in their professional journeys.
-                </p>
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-5 w-5 text-primary" />
-                    <span>Quarterly Events</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-primary" />
-                    <span>200+ Attendees</span>
-                  </div>
-                </div>
-                <Button asChild className="rounded-full">
-                  <Link href="/programs/women-forum" className="flex items-center gap-2">
-                    Learn More <ArrowRight className="h-4 w-4" />
+                <Button asChild size="lg" className="rounded-full w-fit">
+                  <Link
+                    href="https://opensvforums.org"
+                    className="flex items-center gap-2"
+                  >
+                    Visit Forums Website <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
               </div>
@@ -190,12 +152,14 @@ export default function ProgramsPage() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Workshops</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  SIG events are arranged on a regular basis where people in a particular domain or with a particular
-                  interest gather and learn from others via meetups, talks and workshops.
+                  SIG events are arranged on a regular basis where people in a
+                  particular domain or with a particular interest gather and
+                  learn from others via meetups, talks and workshops.
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
-                  Our workshops cover a wide range of topics including startup funding, marketing, product development,
-                  leadership, and more, providing practical skills and knowledge.
+                  Our workshops cover a wide range of topics including startup
+                  funding, marketing, product development, leadership, and more,
+                  providing practical skills and knowledge.
                 </p>
                 <div className="flex items-center gap-4 mb-8">
                   <div className="flex items-center gap-2">
@@ -208,7 +172,10 @@ export default function ProgramsPage() {
                   </div>
                 </div>
                 <Button asChild className="rounded-full">
-                  <Link href="/programs/workshops" className="flex items-center gap-2">
+                  <Link
+                    href="/programs/workshops"
+                    className="flex items-center gap-2"
+                  >
                     Learn More <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -223,9 +190,12 @@ export default function ProgramsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Upcoming Program Events</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Upcoming Program Events
+              </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join us for our upcoming program events and take advantage of the learning and networking opportunities.
+                Join us for our upcoming program events and take advantage of
+                the learning and networking opportunities.
               </p>
             </div>
 
@@ -249,8 +219,9 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    A workshop on fundraising strategies for early-stage startups, covering angel investment, venture
-                    capital, and alternative funding sources.
+                    A workshop on fundraising strategies for early-stage
+                    startups, covering angel investment, venture capital, and
+                    alternative funding sources.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -279,8 +250,9 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    A seminar focused on challenges and opportunities for women entrepreneurs in the tech industry,
-                    featuring successful women leaders.
+                    A seminar focused on challenges and opportunities for women
+                    entrepreneurs in the tech industry, featuring successful
+                    women leaders.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -309,8 +281,9 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    Connect with experienced mentors who can provide guidance and support for your entrepreneurial
-                    journey or professional development.
+                    Connect with experienced mentors who can provide guidance
+                    and support for your entrepreneurial journey or professional
+                    development.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -338,17 +311,30 @@ export default function ProgramsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Get Involved</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you're an entrepreneur, investor, professional, or student, there's a place for you in our
-              community. Join OPEN Silicon Valley today and take advantage of our programs and network.
+              Whether you're an entrepreneur, investor, professional, or
+              student, there's a place for you in our community. Join OPEN
+              Silicon Valley today and take advantage of our programs and
+              network.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
-                <Link href="https://opensv.wildapricot.org/join-us" className="flex items-center gap-2">
+                <Link
+                  href="https://opensv.wildapricot.org/join-us"
+                  className="flex items-center gap-2"
+                >
                   Become a Member <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full">
-                <Link href="/volunteer-with-us" className="flex items-center gap-2">
+              <Button
+                asChild
+                variant="outline"
+                size="lg"
+                className="rounded-full"
+              >
+                <Link
+                  href="/volunteer-with-us"
+                  className="flex items-center gap-2"
+                >
                   Volunteer With Us <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
@@ -357,5 +343,5 @@ export default function ProgramsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
