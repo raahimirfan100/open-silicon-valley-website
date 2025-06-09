@@ -1,15 +1,27 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { CalendarIcon, MapPinIcon, ClockIcon, ArrowRight, ExternalLink } from "lucide-react"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  CalendarIcon,
+  MapPinIcon,
+  ClockIcon,
+  ArrowRight,
+  ExternalLink,
+} from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Events | OPEN Silicon Valley",
   description: "Upcoming events and gatherings hosted by OPEN Silicon Valley",
-}
+};
 
 export default function EventsPage() {
   const eventCategories = [
@@ -33,7 +45,7 @@ export default function EventsPage() {
       id: "networking",
       label: "Networking",
     },
-  ]
+  ];
 
   const events = [
     {
@@ -53,7 +65,8 @@ export default function EventsPage() {
       date: "July 22, 2025",
       time: "1:00 PM - 4:00 PM",
       location: "Palo Alto Community Center",
-      description: "A seminar focused on challenges and opportunities for women entrepreneurs in the tech industry.",
+      description:
+        "A seminar focused on challenges and opportunities for women entrepreneurs in the tech industry.",
       category: "seminars",
       image: "/placeholder.svg?height=300&width=500&text=Women+in+Tech",
     },
@@ -63,7 +76,8 @@ export default function EventsPage() {
       date: "June 10, 2025",
       time: "10:00 AM - 11:30 AM",
       location: "Virtual Event",
-      description: "Learn about the latest trends in AI and machine learning from industry experts.",
+      description:
+        "Learn about the latest trends in AI and machine learning from industry experts.",
       category: "webinars",
       image: "/placeholder.svg?height=300&width=500&text=AI+Webinar",
     },
@@ -73,7 +87,8 @@ export default function EventsPage() {
       date: "May 28, 2025",
       time: "6:00 PM - 8:30 PM",
       location: "Mountain View Tech Hub",
-      description: "An evening of networking with entrepreneurs, investors, and professionals in Silicon Valley.",
+      description:
+        "An evening of networking with entrepreneurs, investors, and professionals in Silicon Valley.",
       category: "networking",
       image: "/placeholder.svg?height=300&width=500&text=Networking+Mixer",
     },
@@ -83,7 +98,8 @@ export default function EventsPage() {
       date: "June 5, 2025",
       time: "2:00 PM - 5:00 PM",
       location: "Sunnyvale Innovation Center",
-      description: "A workshop on fundraising strategies for early-stage startups.",
+      description:
+        "A workshop on fundraising strategies for early-stage startups.",
       category: "seminars",
       image: "/placeholder.svg?height=300&width=500&text=Funding+Workshop",
     },
@@ -93,28 +109,40 @@ export default function EventsPage() {
       date: "October 10-12, 2025",
       time: "9:00 AM - 6:00 PM",
       location: "Santa Clara Convention Center",
-      description: "A three-day summit bringing together entrepreneurs from around the world.",
+      description:
+        "A three-day summit bringing together entrepreneurs from around the world.",
       category: "conferences",
       image: "/placeholder.svg?height=300&width=500&text=Global+Summit",
     },
-  ]
+  ];
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-        <div className="absolute inset-0 islamic-pattern opacity-30" aria-hidden="true"></div>
+        <div
+          className="absolute inset-0 pakistani-pattern opacity-30"
+          aria-hidden="true"
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Events</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Join us for our upcoming events where you can connect with fellow entrepreneurs, learn new skills, and be
-              inspired by innovation in Silicon Valley.
+              Join us for our upcoming events where you can connect with fellow
+              entrepreneurs, learn new skills, and be inspired by innovation in
+              Silicon Valley.
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 text-white" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto">
+        <div
+          className="absolute bottom-0 left-0 right-0 text-white"
+          aria-hidden="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 100"
+            className="w-full h-auto"
+          >
             <path
               fill="currentColor"
               fillOpacity="1"
@@ -143,7 +171,9 @@ export default function EventsPage() {
                   </div>
                 </div>
                 <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-                  <h2 className="text-3xl font-bold mb-4">Annual Entrepreneurship Conference</h2>
+                  <h2 className="text-3xl font-bold mb-4">
+                    Annual Entrepreneurship Conference
+                  </h2>
                   <div className="space-y-4 mb-6">
                     <div className="flex items-center gap-2">
                       <CalendarIcon className="h-5 w-5 text-primary" />
@@ -159,9 +189,10 @@ export default function EventsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600 mb-8">
-                    Join us for our annual flagship event bringing together entrepreneurs, investors, and industry
-                    leaders. The conference features keynote speeches, panel discussions, networking opportunities, and
-                    a startup showcase.
+                    Join us for our annual flagship event bringing together
+                    entrepreneurs, investors, and industry leaders. The
+                    conference features keynote speeches, panel discussions,
+                    networking opportunities, and a startup showcase.
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <Button className="rounded-full">Register Now</Button>
@@ -193,7 +224,11 @@ export default function EventsPage() {
                 <TabsContent key={category.id} value={category.id}>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {events
-                      .filter((event) => category.id === "all" || event.category === category.id)
+                      .filter(
+                        (event) =>
+                          category.id === "all" ||
+                          event.category === category.id
+                      )
                       .map((event) => (
                         <Card
                           key={event.id}
@@ -210,7 +245,9 @@ export default function EventsPage() {
                           </div>
                           <CardHeader>
                             <div className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-xs font-medium mb-2">
-                              {category.id === "all" ? event.category : category.label}
+                              {category.id === "all"
+                                ? event.category
+                                : category.label}
                             </div>
                             <CardTitle>{event.title}</CardTitle>
                           </CardHeader>
@@ -251,8 +288,8 @@ export default function EventsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Events Calendar</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Stay updated with all our upcoming events. Subscribe to our calendar to never miss an opportunity to
-                connect and grow.
+                Stay updated with all our upcoming events. Subscribe to our
+                calendar to never miss an opportunity to connect and grow.
               </p>
             </div>
 
@@ -291,8 +328,8 @@ export default function EventsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Events Gallery</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Check out photos and videos from our past events. Get a glimpse of the OPEN Silicon Valley community in
-                action.
+                Check out photos and videos from our past events. Get a glimpse
+                of the OPEN Silicon Valley community in action.
               </p>
             </div>
 
@@ -356,7 +393,10 @@ export default function EventsPage() {
 
             <div className="text-center">
               <Button asChild variant="outline" className="rounded-full">
-                <Link href="/events-directory/events-gallery" className="flex items-center gap-2">
+                <Link
+                  href="/events-directory/events-gallery"
+                  className="flex items-center gap-2"
+                >
                   View Full Gallery <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
@@ -371,8 +411,10 @@ export default function EventsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Host an Event with Us</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Are you interested in hosting an event with OPEN Silicon Valley? We welcome collaboration opportunities
-              with organizations and individuals who share our mission of supporting entrepreneurs and professionals.
+              Are you interested in hosting an event with OPEN Silicon Valley?
+              We welcome collaboration opportunities with organizations and
+              individuals who share our mission of supporting entrepreneurs and
+              professionals.
             </p>
             <Button asChild size="lg" className="rounded-full">
               <Link href="/contact" className="flex items-center gap-2">
@@ -383,5 +425,5 @@ export default function EventsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

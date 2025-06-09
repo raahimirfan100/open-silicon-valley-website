@@ -1,14 +1,20 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Calendar, User } from "lucide-react"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Calendar, User } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "News & Updates | OPEN Silicon Valley",
   description: "Latest news and updates from OPEN Silicon Valley",
-}
+};
 
 export default function NewsPage() {
   const featuredNews = {
@@ -17,9 +23,10 @@ export default function NewsPage() {
       "New fund will support early-stage Pakistani-American entrepreneurs with grants and mentorship opportunities.",
     date: "2024-01-15",
     author: "OPEN SV Team",
-    image: "/placeholder.svg?height=400&width=600&text=Investment+Fund+Announcement",
+    image:
+      "/placeholder.svg?height=400&width=600&text=Investment+Fund+Announcement",
     category: "Funding",
-  }
+  };
 
   const newsItems = [
     {
@@ -33,7 +40,8 @@ export default function NewsPage() {
     },
     {
       title: "New Partnership with Stanford University",
-      excerpt: "OPEN SV partners with Stanford to launch entrepreneurship program for Pakistani students.",
+      excerpt:
+        "OPEN SV partners with Stanford to launch entrepreneurship program for Pakistani students.",
       date: "2024-01-05",
       author: "Dr. Hassan Ali",
       image: "/placeholder.svg?height=300&width=400&text=Stanford+Partnership",
@@ -41,7 +49,8 @@ export default function NewsPage() {
     },
     {
       title: "Women Forum Launches Mentorship Program",
-      excerpt: "New initiative connects female entrepreneurs with successful business leaders in Silicon Valley.",
+      excerpt:
+        "New initiative connects female entrepreneurs with successful business leaders in Silicon Valley.",
       date: "2023-12-20",
       author: "Fatima Khan",
       image: "/placeholder.svg?height=300&width=400&text=Women+Mentorship",
@@ -49,7 +58,8 @@ export default function NewsPage() {
     },
     {
       title: "OPEN SV Members Raise $50M in Series A Funding",
-      excerpt: "Three member companies successfully close significant funding rounds in Q4 2023.",
+      excerpt:
+        "Three member companies successfully close significant funding rounds in Q4 2023.",
       date: "2023-12-15",
       author: "Investment Team",
       image: "/placeholder.svg?height=300&width=400&text=Series+A+Success",
@@ -57,7 +67,8 @@ export default function NewsPage() {
     },
     {
       title: "Youth Program Expands to 10 Universities",
-      excerpt: "OPEN SV's youth initiative now active in universities across California and beyond.",
+      excerpt:
+        "OPEN SV's youth initiative now active in universities across California and beyond.",
       date: "2023-12-10",
       author: "Youth Committee",
       image: "/placeholder.svg?height=300&width=400&text=Youth+Expansion",
@@ -65,27 +76,41 @@ export default function NewsPage() {
     },
     {
       title: "Tech Innovation Summit Highlights AI Trends",
-      excerpt: "Industry leaders discuss the future of AI and its impact on Pakistani-American entrepreneurs.",
+      excerpt:
+        "Industry leaders discuss the future of AI and its impact on Pakistani-American entrepreneurs.",
       date: "2023-12-01",
       author: "Tech Committee",
       image: "/placeholder.svg?height=300&width=400&text=AI+Summit",
       category: "Technology",
     },
-  ]
+  ];
 
-  const categories = ["All", "Events", "Programs", "Partnerships", "Funding", "Success Stories", "Technology"]
+  const categories = [
+    "All",
+    "Events",
+    "Programs",
+    "Partnerships",
+    "Funding",
+    "Success Stories",
+    "Technology",
+  ];
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-        <div className="absolute inset-0 islamic-pattern opacity-30" aria-hidden="true"></div>
+        <div
+          className="absolute inset-0 pakistani-pattern opacity-30"
+          aria-hidden="true"
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">News & Updates</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              News & Updates
+            </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Stay informed about the latest developments, achievements, and initiatives from the OPEN Silicon Valley
-              community.
+              Stay informed about the latest developments, achievements, and
+              initiatives from the OPEN Silicon Valley community.
             </p>
           </div>
         </div>
@@ -113,8 +138,12 @@ export default function NewsPage() {
                 </div>
                 <div className="p-8 flex flex-col justify-center">
                   <CardHeader className="p-0 mb-4">
-                    <CardTitle className="text-2xl mb-2">{featuredNews.title}</CardTitle>
-                    <CardDescription className="text-lg">{featuredNews.excerpt}</CardDescription>
+                    <CardTitle className="text-2xl mb-2">
+                      {featuredNews.title}
+                    </CardTitle>
+                    <CardDescription className="text-lg">
+                      {featuredNews.excerpt}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent className="p-0">
                     <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
@@ -172,7 +201,12 @@ export default function NewsPage() {
                   className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
                 >
                   <div className="relative h-48">
-                    <Image src={item.image || "/placeholder.svg"} alt={item.title} fill className="object-cover" />
+                    <Image
+                      src={item.image || "/placeholder.svg"}
+                      alt={item.title}
+                      fill
+                      className="object-cover"
+                    />
                     <div className="absolute top-4 left-4">
                       <span className="bg-white/90 text-gray-800 px-2 py-1 rounded-full text-xs font-medium">
                         {item.category}
@@ -180,8 +214,12 @@ export default function NewsPage() {
                     </div>
                   </div>
                   <CardHeader>
-                    <CardTitle className="text-lg line-clamp-2">{item.title}</CardTitle>
-                    <CardDescription className="line-clamp-3">{item.excerpt}</CardDescription>
+                    <CardTitle className="text-lg line-clamp-2">
+                      {item.title}
+                    </CardTitle>
+                    <CardDescription className="line-clamp-3">
+                      {item.excerpt}
+                    </CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
@@ -194,7 +232,12 @@ export default function NewsPage() {
                         {item.author}
                       </div>
                     </div>
-                    <Button asChild variant="outline" size="sm" className="w-full rounded-full">
+                    <Button
+                      asChild
+                      variant="outline"
+                      size="sm"
+                      className="w-full rounded-full"
+                    >
                       <Link href="#" className="flex items-center gap-2">
                         Read More <ArrowRight className="h-3 w-3" />
                       </Link>
@@ -213,7 +256,8 @@ export default function NewsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Stay Updated</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Subscribe to our newsletter to receive the latest news and updates directly in your inbox.
+              Subscribe to our newsletter to receive the latest news and updates
+              directly in your inbox.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
@@ -230,5 +274,5 @@ export default function NewsPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

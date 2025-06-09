@@ -1,18 +1,24 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Users, Calendar, Clock, Award } from "lucide-react"
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, Users, Calendar, Clock, Award } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Volunteer With Us | OPEN Silicon Valley",
   description: "Join the OPEN Silicon Valley volunteer team",
-}
+};
 
 export default function VolunteerPage() {
   const volunteerRoles = [
@@ -21,60 +27,103 @@ export default function VolunteerPage() {
       description:
         "Help plan and execute OPEN Silicon Valley events, including venue selection, speaker coordination, and logistics management.",
       commitment: "5-10 hours per month",
-      skills: ["Event planning", "Communication", "Organization", "Time management"],
+      skills: [
+        "Event planning",
+        "Communication",
+        "Organization",
+        "Time management",
+      ],
     },
     {
       title: "Marketing & Communications",
       description:
         "Assist with social media management, email newsletters, content creation, and promotional materials for OPEN Silicon Valley.",
       commitment: "3-8 hours per month",
-      skills: ["Social media", "Content writing", "Graphic design", "Email marketing"],
+      skills: [
+        "Social media",
+        "Content writing",
+        "Graphic design",
+        "Email marketing",
+      ],
     },
     {
       title: "Membership Coordinator",
       description:
         "Support member recruitment, onboarding, and engagement activities to help grow and strengthen our community.",
       commitment: "4-6 hours per month",
-      skills: ["Customer service", "Database management", "Communication", "Relationship building"],
+      skills: [
+        "Customer service",
+        "Database management",
+        "Communication",
+        "Relationship building",
+      ],
     },
     {
       title: "Technology Support",
       description:
         "Provide technical assistance for the OPEN Silicon Valley website, membership portal, and digital tools.",
       commitment: "3-8 hours per month",
-      skills: ["Web development", "IT support", "Software management", "Problem-solving"],
+      skills: [
+        "Web development",
+        "IT support",
+        "Software management",
+        "Problem-solving",
+      ],
     },
     {
       title: "Sponsorship Coordinator",
       description:
         "Help identify, approach, and manage relationships with potential sponsors for OPEN Silicon Valley events and programs.",
       commitment: "4-8 hours per month",
-      skills: ["Sales", "Relationship management", "Negotiation", "Business development"],
+      skills: [
+        "Sales",
+        "Relationship management",
+        "Negotiation",
+        "Business development",
+      ],
     },
     {
       title: "Mentorship Program Coordinator",
       description:
         "Assist in matching mentors with mentees, organizing mentorship events, and ensuring the success of the mentorship program.",
       commitment: "5-10 hours per month",
-      skills: ["Relationship building", "Program management", "Communication", "Empathy"],
+      skills: [
+        "Relationship building",
+        "Program management",
+        "Communication",
+        "Empathy",
+      ],
     },
-  ]
+  ];
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-        <div className="absolute inset-0 islamic-pattern opacity-30" aria-hidden="true"></div>
+        <div
+          className="absolute inset-0 pakistani-pattern opacity-30"
+          aria-hidden="true"
+        ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Volunteer With Us</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Volunteer With Us
+            </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Join our team of dedicated volunteers and help make a difference in the entrepreneurial ecosystem.
+              Join our team of dedicated volunteers and help make a difference
+              in the entrepreneurial ecosystem.
             </p>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 right-0 text-white" aria-hidden="true">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto">
+        <div
+          className="absolute bottom-0 left-0 right-0 text-white"
+          aria-hidden="true"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 100"
+            className="w-full h-auto"
+          >
             <path
               fill="currentColor"
               fillOpacity="1"
@@ -101,11 +150,14 @@ export default function VolunteerPage() {
                 </div>
               </div>
               <div className="md:w-1/2">
-                <h2 className="text-3xl font-bold mb-6">Why Volunteer With Us?</h2>
+                <h2 className="text-3xl font-bold mb-6">
+                  Why Volunteer With Us?
+                </h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  OPEN Silicon Valley is a volunteer-led organization. Our success depends on the dedication and skills
-                  of our volunteers. Join our team and help build a stronger community while developing your skills and
-                  expanding your network.
+                  OPEN Silicon Valley is a volunteer-led organization. Our
+                  success depends on the dedication and skills of our
+                  volunteers. Join our team and help build a stronger community
+                  while developing your skills and expanding your network.
                 </p>
 
                 <div className="space-y-4">
@@ -116,7 +168,8 @@ export default function VolunteerPage() {
                     <div>
                       <h3 className="font-semibold">Expand Your Network</h3>
                       <p className="text-gray-600">
-                        Connect with entrepreneurs, investors, and professionals in Silicon Valley.
+                        Connect with entrepreneurs, investors, and professionals
+                        in Silicon Valley.
                       </p>
                     </div>
                   </div>
@@ -128,7 +181,8 @@ export default function VolunteerPage() {
                     <div>
                       <h3 className="font-semibold">Develop New Skills</h3>
                       <p className="text-gray-600">
-                        Gain valuable experience and skills that can enhance your professional profile.
+                        Gain valuable experience and skills that can enhance
+                        your professional profile.
                       </p>
                     </div>
                   </div>
@@ -140,7 +194,8 @@ export default function VolunteerPage() {
                     <div>
                       <h3 className="font-semibold">Make an Impact</h3>
                       <p className="text-gray-600">
-                        Contribute to the growth and success of the Pakistani entrepreneurial ecosystem.
+                        Contribute to the growth and success of the Pakistani
+                        entrepreneurial ecosystem.
                       </p>
                     </div>
                   </div>
@@ -152,7 +207,8 @@ export default function VolunteerPage() {
                     <div>
                       <h3 className="font-semibold">Flexible Commitment</h3>
                       <p className="text-gray-600">
-                        Volunteer as much or as little as you can, based on your availability.
+                        Volunteer as much or as little as you can, based on your
+                        availability.
                       </p>
                     </div>
                   </div>
@@ -168,15 +224,21 @@ export default function VolunteerPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Available Volunteer Roles</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Available Volunteer Roles
+              </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                We have various volunteer opportunities available based on your skills, interests, and availability.
+                We have various volunteer opportunities available based on your
+                skills, interests, and availability.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {volunteerRoles.map((role, index) => (
-                <Card key={index} className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card
+                  key={index}
+                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                >
                   <CardHeader>
                     <CardTitle>{role.title}</CardTitle>
                   </CardHeader>
@@ -184,7 +246,9 @@ export default function VolunteerPage() {
                     <p className="text-gray-600 mb-4">{role.description}</p>
                     <div className="mb-4">
                       <div className="font-medium mb-2">Time Commitment:</div>
-                      <div className="text-sm text-gray-600">{role.commitment}</div>
+                      <div className="text-sm text-gray-600">
+                        {role.commitment}
+                      </div>
                     </div>
                     <div>
                       <div className="font-medium mb-2">Skills Required:</div>
@@ -214,7 +278,8 @@ export default function VolunteerPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Volunteer Application</h2>
               <p className="text-lg text-gray-600">
-                Fill out the form below to apply for a volunteer position with OPEN Silicon Valley.
+                Fill out the form below to apply for a volunteer position with
+                OPEN Silicon Valley.
               </p>
             </div>
 
@@ -307,7 +372,8 @@ export default function VolunteerPage() {
                     Submit Application
                   </Button>
                   <p className="text-sm text-gray-500 mt-2 text-center">
-                    Note: This form will be replaced with a Monday.com form in the future.
+                    Note: This form will be replaced with a Monday.com form in
+                    the future.
                   </p>
                 </div>
               </form>
@@ -321,9 +387,12 @@ export default function VolunteerPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-4">Volunteer Testimonials</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Volunteer Testimonials
+              </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Hear from our volunteers about their experiences with OPEN Silicon Valley.
+                Hear from our volunteers about their experiences with OPEN
+                Silicon Valley.
               </p>
             </div>
 
@@ -340,12 +409,15 @@ export default function VolunteerPage() {
                     />
                   </div>
                   <p className="text-gray-600 italic mb-4">
-                    "Volunteering with OPEN SV has been an incredible experience. I've met amazing people, developed new
-                    skills, and made a real impact in the community. It's been rewarding both personally and
-                    professionally."
+                    "Volunteering with OPEN SV has been an incredible
+                    experience. I've met amazing people, developed new skills,
+                    and made a real impact in the community. It's been rewarding
+                    both personally and professionally."
                   </p>
                   <div className="font-semibold">Fatima Ahmed</div>
-                  <div className="text-sm text-gray-500">Event Coordinator Volunteer</div>
+                  <div className="text-sm text-gray-500">
+                    Event Coordinator Volunteer
+                  </div>
                 </div>
               </Card>
 
@@ -361,12 +433,15 @@ export default function VolunteerPage() {
                     />
                   </div>
                   <p className="text-gray-600 italic mb-4">
-                    "As a marketing volunteer, I've had the opportunity to work on meaningful projects that have helped
-                    me grow professionally. The OPEN SV team is supportive and appreciative of volunteers'
-                    contributions."
+                    "As a marketing volunteer, I've had the opportunity to work
+                    on meaningful projects that have helped me grow
+                    professionally. The OPEN SV team is supportive and
+                    appreciative of volunteers' contributions."
                   </p>
                   <div className="font-semibold">Imran Malik</div>
-                  <div className="text-sm text-gray-500">Marketing Volunteer</div>
+                  <div className="text-sm text-gray-500">
+                    Marketing Volunteer
+                  </div>
                 </div>
               </Card>
 
@@ -382,11 +457,15 @@ export default function VolunteerPage() {
                     />
                   </div>
                   <p className="text-gray-600 italic mb-4">
-                    "Volunteering with OPEN SV has expanded my network and opened doors to new opportunities. I've made
-                    valuable connections and gained insights into the entrepreneurial ecosystem in Silicon Valley."
+                    "Volunteering with OPEN SV has expanded my network and
+                    opened doors to new opportunities. I've made valuable
+                    connections and gained insights into the entrepreneurial
+                    ecosystem in Silicon Valley."
                   </p>
                   <div className="font-semibold">Nadia Rahman</div>
-                  <div className="text-sm text-gray-500">Membership Coordinator Volunteer</div>
+                  <div className="text-sm text-gray-500">
+                    Membership Coordinator Volunteer
+                  </div>
                 </div>
               </Card>
             </div>
@@ -399,47 +478,64 @@ export default function VolunteerPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
-              <p className="text-lg text-gray-600">Find answers to common questions about volunteering.</p>
+              <h2 className="text-3xl font-bold mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600">
+                Find answers to common questions about volunteering.
+              </p>
             </div>
 
             <div className="space-y-6">
               <Card className="border-gray-100 shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Do I need to be a member to volunteer?</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Do I need to be a member to volunteer?
+                  </h3>
                   <p className="text-gray-600">
-                    No, you don't need to be a member to volunteer with OPEN Silicon Valley. However, many of our
-                    volunteers choose to become members to take advantage of additional benefits.
+                    No, you don't need to be a member to volunteer with OPEN
+                    Silicon Valley. However, many of our volunteers choose to
+                    become members to take advantage of additional benefits.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-gray-100 shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">How much time do I need to commit?</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    How much time do I need to commit?
+                  </h3>
                   <p className="text-gray-600">
-                    The time commitment varies depending on the role and your availability. Most volunteer roles require
-                    3-10 hours per month, but we're flexible and appreciate any time you can contribute.
+                    The time commitment varies depending on the role and your
+                    availability. Most volunteer roles require 3-10 hours per
+                    month, but we're flexible and appreciate any time you can
+                    contribute.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-gray-100 shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">Can I volunteer remotely?</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    Can I volunteer remotely?
+                  </h3>
                   <p className="text-gray-600">
-                    Yes, many of our volunteer roles can be performed remotely. Some roles, particularly those related
-                    to event management, may require occasional in-person attendance.
+                    Yes, many of our volunteer roles can be performed remotely.
+                    Some roles, particularly those related to event management,
+                    may require occasional in-person attendance.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border-gray-100 shadow-sm">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">How long is the volunteer commitment?</h3>
+                  <h3 className="text-xl font-semibold mb-2">
+                    How long is the volunteer commitment?
+                  </h3>
                   <p className="text-gray-600">
-                    We typically ask for a minimum commitment of 6 months, but this is flexible. We understand that
-                    circumstances change and appreciate any time you can contribute.
+                    We typically ask for a minimum commitment of 6 months, but
+                    this is flexible. We understand that circumstances change
+                    and appreciate any time you can contribute.
                   </p>
                 </CardContent>
               </Card>
@@ -452,10 +548,12 @@ export default function VolunteerPage() {
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
+            <h2 className="text-3xl font-bold mb-6">
+              Ready to Make a Difference?
+            </h2>
             <p className="text-lg text-gray-600 mb-8">
-              Join our team of dedicated volunteers and help us build a stronger community for entrepreneurs and
-              professionals.
+              Join our team of dedicated volunteers and help us build a stronger
+              community for entrepreneurs and professionals.
             </p>
             <Button asChild size="lg" className="rounded-full">
               <Link href="#apply" className="flex items-center gap-2">
@@ -466,5 +564,5 @@ export default function VolunteerPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

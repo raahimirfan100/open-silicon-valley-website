@@ -102,7 +102,7 @@ export default function LaunchpadPage() {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-primary/10 to-white overflow-hidden">
         <div
-          className="absolute inset-0 islamic-pattern opacity-30"
+          className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
         ></div>
         <div className="container mx-auto px-4 relative z-10">
