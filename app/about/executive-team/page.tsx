@@ -7,8 +7,9 @@ import { ArrowLeft, Linkedin, ExternalLink, Mail } from "lucide-react";
 import { leadershipTeam } from "@/data/team-members";
 
 export const metadata: Metadata = {
-  title: "Executive Team | OPEN Silicon Valley",
-  description: "Meet the executive team of OPEN Silicon Valley",
+  title: "Leadership Team | OPEN Silicon Valley",
+  description:
+    "Meet the leadership team - our dedicated volunteers helping build a stronger community",
 };
 
 export default function ExecutiveTeamPage() {
@@ -30,11 +31,10 @@ export default function ExecutiveTeamPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Executive Team
+              Meet the Leadership Team
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Meet the dedicated volunteers who lead OPEN Silicon Valley's
-              day-to-day operations and programs.
+              Our dedicated volunteers helping build a stronger community
             </p>
           </div>
         </div>
@@ -74,19 +74,23 @@ export default function ExecutiveTeamPage() {
 
             <div className="bg-gray-50 rounded-xl p-8 mb-16">
               <h2 className="text-2xl font-bold mb-4">
-                About the Executive Team
+                About Our Leadership Team
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our executive team is comprised of dedicated volunteers who are
-                passionate about supporting entrepreneurs and professionals in
-                Silicon Valley. They bring diverse expertise and experience to
-                their roles and are committed to advancing OPEN Silicon Valley's
-                mission.
+                Our leadership team is comprised of over 30 dedicated volunteers
+                who are passionate about supporting entrepreneurs and
+                professionals in Silicon Valley. They bring diverse expertise
+                and experience to their roles and are committed to advancing
+                OPEN Silicon Valley's mission through specialized functions
+                ranging from marketing and programming to youth engagement and
+                global partnerships.
               </p>
               <p className="text-lg text-gray-600">
-                The executive team is responsible for implementing the strategic
-                direction set by the board, managing day-to-day operations, and
-                leading our various programs and initiatives.
+                Each team leader is responsible for implementing strategic
+                initiatives, managing specialized programs, and fostering
+                community growth within their areas of expertise. Together, they
+                form a comprehensive support system that serves our growing
+                member base.
               </p>
             </div>
 
@@ -161,53 +165,55 @@ export default function ExecutiveTeamPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">Team Structure</h2>
+              <h2 className="text-3xl font-bold mb-4">
+                Organizational Structure
+              </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our executive team is organized into functional areas to
-                effectively manage our operations and programs.
+                Our leadership team is organized into specialized functional
+                areas to effectively serve our community and manage diverse
+                programs.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold mb-4">Leadership</h3>
+                <h3 className="text-xl font-bold mb-4">Executive Leadership</h3>
                 <p className="text-gray-600 mb-4">
-                  The leadership team, including the President and Vice
-                  Presidents, provides overall direction and coordination for
-                  the organization.
+                  Core leadership providing strategic direction, governance, and
+                  organizational management.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                  <li>Strategic planning and execution</li>
-                  <li>Organizational development</li>
-                  <li>External relations and partnerships</li>
+                  <li>President & Executive Team</li>
+                  <li>Legal Counsel & Governance</li>
+                  <li>Treasury & Financial Management</li>
                 </ul>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold mb-4">Programs</h3>
+                <h3 className="text-xl font-bold mb-4">Programs & Events</h3>
                 <p className="text-gray-600 mb-4">
-                  The programs team develops and manages our various
-                  initiatives, including workshops, forums, and mentorship
-                  programs.
+                  Teams managing our diverse programming including forums,
+                  workshops, and networking events.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                  <li>Program development and implementation</li>
-                  <li>Event planning and execution</li>
-                  <li>Speaker and mentor coordination</li>
+                  <li>Programming Team</li>
+                  <li>Spring & Youth Forums</li>
+                  <li>Networking Events</li>
+                  <li>Sports & Social Events</li>
                 </ul>
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-sm">
-                <h3 className="text-xl font-bold mb-4">Membership</h3>
+                <h3 className="text-xl font-bold mb-4">Member Services</h3>
                 <p className="text-gray-600 mb-4">
-                  The membership team focuses on recruiting, engaging, and
-                  retaining members, ensuring they receive value from their OPEN
-                  Silicon Valley membership.
+                  Dedicated teams focused on member growth, engagement, and
+                  career development.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                  <li>Member recruitment and onboarding</li>
-                  <li>Member engagement and retention</li>
-                  <li>Member services and support</li>
+                  <li>Membership Development</li>
+                  <li>Career Development</li>
+                  <li>Trusted Partner Network</li>
+                  <li>Volunteer Appreciation</li>
                 </ul>
               </div>
 
@@ -216,13 +222,44 @@ export default function ExecutiveTeamPage() {
                   Marketing & Communications
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  The marketing team handles our communications, social media,
-                  and promotional activities to raise awareness and engagement.
+                  Comprehensive marketing, brand management, and digital
+                  strategy teams.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                  <li>Brand management and messaging</li>
-                  <li>Social media and digital marketing</li>
-                  <li>Content creation and distribution</li>
+                  <li>Marketing & Brand Identity</li>
+                  <li>Digital Strategy</li>
+                  <li>Web Content & Maintenance</li>
+                  <li>Photography & Videography</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-xl font-bold mb-4">Operations & Support</h3>
+                <p className="text-gray-600 mb-4">
+                  Backend support teams ensuring smooth operations and
+                  data-driven decisions.
+                </p>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>Program Administration</li>
+                  <li>Registration & Calendar</li>
+                  <li>Analytics & Research</li>
+                  <li>AI Transformation</li>
+                </ul>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm">
+                <h3 className="text-xl font-bold mb-4">
+                  Community & Partnerships
+                </h3>
+                <p className="text-gray-600 mb-4">
+                  Teams focused on external partnerships, community outreach,
+                  and global connections.
+                </p>
+                <ul className="list-disc pl-5 space-y-1 text-gray-600">
+                  <li>Sponsorships</li>
+                  <li>Global Programs</li>
+                  <li>US-Pakistan Liaison</li>
+                  <li>Non-Profit Awareness</li>
                 </ul>
               </div>
             </div>
