@@ -124,8 +124,10 @@ export default function Footer() {
               <h4 className="font-semibold mb-4 text-sm">Programs</h4>
               <ul className="space-y-2">
                 {[
-                  { name: "Women Forum", href: "https://opensvforums.org" },
-                  { name: "Annual Forum", href: "https://opensvforums.org" },
+                  { name: "Conferences", href: "/programs/conferences" },
+                  { name: "Seminars", href: "/programs/seminars" },
+                  { name: "Webinars", href: "/programs/webinars" },
+                  { name: "Networking", href: "/programs/networking" },
                   { name: "Mentorship", href: "/programs/mentorship" },
                   { name: "Workshops", href: "/programs/workshops" },
                   {
@@ -184,8 +186,10 @@ export default function Footer() {
                 {[
                   { name: "About Us", href: "/about" },
                   { name: "Events", href: "/events" },
+                  { name: "Join Us", href: "/join-us" },
+                  { name: "Donate", href: "/donate" },
                   { name: "Volunteer", href: "/volunteer-with-us" },
-                  { name: "Contact", href: "/contact" },
+                  { name: "Contact", href: "/contact-us" },
                   { name: "Privacy Policy", href: "/privacy-policy" },
                   {
                     name: "OPEN Global",

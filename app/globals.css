@@ -29,7 +29,7 @@ body {
 .pakistani-pattern {
   background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2337ac50' fill-opacity='0.08'%3E%3Cpath d='M0 0h60v60H0V0zm60 60h60v60H60V60z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   background-size: 120px 120px;
-  opacity: 1;
+  opacity: 0.7;
 }
 
 @layer utilities {

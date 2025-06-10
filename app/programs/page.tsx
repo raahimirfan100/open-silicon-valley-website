@@ -185,6 +185,313 @@ export default function ProgramsPage() {
         </div>
       </section>
 
+      {/* Program Types - Conferences, Seminars, Webinars, Networking */}
+      <section className="py-16" id="conferences">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Conferences</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Join our flagship conferences featuring industry leaders,
+                investors, and successful entrepreneurs.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <CardTitle>Annual OPEN Conference</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Our flagship annual event bringing together 500+
+                    entrepreneurs, investors, and tech leaders.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>📅 Next: Fall 2024</div>
+                    <div>📍 San Francisco Bay Area</div>
+                    <div>👥 Expected: 500+ Attendees</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href="/programs/conferences">Learn More</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <CardTitle>Industry Summits</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Sector-specific conferences focusing on tech, healthcare,
+                    fintech, and emerging industries.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>📅 Quarterly Events</div>
+                    <div>📍 Various Locations</div>
+                    <div>🎯 Industry-Focused</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/programs/conferences">View Summits</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <CardTitle>Startup Showcase</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Pitch competitions and demo days for emerging startups to
+                    present to investors.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>📅 Bi-Annual</div>
+                    <div>📍 Silicon Valley</div>
+                    <div>💰 Investment Opportunities</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/programs/conferences">Apply to Present</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Seminars Section */}
+      <section className="py-16 bg-gray-50" id="seminars">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Seminars</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Monthly educational sessions covering essential business topics
+                and emerging trends.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <CardTitle>Business Fundamentals</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Essential topics covering legal structures, taxation,
+                    intellectual property, and compliance.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• Business Registration & Legal Structures</li>
+                    <li>• Tax Planning & Financial Management</li>
+                    <li>• Intellectual Property Protection</li>
+                    <li>• Employment Law & HR Compliance</li>
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href="/programs/seminars">View Schedule</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <CardTitle>Technology & Innovation</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Cutting-edge topics in AI, blockchain, cybersecurity, and
+                    emerging technologies.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-1">
+                    <li>• AI & Machine Learning Applications</li>
+                    <li>• Blockchain & Cryptocurrency</li>
+                    <li>• Cybersecurity Best Practices</li>
+                    <li>• Digital Transformation Strategies</li>
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/programs/seminars">Join Next Seminar</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Webinars Section */}
+      <section className="py-16" id="webinars">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Webinars</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Virtual learning sessions accessible from anywhere, featuring
+                expert speakers and interactive Q&A.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="text-2xl font-semibold mb-6">
+                  Upcoming Webinars
+                </h3>
+                <div className="space-y-4">
+                  <Card className="border-gray-100">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-2">
+                        <h4 className="font-semibold">
+                          Startup Funding Strategies
+                        </h4>
+                        <span className="text-sm bg-primary/10 text-primary px-2 py-1 rounded">
+                          Live
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Learn about seed funding, venture capital, and
+                        alternative financing options.
+                      </p>
+                      <div className="text-xs text-gray-500">
+                        <div>📅 Next Friday, 2:00 PM PST</div>
+                        <div>
+                          🎤 Speaker: Sarah Chen, Partner at Kleiner Perkins
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card className="border-gray-100">
+                    <CardContent className="p-4">
+                      <div className="flex justify-between items-start mb-2">
+                        <h4 className="font-semibold">
+                          Digital Marketing for Startups
+                        </h4>
+                        <span className="text-sm bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                          On-Demand
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-600 mb-2">
+                        Effective strategies for customer acquisition and brand
+                        building online.
+                      </p>
+                      <div className="text-xs text-gray-500">
+                        <div>🎤 Speaker: Ahmed Malik, CMO at Dropbox</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+                <Button asChild className="mt-6">
+                  <Link href="/programs/webinars">View All Webinars</Link>
+                </Button>
+              </div>
+              <div className="relative">
+                <Image
+                  src="/placeholder.svg?height=400&width=600&text=Webinar+Session"
+                  alt="OPEN Silicon Valley Webinar Session"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Networking Section */}
+      <section className="py-16 bg-gray-50" id="networking">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Networking</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Connect with fellow entrepreneurs, investors, and industry
+                professionals through our structured networking events.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <Users className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Monthly Mixers</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Casual evening events at premier venues across Silicon
+                    Valley.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>📅 First Thursday of each month</div>
+                    <div>🕕 6:00 PM - 8:00 PM</div>
+                    <div>📍 Rotating venues</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href="/programs/networking">RSVP for Next Event</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <Calendar className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Speed Networking</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Structured sessions designed to maximize meaningful
+                    connections in minimal time.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>📅 Quarterly events</div>
+                    <div>🕒 90-minute sessions</div>
+                    <div>🤝 Meet 15+ professionals</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/programs/networking">Learn More</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <CardHeader>
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                    <BookOpen className="h-6 w-6 text-primary" />
+                  </div>
+                  <CardTitle>Industry Meetups</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 mb-4">
+                    Sector-specific gatherings for deep-dive discussions and
+                    specialized networking.
+                  </p>
+                  <div className="text-sm text-gray-500">
+                    <div>🎯 Tech, Healthcare, Fintech</div>
+                    <div>👥 15-30 participants</div>
+                    <div>💡 Topic-focused discussions</div>
+                  </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link href="/programs/networking">Join a Meetup</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Upcoming Programs */}
       <section className="py-16">
         <div className="container mx-auto px-4">

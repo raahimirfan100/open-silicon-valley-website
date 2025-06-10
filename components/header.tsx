@@ -1,77 +1,89 @@
-"use client"
+"use client";
 
-import { useState, useEffect, useRef } from "react"
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
 
 export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const [isInitiativesOpen, setIsInitiativesOpen] = useState(false)
-  const [isProgramsOpen, setIsProgramsOpen] = useState(false)
-  const [isMembersOpen, setIsMembersOpen] = useState(false)
-  const [isAboutOpen, setIsAboutOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isInitiativesOpen, setIsInitiativesOpen] = useState(false);
+  const [isProgramsOpen, setIsProgramsOpen] = useState(false);
+  const [isMembersOpen, setIsMembersOpen] = useState(false);
+  const [isAboutOpen, setIsAboutOpen] = useState(false);
 
-  const initiativesRef = useRef<HTMLDivElement>(null)
-  const programsRef = useRef<HTMLDivElement>(null)
-  const membersRef = useRef<HTMLDivElement>(null)
-  const aboutRef = useRef<HTMLDivElement>(null)
+  const initiativesRef = useRef<HTMLDivElement>(null);
+  const programsRef = useRef<HTMLDivElement>(null);
+  const membersRef = useRef<HTMLDivElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
 
   // Close all dropdowns when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (initiativesRef.current && !initiativesRef.current.contains(event.target as Node)) {
-        setIsInitiativesOpen(false)
+      if (
+        initiativesRef.current &&
+        !initiativesRef.current.contains(event.target as Node)
+      ) {
+        setIsInitiativesOpen(false);
       }
-      if (programsRef.current && !programsRef.current.contains(event.target as Node)) {
-        setIsProgramsOpen(false)
+      if (
+        programsRef.current &&
+        !programsRef.current.contains(event.target as Node)
+      ) {
+        setIsProgramsOpen(false);
       }
-      if (membersRef.current && !membersRef.current.contains(event.target as Node)) {
-        setIsMembersOpen(false)
+      if (
+        membersRef.current &&
+        !membersRef.current.contains(event.target as Node)
+      ) {
+        setIsMembersOpen(false);
       }
-      if (aboutRef.current && !aboutRef.current.contains(event.target as Node)) {
-        setIsAboutOpen(false)
+      if (
+        aboutRef.current &&
+        !aboutRef.current.contains(event.target as Node)
+      ) {
+        setIsAboutOpen(false);
       }
     }
 
-    document.addEventListener("mousedown", handleClickOutside)
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside)
-    }
-  }, [])
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
-  }
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   const toggleInitiatives = () => {
-    setIsProgramsOpen(false)
-    setIsMembersOpen(false)
-    setIsAboutOpen(false)
-    setIsInitiativesOpen(!isInitiativesOpen)
-  }
+    setIsProgramsOpen(false);
+    setIsMembersOpen(false);
+    setIsAboutOpen(false);
+    setIsInitiativesOpen(!isInitiativesOpen);
+  };
 
   const togglePrograms = () => {
-    setIsInitiativesOpen(false)
-    setIsMembersOpen(false)
-    setIsAboutOpen(false)
-    setIsProgramsOpen(!isProgramsOpen)
-  }
+    setIsInitiativesOpen(false);
+    setIsMembersOpen(false);
+    setIsAboutOpen(false);
+    setIsProgramsOpen(!isProgramsOpen);
+  };
 
   const toggleMembers = () => {
-    setIsInitiativesOpen(false)
-    setIsProgramsOpen(false)
-    setIsAboutOpen(false)
-    setIsMembersOpen(!isMembersOpen)
-  }
+    setIsInitiativesOpen(false);
+    setIsProgramsOpen(false);
+    setIsAboutOpen(false);
+    setIsMembersOpen(!isMembersOpen);
+  };
 
   const toggleAbout = () => {
-    setIsInitiativesOpen(false)
-    setIsProgramsOpen(false)
-    setIsMembersOpen(false)
-    setIsAboutOpen(!isAboutOpen)
-  }
+    setIsInitiativesOpen(false);
+    setIsProgramsOpen(false);
+    setIsMembersOpen(false);
+    setIsAboutOpen(!isAboutOpen);
+  };
 
   return (
     <header className="border-b sticky top-0 bg-white z-50 shadow-sm">
@@ -96,12 +108,18 @@ export default function Header() {
             <Link href="/" className="text-sm font-medium hover:text-primary">
               Home
             </Link>
-            <Link href="/events" className="text-sm font-medium hover:text-primary">
+            <Link
+              href="/events"
+              className="text-sm font-medium hover:text-primary"
+            >
               Events
             </Link>
             <div className="relative group" ref={programsRef}>
               <div className="flex items-center">
-                <Link href="/programs" className="text-sm font-medium hover:text-primary mr-1">
+                <Link
+                  href="/programs"
+                  className="text-sm font-medium hover:text-primary mr-1"
+                >
                   Programs
                 </Link>
                 <button
@@ -121,7 +139,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isProgramsOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -162,7 +182,10 @@ export default function Header() {
             </div>
             <div className="relative group" ref={initiativesRef}>
               <div className="flex items-center">
-                <Link href="/initiatives" className="text-sm font-medium hover:text-primary mr-1">
+                <Link
+                  href="/initiatives"
+                  className="text-sm font-medium hover:text-primary mr-1"
+                >
                   Initiatives
                 </Link>
                 <button
@@ -182,7 +205,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isInitiativesOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -223,7 +248,10 @@ export default function Header() {
             </div>
             <div className="relative group" ref={membersRef}>
               <div className="flex items-center">
-                <Link href="/members" className="text-sm font-medium hover:text-primary mr-1">
+                <Link
+                  href="/members"
+                  className="text-sm font-medium hover:text-primary mr-1"
+                >
                   Members
                 </Link>
                 <button
@@ -243,7 +271,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isMembersOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -284,7 +314,10 @@ export default function Header() {
             </div>
             <div className="relative group" ref={aboutRef}>
               <div className="flex items-center">
-                <Link href="/about" className="text-sm font-medium hover:text-primary mr-1">
+                <Link
+                  href="/about"
+                  className="text-sm font-medium hover:text-primary mr-1"
+                >
                   About
                 </Link>
                 <button
@@ -304,7 +337,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isAboutOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -385,19 +420,29 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <Link href="/volunteer-with-us" className="text-sm font-medium hover:text-primary">
-              Volunteer With Us!
+            <Link
+              href="/volunteer-with-us"
+              className="text-sm font-medium hover:text-primary"
+            >
+              Volunteer
             </Link>
           </nav>
 
-          <div className="hidden lg:flex">
+          <div className="hidden lg:flex items-center gap-3">
+            <Button variant="outline" size="sm">
+              <Link href="/donate">Donate</Link>
+            </Button>
             <Button className="bg-primary hover:bg-primary/90 transition-colors">
-              <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
+              <Link href="/join-us">Join Us</Link>
             </Button>
           </div>
 
           {/* Mobile Menu Button */}
-          <button className="lg:hidden" onClick={toggleMenu} aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
+          <button
+            className="lg:hidden"
+            onClick={toggleMenu}
+            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -407,15 +452,27 @@ export default function Header() {
       {isMenuOpen && (
         <div className="lg:hidden">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            <Link href="/" className="block text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+            <Link
+              href="/"
+              className="block text-sm font-medium hover:text-primary"
+              onClick={toggleMenu}
+            >
               Home
             </Link>
-            <Link href="/events" className="block text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+            <Link
+              href="/events"
+              className="block text-sm font-medium hover:text-primary"
+              onClick={toggleMenu}
+            >
               Events
             </Link>
             <div>
               <div className="flex items-center justify-between">
-                <Link href="/programs" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="/programs"
+                  className="text-sm font-medium hover:text-primary"
+                  onClick={toggleMenu}
+                >
                   Programs
                 </Link>
                 <button
@@ -435,7 +492,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isProgramsOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isProgramsOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -447,8 +506,8 @@ export default function Header() {
                     href="/programs#conferences"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsProgramsOpen(false)
-                      setIsMenuOpen(false)
+                      setIsProgramsOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Conferences
@@ -457,8 +516,8 @@ export default function Header() {
                     href="/programs#seminars"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsProgramsOpen(false)
-                      setIsMenuOpen(false)
+                      setIsProgramsOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Seminars
@@ -467,8 +526,8 @@ export default function Header() {
                     href="/programs#webinars"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsProgramsOpen(false)
-                      setIsMenuOpen(false)
+                      setIsProgramsOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Webinars
@@ -477,8 +536,8 @@ export default function Header() {
                     href="/programs#networking"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsProgramsOpen(false)
-                      setIsMenuOpen(false)
+                      setIsProgramsOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Networking
@@ -488,7 +547,11 @@ export default function Header() {
             </div>
             <div>
               <div className="flex items-center justify-between">
-                <Link href="/initiatives" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="/initiatives"
+                  className="text-sm font-medium hover:text-primary"
+                  onClick={toggleMenu}
+                >
                   Initiatives
                 </Link>
                 <button
@@ -508,7 +571,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isInitiativesOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isInitiativesOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -520,8 +585,8 @@ export default function Header() {
                     href="https://opensvconnect.org/"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsInitiativesOpen(false)
-                      setIsMenuOpen(false)
+                      setIsInitiativesOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     SV Connect
@@ -530,8 +595,8 @@ export default function Header() {
                     href="https://www.startupconnect.io/"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsInitiativesOpen(false)
-                      setIsMenuOpen(false)
+                      setIsInitiativesOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Startup Connect
@@ -540,8 +605,8 @@ export default function Header() {
                     href="/initiatives/trusted-partners-network"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsInitiativesOpen(false)
-                      setIsMenuOpen(false)
+                      setIsInitiativesOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Trusted Partners Network
@@ -550,8 +615,8 @@ export default function Header() {
                     href="/initiatives/non-profit-awareness"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsInitiativesOpen(false)
-                      setIsMenuOpen(false)
+                      setIsInitiativesOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Non Profit Awareness
@@ -561,7 +626,11 @@ export default function Header() {
             </div>
             <div>
               <div className="flex items-center justify-between">
-                <Link href="/members" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="/members"
+                  className="text-sm font-medium hover:text-primary"
+                  onClick={toggleMenu}
+                >
                   Members
                 </Link>
                 <button
@@ -581,7 +650,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isMembersOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isMembersOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -593,8 +664,8 @@ export default function Header() {
                     href="/members/charter-members"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsMembersOpen(false)
-                      setIsMenuOpen(false)
+                      setIsMembersOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Charter Members
@@ -603,8 +674,8 @@ export default function Header() {
                     href="/members/youth-members"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsMembersOpen(false)
-                      setIsMenuOpen(false)
+                      setIsMembersOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Youth Members
@@ -613,8 +684,8 @@ export default function Header() {
                     href="/members/young-professionals"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsMembersOpen(false)
-                      setIsMenuOpen(false)
+                      setIsMembersOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Young Professionals
@@ -623,8 +694,8 @@ export default function Header() {
                     href="/members/rising-stars"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsMembersOpen(false)
-                      setIsMenuOpen(false)
+                      setIsMembersOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Rising Stars
@@ -634,7 +705,11 @@ export default function Header() {
             </div>
             <div>
               <div className="flex items-center justify-between">
-                <Link href="/about" className="text-sm font-medium hover:text-primary" onClick={toggleMenu}>
+                <Link
+                  href="/about"
+                  className="text-sm font-medium hover:text-primary"
+                  onClick={toggleMenu}
+                >
                   About
                 </Link>
                 <button
@@ -654,7 +729,9 @@ export default function Header() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`transition-transform duration-200 ${isAboutOpen ? "rotate-180" : ""}`}
+                    className={`transition-transform duration-200 ${
+                      isAboutOpen ? "rotate-180" : ""
+                    }`}
                   >
                     <path d="m6 9 6 6 6-6" />
                   </svg>
@@ -666,8 +743,8 @@ export default function Header() {
                     href="/about/news"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     News & Updates
@@ -676,8 +753,8 @@ export default function Header() {
                     href="/about/who-we-are"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Who We Are
@@ -686,8 +763,8 @@ export default function Header() {
                     href="/about/presidents-message"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     President's Message
@@ -696,8 +773,8 @@ export default function Header() {
                     href="/events-directory/partners"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Our Partners & Sponsors
@@ -706,8 +783,8 @@ export default function Header() {
                     href="/about/open-silicon-valley"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     OPEN Silicon Valley
@@ -716,8 +793,8 @@ export default function Header() {
                     href="https://www.openglobalweb.org/#about"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     OPEN Global
@@ -726,8 +803,8 @@ export default function Header() {
                     href="/about/open-silicon-valley/#officers"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Officers
@@ -736,8 +813,8 @@ export default function Header() {
                     href="/about/board-members"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Board Members
@@ -746,8 +823,8 @@ export default function Header() {
                     href="/about/executive-team"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Executive Team
@@ -756,8 +833,8 @@ export default function Header() {
                     href="/contact-us"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
-                      setIsAboutOpen(false)
-                      setIsMenuOpen(false)
+                      setIsAboutOpen(false);
+                      setIsMenuOpen(false);
                     }}
                   >
                     Contact Us
@@ -770,16 +847,19 @@ export default function Header() {
               className="block text-sm font-medium hover:text-primary"
               onClick={toggleMenu}
             >
-              Volunteer With Us!
+              Volunteer
             </Link>
-            <div className="flex flex-col pt-2">
+            <div className="flex flex-col gap-3 pt-2">
+              <Button variant="outline" className="w-full">
+                <Link href="/donate">Donate</Link>
+              </Button>
               <Button className="w-full">
-                <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
+                <Link href="/join-us">Join Us</Link>
               </Button>
             </div>
           </div>
         </div>
       )}
     </header>
-  )
+  );
 }

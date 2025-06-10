@@ -12,6 +12,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Users, Calendar, Clock, Award } from "lucide-react";
 
@@ -219,8 +220,123 @@ export default function VolunteerPage() {
         </div>
       </section>
 
+      {/* Committee Structure */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">Committee Structure</h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Join one of our committees and contribute to specific areas of
+                OPEN's mission.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold mb-3">Events Committee</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Plan and execute all OPEN events including mixers,
+                  conferences, and workshops.
+                </p>
+                <div className="text-xs text-gray-500">
+                  <div>Monthly meetings</div>
+                  <div>5-10 hours/month</div>
+                </div>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold mb-3">Membership Committee</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Focus on member recruitment, engagement, and retention
+                  strategies.
+                </p>
+                <div className="text-xs text-gray-500">
+                  <div>Bi-weekly meetings</div>
+                  <div>4-8 hours/month</div>
+                </div>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-purple-600" />
+                </div>
+                <h3 className="font-semibold mb-3">Programs Committee</h3>
+                <p className="text-sm text-gray-600 mb-4">
+                  Develop educational content, workshops, and professional
+                  development programs.
+                </p>
+                <div className="text-xs text-gray-500">
+                  <div>Monthly meetings</div>
+                  <div>6-12 hours/month</div>
+                </div>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Time Commitments */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Flexible Time Commitments
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                We offer various levels of involvement to fit your schedule and
+                availability.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Clock className="h-6 w-6 text-yellow-600" />
+                </div>
+                <h3 className="font-semibold mb-2">One-Time Help</h3>
+                <div className="text-2xl font-bold text-yellow-600 mb-2">
+                  2-4 hours
+                </div>
+                <p className="text-sm text-gray-600">
+                  Event setup, registration assistance, social media posts
+                </p>
+              </Card>
+              <Card className="border-gray-100 text-center p-6 border-primary">
+                <Badge className="mb-4">Most Popular</Badge>
+                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="font-semibold mb-2">Regular Volunteer</h3>
+                <div className="text-2xl font-bold text-primary mb-2">
+                  5-10 hours/month
+                </div>
+                <p className="text-sm text-gray-600">
+                  Committee participation, ongoing projects, event coordination
+                </p>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-orange-600" />
+                </div>
+                <h3 className="font-semibold mb-2">Leadership Role</h3>
+                <div className="text-2xl font-bold text-orange-600 mb-2">
+                  10+ hours/month
+                </div>
+                <p className="text-sm text-gray-600">
+                  Committee chair, project leadership, strategic planning
+                </p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Volunteer Roles */}
-      <section className="py-16 bg-gray-50" id="roles">
+      <section className="py-16" id="roles">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -377,6 +493,61 @@ export default function VolunteerPage() {
                   </p>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Recognition Program */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Volunteer Recognition Program
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                We deeply appreciate our volunteers and recognize their valuable
+                contributions in multiple ways.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Award className="h-6 w-6 text-blue-600" />
+                </div>
+                <h3 className="font-semibold mb-2">Annual Awards</h3>
+                <p className="text-sm text-gray-600">
+                  Volunteer of the Year and category-specific recognition awards
+                </p>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-6 w-6 text-green-600" />
+                </div>
+                <h3 className="font-semibold mb-2">Community Spotlights</h3>
+                <p className="text-sm text-gray-600">
+                  Featured profiles in newsletters and social media
+                </p>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Calendar className="h-6 w-6 text-purple-600" />
+                </div>
+                <h3 className="font-semibold mb-2">Appreciation Events</h3>
+                <p className="text-sm text-gray-600">
+                  Exclusive volunteer appreciation dinners and gatherings
+                </p>
+              </Card>
+              <Card className="border-gray-100 text-center p-6">
+                <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ArrowRight className="h-6 w-6 text-orange-600" />
+                </div>
+                <h3 className="font-semibold mb-2">Professional References</h3>
+                <p className="text-sm text-gray-600">
+                  LinkedIn recommendations and professional references
+                </p>
+              </Card>
             </div>
           </div>
         </div>
