@@ -10,6 +10,7 @@ import {
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Check } from 'lucide-react'
+import { membershipOptions } from '@/data/memberships'
 
 export const metadata: Metadata = {
   title: 'Membership | OPEN Silicon Valley',
@@ -17,51 +18,7 @@ export const metadata: Metadata = {
 }
 
 export default function MembersPage() {
-  const membershipTypes = [
-    {
-      title: 'Executive Member',
-      description: 'For senior executives and founders',
-      price: '$350',
-      period: 'per year',
-      benefits: ['All member benefits, plus VIP opportunities', 'Member-only events and discounts'],
-      featured: true,
-    },
-    {
-      title: 'Member',
-      description: 'For professionals and entrepreneurs',
-      price: '$75',
-      period: 'per year',
-      benefits: [
-        'Member-only events and discounted registration',
-        'Access to networking and programs',
-      ],
-      featured: false,
-    },
-    {
-      title: 'Student Member',
-      description: 'For students starting their careers',
-      price: '$30',
-      period: 'per year',
-      benefits: ['Discounted event registration', 'Access to member-only events'],
-      featured: false,
-    },
-    {
-      title: 'Volunteer Member',
-      description: 'Support OPEN SV as a volunteer',
-      price: '$25',
-      period: 'per year',
-      benefits: ['Access to member benefits', 'Support community events'],
-      featured: false,
-    },
-    {
-      title: 'Guest',
-      description: 'Become a guest to make registration easier',
-      price: 'Free',
-      period: 'unlimited',
-      benefits: ['Easier registration for events'],
-      featured: false,
-    },
-  ]
+  const membershipTypes = membershipOptions
 
   return (
     <div className="bg-white">
@@ -119,8 +76,14 @@ export default function MembersPage() {
                   </CardHeader>
                   <CardContent>
                     <div className="mb-6 text-center">
-                      <div className="text-3xl font-bold text-primary">{type.price}</div>
-                      <div className="text-sm text-gray-500">{type.period}</div>
+                      <div className="text-3xl font-bold text-primary">
+                        {type.priceDisplay}
+                        {type.priceUSD !== null && <span className="text-gray-600">/year</span>}
+                      </div>
+                      <div className="text-sm text-gray-500">{type.subscriptionNote}</div>
+                      {type.recurringNote && (
+                        <div className="text-xs text-gray-500 mt-1">{type.recurringNote}</div>
+                      )}
                     </div>
                     <h3 className="font-medium mb-4">Benefits:</h3>
                     <ul className="space-y-2 mb-6">

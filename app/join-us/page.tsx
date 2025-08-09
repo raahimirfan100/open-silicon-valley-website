@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
+import { membershipOptions } from '@/data/memberships'
 import {
   Users,
   Star,
@@ -182,134 +183,70 @@ export default function JoinUsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-              {/* Executive Member */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Building2 className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <CardTitle>Executive Member</CardTitle>
-                  <div className="text-2xl font-bold text-purple-600">$350/year</div>
-                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
-                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-purple-500" />
-                      <span>All member benefits, plus VIP opportunities</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" asChild>
-                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Member */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <CardTitle>Member</CardTitle>
-                  <div className="text-2xl font-bold text-blue-600">$75/year</div>
-                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
-                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>Member-only events and discounted registration</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" asChild>
-                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Student Member */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <BookOpen className="h-6 w-6 text-green-600" />
-                  </div>
-                  <CardTitle>Student Member</CardTitle>
-                  <div className="text-2xl font-bold text-green-600">$30/year</div>
-                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
-                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-green-500" />
-                      <span>Access to member-only events and discounts</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" asChild>
-                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Volunteer Member */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Heart className="h-6 w-6 text-orange-600" />
-                  </div>
-                  <CardTitle>Volunteer Member</CardTitle>
-                  <div className="text-2xl font-bold text-orange-600">$25/year</div>
-                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
-                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-orange-500" />
-                      <span>Support OPEN SV and access member benefits</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" asChild>
-                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Guest */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Star className="h-6 w-6 text-gray-700" />
-                  </div>
-                  <CardTitle>Guest</CardTitle>
-                  <div className="text-2xl font-bold text-gray-700">Free</div>
-                  <p className="text-sm text-gray-600">Subscription period: Unlimited</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-gray-500" />
-                      <span>Become a guest to make registration easier</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" variant="outline" asChild>
-                    <a href="https://opensv.wildapricot.org/join-us">Sign Up</a>
-                  </Button>
-                </CardFooter>
-              </Card>
+              {membershipOptions.map((option) => (
+                <Card key={option.id} className="border-gray-100 relative">
+                  {option.featured && (
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                      <Badge className="bg-primary">Most Popular</Badge>
+                    </div>
+                  )}
+                  <CardHeader className="text-center">
+                    <div
+                      className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 ${
+                        option.icon === 'building2'
+                          ? 'bg-purple-100'
+                          : option.icon === 'users'
+                            ? 'bg-blue-100'
+                            : option.icon === 'bookOpen'
+                              ? 'bg-green-100'
+                              : option.icon === 'heart'
+                                ? 'bg-orange-100'
+                                : 'bg-gray-100'
+                      }`}
+                    >
+                      {option.icon === 'building2' && (
+                        <Building2 className="h-6 w-6 text-purple-600" />
+                      )}
+                      {option.icon === 'users' && <Users className="h-6 w-6 text-blue-600" />}
+                      {option.icon === 'bookOpen' && (
+                        <BookOpen className="h-6 w-6 text-green-600" />
+                      )}
+                      {option.icon === 'heart' && <Heart className="h-6 w-6 text-orange-600" />}
+                      {option.icon === 'star' && <Star className="h-6 w-6 text-gray-700" />}
+                    </div>
+                    <CardTitle>{option.title}</CardTitle>
+                    <div className="text-2xl font-bold">
+                      {option.priceDisplay}
+                      {option.priceUSD !== null && <span className="text-gray-600">/year</span>}
+                    </div>
+                    <p className="text-sm text-gray-600">{option.subscriptionNote}</p>
+                    {option.recurringNote && (
+                      <p className="text-xs text-gray-500 mt-1">{option.recurringNote}</p>
+                    )}
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-sm">
+                      {option.benefits.map((b, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <Check className="h-4 w-4 text-primary" />
+                          <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                  <CardFooter>
+                    <Button
+                      className="w-full"
+                      variant={option.id === 'guest' ? 'outline' : 'default'}
+                      asChild
+                    >
+                      <a href="https://opensv.wildapricot.org/join-us">
+                        {option.id === 'guest' ? 'Sign Up' : 'Select Plan'}
+                      </a>
+                    </Button>
+                  </CardFooter>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
