@@ -1,0 +1,27 @@
+# Events TODOs
+
+- [ ] Decide source of truth for events
+  - [ ] Google Calendar as primary, or
+  - [ ] CMS (e.g., headless) with ICS sync, or
+  - [ ] Wild Apricot API for events
+- [ ] Implement server-side fetch for events
+  - [ ] Create `lib/events.ts` with fetch/adapters
+  - [ ] Types for `EventItem` (title, start/end, location, url, category, image)
+- [ ] Wire homepage `UpcomingEvents` to real data
+  - [ ] Replace placeholder text
+  - [ ] Re-enable cards grid
+- [ ] Wire `app/events/page.tsx`
+  - [ ] Featured event block from next upcoming
+  - [ ] Tabs/filters by category (if available)
+  - [ ] Pagination or lazy-load if many events
+- [ ] Add calendar subscription CTA (done)
+  - [x] Google Calendar embed and subscribe link
+- [ ] Accessibility and SEO
+  - [ ] `aria-label`s, headings structure
+  - [ ] Structured data (Event schema)
+- [ ] Analytics
+  - [ ] Track clicks on Register/Subscribe buttons
+- [ ] Content
+  - [ ] Replace copy placeholders flagged as TODO(copy)
+- [ ] Cleanup
+  - [ ] Remove commented dummy blocks once data is live
