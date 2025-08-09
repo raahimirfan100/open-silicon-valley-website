@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   eslint: { ignoreDuringBuilds: false },
   typescript: { ignoreBuildErrors: false },
   images: { unoptimized: true },
-  experimental: { typedRoutes: true },
+  // experimental features disabled for production stability
 }
 
 export default nextConfig
