@@ -177,7 +177,7 @@ export default function NewsPage() {
               {categories.map((category) => (
                 <Button
                   key={category}
-                  variant={category === "All" ? "default" : "outline-solid"}
+                  variant={category === "All" ? "default" : "outline"}
                   size="sm"
                   className="rounded-full"
                 >
