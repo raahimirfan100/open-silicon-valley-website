@@ -57,11 +57,11 @@ export default function MembersPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {membershipTypes.map((type, index) => (
                 <Card
                   key={index}
-                  className={`border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden h-full ${
+                  className={`border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden h-full flex flex-col ${
                     type.featured ? 'border-primary/50 shadow-md' : ''
                   }`}
                 >
@@ -74,7 +74,7 @@ export default function MembersPage() {
                     <CardTitle className="text-xl">{type.title}</CardTitle>
                     <CardDescription>{type.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1">
                     <div className="mb-6 text-center">
                       <div className="text-3xl font-bold text-primary">
                         {type.priceDisplay}
@@ -95,7 +95,7 @@ export default function MembersPage() {
                       ))}
                     </ul>
                   </CardContent>
-                  <CardFooter>
+                  <CardFooter className="mt-auto">
                     <Button
                       asChild
                       className={`w-full ${type.featured ? '' : 'bg-gray-700 hover:bg-gray-800'}`}

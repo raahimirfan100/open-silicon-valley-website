@@ -182,9 +182,9 @@ export default function JoinUsPage() {
                 events.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
               {membershipOptions.map((option) => (
-                <Card key={option.id} className="border-gray-100 relative">
+                <Card key={option.id} className="border-gray-100 relative h-full flex flex-col">
                   {option.featured && (
                     <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                       <Badge className="bg-primary">Most Popular</Badge>
@@ -224,7 +224,7 @@ export default function JoinUsPage() {
                       <p className="text-xs text-gray-500 mt-1">{option.recurringNote}</p>
                     )}
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="flex-1">
                     <ul className="space-y-2 text-sm">
                       {option.benefits.map((b, i) => (
                         <li key={i} className="flex items-center gap-2">
@@ -234,7 +234,7 @@ export default function JoinUsPage() {
                       ))}
                     </ul>
                   </CardContent>
-                  <CardFooter>
+                  <CardFooter className="mt-auto">
                     <Button
                       className="w-full"
                       variant={option.id === 'guest' ? 'outline' : 'default'}
