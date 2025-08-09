@@ -1,57 +1,51 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Linkedin, ExternalLink, Quote } from "lucide-react";
-import { boardMembers } from "@/data/team-members";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { ArrowLeft, Linkedin, ExternalLink, Quote } from 'lucide-react'
+import { boardMembers } from '@/data/team-members'
 
 export const metadata: Metadata = {
-  title: "Board Members | OPEN Silicon Valley",
+  title: 'Board Members | OPEN Silicon Valley',
   description:
-    "Meet the distinguished board members of OPEN Silicon Valley who provide strategic guidance and leadership to our organization.",
+    'Meet the distinguished board members of OPEN Silicon Valley who provide strategic guidance and leadership to our organization.',
   openGraph: {
-    title: "Board Members | OPEN Silicon Valley",
+    title: 'Board Members | OPEN Silicon Valley',
     description:
-      "Meet the distinguished board members of OPEN Silicon Valley who provide strategic guidance and leadership to our organization.",
-    images: ["/images/board-members-og.jpg"],
+      'Meet the distinguished board members of OPEN Silicon Valley who provide strategic guidance and leadership to our organization.',
+    images: ['/images/board-members-og.jpg'],
   },
-};
+}
 
 export default function BoardMembersPage() {
   // Extended board member data with more details
   const extendedBoardMembers = boardMembers.map((member, index) => ({
     ...member,
-    title: index === 0 ? "Board Chair" : "Board Member",
-    company:
-      "Founder & CEO, " + (Math.random() > 0.5 ? "TechVentures" : "InnovateX"),
-    bio: "Distinguished leader with over 20 years of experience in technology and entrepreneurship. Has founded multiple successful startups and mentored dozens of entrepreneurs throughout Silicon Valley.",
+    title: index === 0 ? 'Board Chair' : 'Board Member',
+    company: 'Founder & CEO, ' + (Math.random() > 0.5 ? 'TechVentures' : 'InnovateX'),
+    bio: 'Distinguished leader with over 20 years of experience in technology and entrepreneurship. Has founded multiple successful startups and mentored dozens of entrepreneurs throughout Silicon Valley.',
     quote:
-      "Innovation thrives when diverse perspectives come together with a shared vision for the future.",
+      'Innovation thrives when diverse perspectives come together with a shared vision for the future.',
     achievements: [
-      "Founded 3 successful technology startups",
-      "Angel investor in 15+ companies",
-      "Mentor at Stanford Entrepreneurship Network",
-      "Published author on technology leadership",
+      'Founded 3 successful technology startups',
+      'Angel investor in 15+ companies',
+      'Mentor at Stanford Entrepreneurship Network',
+      'Published author on technology leadership',
     ],
-  }));
+  }))
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-16 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-20"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-20" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Board of Directors
-            </h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">Board of Directors</h1>
             <p className="text-lg text-gray-600 mb-6">
-              Meet the distinguished leaders who provide strategic guidance and
-              governance to OPEN Silicon Valley.
+              Meet the distinguished leaders who provide strategic guidance and governance to OPEN
+              Silicon Valley.
             </p>
           </div>
         </div>
@@ -62,11 +56,7 @@ export default function BoardMembersPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-8">
-              <Button
-                asChild
-                variant="outline"
-                className="flex items-center gap-2"
-              >
+              <Button asChild variant="outline" className="flex items-center gap-2">
                 <Link href="/about">
                   <ArrowLeft className="h-4 w-4" /> Back to About
                 </Link>
@@ -85,20 +75,16 @@ export default function BoardMembersPage() {
                   />
                 </div>
                 <div className="md:w-2/3">
-                  <h2 className="text-2xl font-bold mb-4 text-gray-800">
-                    About Our Board
-                  </h2>
+                  <h2 className="text-2xl font-bold mb-4 text-gray-800">About Our Board</h2>
                   <p className="text-gray-700 mb-4 leading-relaxed">
-                    The OPEN Silicon Valley Board of Directors comprises
-                    distinguished leaders from various industries who bring
-                    decades of experience in entrepreneurship, technology,
-                    finance, and community building.
+                    The OPEN Silicon Valley Board of Directors comprises distinguished leaders from
+                    various industries who bring decades of experience in entrepreneurship,
+                    technology, finance, and community building.
                   </p>
                   <p className="text-gray-700 mb-4 leading-relaxed">
-                    Our board members are committed to advancing OPEN's mission
-                    of fostering entrepreneurship, innovation, and professional
-                    growth within the Pakistani community in Silicon Valley and
-                    beyond.
+                    Our board members are committed to advancing OPEN's mission of fostering
+                    entrepreneurship, innovation, and professional growth within the Pakistani
+                    community in Silicon Valley and beyond.
                   </p>
                 </div>
               </div>
@@ -123,7 +109,7 @@ export default function BoardMembersPage() {
                       <div className="lg:w-1/3 relative">
                         <div className="aspect-square lg:h-full relative">
                           <Image
-                            src={member.image || "/placeholder.svg"}
+                            src={member.image || '/placeholder.svg'}
                             alt={`Photo of ${member.name}`}
                             fill
                             className="object-contain"
@@ -134,12 +120,8 @@ export default function BoardMembersPage() {
                       <div className="lg:w-2/3 p-6">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
                           <div>
-                            <h3 className="text-xl font-bold mb-1">
-                              {member.name}
-                            </h3>
-                            <p className="text-primary font-medium text-sm">
-                              {member.title}
-                            </p>
+                            <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                            <p className="text-primary font-medium text-sm">{member.title}</p>
                           </div>
                           <div className="mt-2 md:mt-0">
                             <span className="inline-block bg-primary/10 text-primary text-xs font-medium px-2 py-1 rounded-full">
@@ -150,14 +132,10 @@ export default function BoardMembersPage() {
 
                         <div className="flex items-start gap-2 mb-4 bg-gray-50 p-3 rounded-lg border-l-4 border-primary/50 italic">
                           <Quote className="h-4 w-4 text-primary shrink-0 mt-1" />
-                          <p className="text-gray-700 text-sm">
-                            {member.quote}
-                          </p>
+                          <p className="text-gray-700 text-sm">{member.quote}</p>
                         </div>
 
-                        <p className="text-gray-700 mb-4 text-sm">
-                          {member.bio}
-                        </p>
+                        <p className="text-gray-700 mb-4 text-sm">{member.bio}</p>
 
                         <div className="mb-4">
                           <h4 className="font-semibold mb-2 text-gray-800 text-sm">
@@ -167,9 +145,7 @@ export default function BoardMembersPage() {
                             {member.achievements.map((achievement, i) => (
                               <li key={i} className="flex items-start gap-2">
                                 <span className="inline-block w-1.5 h-1.5 bg-primary rounded-full mt-1.5 shrink-0"></span>
-                                <span className="text-xs text-gray-600">
-                                  {achievement}
-                                </span>
+                                <span className="text-xs text-gray-600">{achievement}</span>
                               </li>
                             ))}
                           </ul>
@@ -207,13 +183,10 @@ export default function BoardMembersPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold mb-6">
-                Board Responsibilities
-              </h2>
+              <h2 className="text-3xl font-bold mb-6">Board Responsibilities</h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Our board members play a crucial role in guiding the
-                organization and ensuring its success through their expertise
-                and leadership.
+                Our board members play a crucial role in guiding the organization and ensuring its
+                success through their expertise and leadership.
               </p>
             </div>
 
@@ -237,9 +210,9 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Strategic Direction</h3>
                 <p className="text-gray-600">
-                  Setting the overall direction and vision for OPEN Silicon
-                  Valley, ensuring alignment with the organization's mission and
-                  values while adapting to changing community needs.
+                  Setting the overall direction and vision for OPEN Silicon Valley, ensuring
+                  alignment with the organization's mission and values while adapting to changing
+                  community needs.
                 </p>
               </div>
 
@@ -263,9 +236,8 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Governance</h3>
                 <p className="text-gray-600">
-                  Establishing and overseeing policies, procedures, and
-                  guidelines to ensure effective governance and compliance with
-                  relevant regulations and best practices.
+                  Establishing and overseeing policies, procedures, and guidelines to ensure
+                  effective governance and compliance with relevant regulations and best practices.
                 </p>
               </div>
 
@@ -291,9 +263,9 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Financial Oversight</h3>
                 <p className="text-gray-600">
-                  Monitoring the financial health of the organization, approving
-                  budgets, and ensuring responsible financial management and
-                  sustainability for long-term success.
+                  Monitoring the financial health of the organization, approving budgets, and
+                  ensuring responsible financial management and sustainability for long-term
+                  success.
                 </p>
               </div>
 
@@ -319,9 +291,8 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Program Development</h3>
                 <p className="text-gray-600">
-                  Guiding the development and evaluation of programs and
-                  initiatives to ensure they meet the needs of our community and
-                  advance our mission effectively.
+                  Guiding the development and evaluation of programs and initiatives to ensure they
+                  meet the needs of our community and advance our mission effectively.
                 </p>
               </div>
 
@@ -346,9 +317,8 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Community Engagement</h3>
                 <p className="text-gray-600">
-                  Representing OPEN Silicon Valley in the community and
-                  fostering relationships with key stakeholders, partners, and
-                  supporters to expand our impact and reach.
+                  Representing OPEN Silicon Valley in the community and fostering relationships with
+                  key stakeholders, partners, and supporters to expand our impact and reach.
                 </p>
               </div>
 
@@ -374,9 +344,9 @@ export default function BoardMembersPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-4">Resource Development</h3>
                 <p className="text-gray-600">
-                  Helping secure the resources needed for the organization to
-                  fulfill its mission, including fundraising, sponsorships, and
-                  in-kind support from the broader community.
+                  Helping secure the resources needed for the organization to fulfill its mission,
+                  including fundraising, sponsorships, and in-kind support from the broader
+                  community.
                 </p>
               </div>
             </div>
@@ -389,38 +359,33 @@ export default function BoardMembersPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-xl p-8 shadow-md border border-gray-100">
-              <h2 className="text-2xl font-bold mb-6 text-center">
-                Board Meetings
-              </h2>
+              <h2 className="text-2xl font-bold mb-6 text-center">Board Meetings</h2>
               <p className="text-lg text-gray-600 mb-6 text-center">
-                The OPEN Silicon Valley Board meets quarterly to review
-                progress, discuss strategic initiatives, and make key decisions.
+                The OPEN Silicon Valley Board meets quarterly to review progress, discuss strategic
+                initiatives, and make key decisions.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-semibold mb-3">Quarterly Meetings</h3>
                   <p className="text-gray-600 text-sm">
-                    Our board holds quarterly meetings to review organizational
-                    performance, discuss strategic initiatives, and make key
-                    decisions.
+                    Our board holds quarterly meetings to review organizational performance, discuss
+                    strategic initiatives, and make key decisions.
                   </p>
                 </div>
 
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold mb-3">
-                    Annual Planning Session
-                  </h3>
+                  <h3 className="font-semibold mb-3">Annual Planning Session</h3>
                   <p className="text-gray-600 text-sm">
-                    Each year, the board conducts an in-depth planning session
-                    to set goals and priorities for the coming year.
+                    Each year, the board conducts an in-depth planning session to set goals and
+                    priorities for the coming year.
                   </p>
                 </div>
               </div>
 
               <p className="text-gray-600 text-center">
-                Board meeting minutes and decisions are communicated to members
-                through our quarterly newsletter and annual report.
+                Board meeting minutes and decisions are communicated to members through our
+                quarterly newsletter and annual report.
               </p>
             </div>
           </div>
@@ -431,14 +396,11 @@ export default function BoardMembersPage() {
       <section className="py-16 bg-primary/5">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">
-              Interested in Board Service?
-            </h2>
+            <h2 className="text-3xl font-bold mb-6">Interested in Board Service?</h2>
             <p className="text-lg text-gray-600 mb-8">
-              If you're passionate about supporting entrepreneurs and
-              professionals in Silicon Valley and have leadership experience,
-              we'd love to hear from you. Board service is a rewarding way to
-              give back to the community and make a meaningful impact.
+              If you're passionate about supporting entrepreneurs and professionals in Silicon
+              Valley and have leadership experience, we'd love to hear from you. Board service is a
+              rewarding way to give back to the community and make a meaningful impact.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
@@ -446,18 +408,9 @@ export default function BoardMembersPage() {
                   Contact Us <ExternalLink className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-full"
-              >
-                <Link
-                  href="/volunteer-with-us"
-                  className="flex items-center gap-2"
-                >
-                  Explore Volunteer Opportunities{" "}
-                  <ArrowLeft className="h-4 w-4 rotate-180" />
+              <Button asChild variant="outline" size="lg" className="rounded-full">
+                <Link href="/volunteer-with-us" className="flex items-center gap-2">
+                  Explore Volunteer Opportunities <ArrowLeft className="h-4 w-4 rotate-180" />
                 </Link>
               </Button>
             </div>
@@ -465,5 +418,5 @@ export default function BoardMembersPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

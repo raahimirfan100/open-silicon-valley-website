@@ -1,15 +1,9 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import {
   Calendar,
   MapPin,
@@ -22,32 +16,26 @@ import {
   Zap,
   Heart,
   Globe,
-} from "lucide-react";
+} from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Networking Events | OPEN Silicon Valley",
+  title: 'Networking Events | OPEN Silicon Valley',
   description:
     "Connect with fellow entrepreneurs, investors, and industry professionals through OPEN Silicon Valley's structured networking events.",
-};
+}
 
 export default function NetworkingPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Networking Events
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Networking Events</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Connect with fellow entrepreneurs, investors, and industry
-              professionals through our structured networking events designed to
-              create meaningful business relationships.
+              Connect with fellow entrepreneurs, investors, and industry professionals through our
+              structured networking events designed to create meaningful business relationships.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -92,12 +80,9 @@ export default function NetworkingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Upcoming Networking Events
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Upcoming Networking Events</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join our next networking events and expand your professional
-                circle.
+                Join our next networking events and expand your professional circle.
               </p>
             </div>
             <div className="space-y-6">
@@ -115,22 +100,16 @@ export default function NetworkingPage() {
                   </div>
                   <div className="md:w-2/3 p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Badge
-                        variant="default"
-                        className="bg-green-100 text-green-800"
-                      >
+                      <Badge variant="default" className="bg-green-100 text-green-800">
                         Monthly Mixer
                       </Badge>
                       <Badge variant="outline">Open to All</Badge>
                     </div>
-                    <h3 className="text-2xl font-bold mb-3">
-                      January Networking Mixer
-                    </h3>
+                    <h3 className="text-2xl font-bold mb-3">January Networking Mixer</h3>
                     <p className="text-gray-600 mb-4">
-                      Kick off the new year with our signature networking mixer!
-                      Connect with entrepreneurs, investors, and industry
-                      professionals in a relaxed atmosphere. Complimentary
-                      drinks and appetizers.
+                      Kick off the new year with our signature networking mixer! Connect with
+                      entrepreneurs, investors, and industry professionals in a relaxed atmosphere.
+                      Complimentary drinks and appetizers.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -165,10 +144,7 @@ export default function NetworkingPage() {
                 <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
-                      <Badge
-                        variant="outline"
-                        className="flex items-center gap-1"
-                      >
+                      <Badge variant="outline" className="flex items-center gap-1">
                         <Zap className="h-3 w-3" />
                         Speed Networking
                       </Badge>
@@ -178,8 +154,8 @@ export default function NetworkingPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Meet 15+ professionals in 90 minutes! Structured 5-minute
-                      conversations designed to maximize meaningful connections.
+                      Meet 15+ professionals in 90 minutes! Structured 5-minute conversations
+                      designed to maximize meaningful connections.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -204,10 +180,7 @@ export default function NetworkingPage() {
                 <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
-                      <Badge
-                        variant="outline"
-                        className="flex items-center gap-1"
-                      >
+                      <Badge variant="outline" className="flex items-center gap-1">
                         <Building2 className="h-3 w-3" />
                         Industry Focus
                       </Badge>
@@ -217,9 +190,8 @@ export default function NetworkingPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Connect with FinTech entrepreneurs, engineers, and
-                      investors. Deep-dive discussions on blockchain, payments,
-                      and financial services.
+                      Connect with FinTech entrepreneurs, engineers, and investors. Deep-dive
+                      discussions on blockchain, payments, and financial services.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -253,12 +225,9 @@ export default function NetworkingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Types of Networking Events
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Types of Networking Events</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                We offer various formats to suit different networking styles and
-                goals.
+                We offer various formats to suit different networking styles and goals.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -268,9 +237,8 @@ export default function NetworkingPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Monthly Mixers</h3>
                 <p className="text-gray-600 mb-6">
-                  Casual evening events at premium venues across Silicon Valley.
-                  Perfect for organic conversations and building relationships
-                  over drinks and appetizers.
+                  Casual evening events at premium venues across Silicon Valley. Perfect for organic
+                  conversations and building relationships over drinks and appetizers.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600 mb-6">
                   <div className="flex items-center justify-center gap-2">
@@ -295,9 +263,8 @@ export default function NetworkingPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Speed Networking</h3>
                 <p className="text-gray-600 mb-6">
-                  Structured sessions designed to maximize connections in
-                  minimal time. Meet 15+ professionals through timed 5-minute
-                  conversations.
+                  Structured sessions designed to maximize connections in minimal time. Meet 15+
+                  professionals through timed 5-minute conversations.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600 mb-6">
                   <div className="flex items-center justify-center gap-2">
@@ -324,9 +291,8 @@ export default function NetworkingPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4">Industry Meetups</h3>
                 <p className="text-gray-600 mb-6">
-                  Sector-specific gatherings for deep-dive discussions and
-                  specialized networking. Focus areas include tech, healthcare,
-                  fintech, and emerging industries.
+                  Sector-specific gatherings for deep-dive discussions and specialized networking.
+                  Focus areas include tech, healthcare, fintech, and emerging industries.
                 </p>
                 <div className="space-y-2 text-sm text-gray-600 mb-6">
                   <div className="flex items-center justify-center gap-2">
@@ -356,9 +322,7 @@ export default function NetworkingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Networking Success Stories
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Networking Success Stories</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Real connections that led to real business opportunities.
               </p>
@@ -379,9 +343,8 @@ export default function NetworkingPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Met my co-founder at the March mixer. We connected over our
-                  shared vision for AI-powered logistics. Six months later,
-                  we've raised $2M in seed funding!"
+                  "Met my co-founder at the March mixer. We connected over our shared vision for
+                  AI-powered logistics. Six months later, we've raised $2M in seed funding!"
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <Heart className="h-4 w-4 text-red-500" />
@@ -400,15 +363,12 @@ export default function NetworkingPage() {
                   />
                   <div>
                     <h4 className="font-semibold">Fatima Khan</h4>
-                    <p className="text-sm text-gray-600">
-                      CEO, HealthTech Solutions
-                    </p>
+                    <p className="text-sm text-gray-600">CEO, HealthTech Solutions</p>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "The HealthTech meetup introduced me to key investors who
-                  later led our Series A. The focused industry discussion made
-                  all the difference in building trust."
+                  "The HealthTech meetup introduced me to key investors who later led our Series A.
+                  The focused industry discussion made all the difference in building trust."
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <Building2 className="h-4 w-4 text-green-500" />
@@ -431,9 +391,8 @@ export default function NetworkingPage() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-4">
-                  "Speed networking was incredibly efficient. In 90 minutes, I
-                  met 3 potential customers, 2 advisors, and 1 key hire. Our
-                  revenue grew 300% in the next quarter."
+                  "Speed networking was incredibly efficient. In 90 minutes, I met 3 potential
+                  customers, 2 advisors, and 1 key hire. Our revenue grew 300% in the next quarter."
                 </p>
                 <div className="flex items-center gap-2 text-sm text-gray-500">
                   <Zap className="h-4 w-4 text-blue-500" />
@@ -450,12 +409,9 @@ export default function NetworkingPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Networking Tips for Success
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Networking Tips for Success</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Make the most of your networking experience with these proven
-                strategies.
+                Make the most of your networking experience with these proven strategies.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -463,57 +419,48 @@ export default function NetworkingPage() {
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        1
-                      </span>
+                      <span className="text-primary font-semibold text-sm">1</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Come Prepared</h4>
                       <p className="text-gray-600 text-sm">
-                        Bring business cards, have a clear elevator pitch, and
-                        set specific goals for the event.
+                        Bring business cards, have a clear elevator pitch, and set specific goals
+                        for the event.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        2
-                      </span>
+                      <span className="text-primary font-semibold text-sm">2</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Listen Actively</h4>
                       <p className="text-gray-600 text-sm">
-                        Ask thoughtful questions and show genuine interest in
-                        others' businesses and challenges.
+                        Ask thoughtful questions and show genuine interest in others' businesses and
+                        challenges.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        3
-                      </span>
+                      <span className="text-primary font-semibold text-sm">3</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Follow Up Promptly</h4>
                       <p className="text-gray-600 text-sm">
-                        Connect within 24-48 hours with a personalized message
-                        referencing your conversation.
+                        Connect within 24-48 hours with a personalized message referencing your
+                        conversation.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        4
-                      </span>
+                      <span className="text-primary font-semibold text-sm">4</span>
                     </div>
                     <div>
                       <h4 className="font-semibold mb-2">Offer Value First</h4>
                       <p className="text-gray-600 text-sm">
-                        Think about how you can help others before asking for
-                        assistance or favors.
+                        Think about how you can help others before asking for assistance or favors.
                       </p>
                     </div>
                   </div>
@@ -537,12 +484,9 @@ export default function NetworkingPage() {
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to Expand Your Network?
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Expand Your Network?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Join our next networking event and start building meaningful
-              business relationships.
+              Join our next networking event and start building meaningful business relationships.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
@@ -560,5 +504,5 @@ export default function NetworkingPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

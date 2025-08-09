@@ -1,5 +1,5 @@
-import Image from "next/image"
-import { Quote } from "lucide-react"
+import Image from 'next/image'
+import { Quote } from 'lucide-react'
 
 export default function PresidentMessage() {
   return (
@@ -51,28 +51,30 @@ export default function PresidentMessage() {
               <div className="lg:w-2/3">
                 <div className="space-y-6">
                   <p className="text-gray-700 leading-relaxed text-lg italic text-pretty">
-                    "I extend a warm welcome to all of you in the OPEN Silicon Valley community. OPEN, as a dynamic and
-                    expansive global network of entrepreneurs, investors, and professionals, boasts an impressive
-                    presence with 15 chapters worldwide, including our distinguished Silicon Valley Chapter."
+                    "I extend a warm welcome to all of you in the OPEN Silicon Valley community.
+                    OPEN, as a dynamic and expansive global network of entrepreneurs, investors, and
+                    professionals, boasts an impressive presence with 15 chapters worldwide,
+                    including our distinguished Silicon Valley Chapter."
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-pretty">
-                    Our mission at OPEN is creating and nurturing a vibrant platform where entrepreneurs, investors, and
-                    professionals can forge meaningful connections, engage in enriching mentorship, and collaboratively
-                    pave the way for innovation across various sectors.
+                    Our mission at OPEN is creating and nurturing a vibrant platform where
+                    entrepreneurs, investors, and professionals can forge meaningful connections,
+                    engage in enriching mentorship, and collaboratively pave the way for innovation
+                    across various sectors.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-pretty">
-                    At its essence, OPEN SV thrives as a volunteer-led organization. Our team of passionate volunteers,
-                    drawn from the vibrant Silicon Valley ecosystem and the wider global community, exemplifies
-                    dedication and commitment.
+                    At its essence, OPEN SV thrives as a volunteer-led organization. Our team of
+                    passionate volunteers, drawn from the vibrant Silicon Valley ecosystem and the
+                    wider global community, exemplifies dedication and commitment.
                   </p>
 
                   <p className="text-gray-700 leading-relaxed text-pretty">
-                    In my role as President, I am wholeheartedly committed to elevating OPEN Silicon Valley to
-                    unprecedented levels of achievement. My vision is centered on expanding the reach and impact of
-                    OPEN's mission, fostering a synergistic relationship between Pakistan and Silicon Valley that
-                    benefits all.
+                    In my role as President, I am wholeheartedly committed to elevating OPEN Silicon
+                    Valley to unprecedented levels of achievement. My vision is centered on
+                    expanding the reach and impact of OPEN's mission, fostering a synergistic
+                    relationship between Pakistan and Silicon Valley that benefits all.
                   </p>
                 </div>
               </div>

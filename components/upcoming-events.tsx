@@ -1,34 +1,34 @@
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Calendar, ArrowRight, Clock, MapPin } from "lucide-react"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { Calendar, ArrowRight, Clock, MapPin } from 'lucide-react'
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 
 export default function UpcomingEvents() {
   // Sample upcoming events
   const upcomingEvents = [
     {
       id: 1,
-      title: "Startup Pitch Night",
-      date: "June 15, 2025",
-      time: "6:00 PM - 9:00 PM",
-      location: "OpenSV Hub, Palo Alto",
-      category: "Networking",
+      title: 'Startup Pitch Night',
+      date: 'June 15, 2025',
+      time: '6:00 PM - 9:00 PM',
+      location: 'OpenSV Hub, Palo Alto',
+      category: 'Networking',
     },
     {
       id: 2,
-      title: "AI in Healthcare Workshop",
-      date: "June 22, 2025",
-      time: "1:00 PM - 4:00 PM",
-      location: "Virtual Event",
-      category: "Workshop",
+      title: 'AI in Healthcare Workshop',
+      date: 'June 22, 2025',
+      time: '1:00 PM - 4:00 PM',
+      location: 'Virtual Event',
+      category: 'Workshop',
     },
     {
       id: 3,
-      title: "Founder Fireside Chat",
-      date: "July 8, 2025",
-      time: "5:30 PM - 7:30 PM",
-      location: "OpenSV Hub, Palo Alto",
-      category: "Speaker Series",
+      title: 'Founder Fireside Chat',
+      date: 'July 8, 2025',
+      time: '5:30 PM - 7:30 PM',
+      location: 'OpenSV Hub, Palo Alto',
+      category: 'Speaker Series',
     },
   ]
 
@@ -43,7 +43,8 @@ export default function UpcomingEvents() {
             Upcoming Events
           </h2>
           <p className="text-gray-600 text-pretty">
-            Connect with fellow entrepreneurs, learn new skills, and be inspired by innovation at our upcoming events.
+            Connect with fellow entrepreneurs, learn new skills, and be inspired by innovation at
+            our upcoming events.
           </p>
         </div>
 
@@ -90,8 +91,8 @@ export default function UpcomingEvents() {
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-2">OPEN Silicon Valley Events Calendar</h3>
               <p className="text-gray-600 mb-6">
-                Stay updated with all our upcoming events. Subscribe to our calendar to never miss an opportunity to
-                connect and grow.
+                Stay updated with all our upcoming events. Subscribe to our calendar to never miss
+                an opportunity to connect and grow.
               </p>
               <Button asChild className="rounded-full">
                 <Link

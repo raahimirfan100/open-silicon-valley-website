@@ -1,15 +1,9 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import {
   Heart,
   Users,
@@ -20,32 +14,26 @@ import {
   Award,
   Globe,
   Target,
-} from "lucide-react";
+} from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Donate & Sponsor | OPEN Silicon Valley",
+  title: 'Donate & Sponsor | OPEN Silicon Valley',
   description:
     "Support OPEN Silicon Valley's mission to empower Pakistani entrepreneurs. Explore donation options and corporate sponsorship packages.",
-};
+}
 
 export default function DonatePage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Support Our Mission
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Support Our Mission</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Help us empower the next generation of Pakistani entrepreneurs in
-              Silicon Valley. Your support creates opportunities, builds
-              networks, and drives innovation.
+              Help us empower the next generation of Pakistani entrepreneurs in Silicon Valley. Your
+              support creates opportunities, builds networks, and drives innovation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -64,9 +52,7 @@ export default function DonatePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-4">
-                Your Impact in Numbers
-              </h2>
+              <h2 className="text-2xl font-bold mb-4">Your Impact in Numbers</h2>
               <p className="text-gray-600">
                 See how donations have helped our community grow and succeed.
               </p>
@@ -81,15 +67,11 @@ export default function DonatePage() {
                 <div className="text-gray-600">Startups Launched</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  $50M+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">$50M+</div>
                 <div className="text-gray-600">Capital Raised by Members</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  2000+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">2000+</div>
                 <div className="text-gray-600">Jobs Created</div>
               </div>
             </div>
@@ -104,8 +86,8 @@ export default function DonatePage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Individual Giving</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Every contribution, no matter the size, helps us provide
-                valuable resources and opportunities to our community.
+                Every contribution, no matter the size, helps us provide valuable resources and
+                opportunities to our community.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -117,8 +99,7 @@ export default function DonatePage() {
                 <h3 className="text-xl font-semibold mb-2">Supporter</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-4">$25</div>
                 <p className="text-sm text-gray-600 mb-6">
-                  Helps fund educational materials and online resources for one
-                  entrepreneur.
+                  Helps fund educational materials and online resources for one entrepreneur.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• Digital thank you</li>
@@ -136,12 +117,9 @@ export default function DonatePage() {
                   <Users className="h-6 w-6 text-green-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Advocate</h3>
-                <div className="text-3xl font-bold text-green-600 mb-4">
-                  $100
-                </div>
+                <div className="text-3xl font-bold text-green-600 mb-4">$100</div>
                 <p className="text-sm text-gray-600 mb-6">
-                  Sponsors one entrepreneur's access to mentorship programs for
-                  3 months.
+                  Sponsors one entrepreneur's access to mentorship programs for 3 months.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• All Supporter benefits</li>
@@ -158,12 +136,9 @@ export default function DonatePage() {
                   <TrendingUp className="h-6 w-6 text-purple-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Champion</h3>
-                <div className="text-3xl font-bold text-purple-600 mb-4">
-                  $500
-                </div>
+                <div className="text-3xl font-bold text-purple-600 mb-4">$500</div>
                 <p className="text-sm text-gray-600 mb-6">
-                  Funds a complete workshop series for 20 entrepreneurs
-                  including materials.
+                  Funds a complete workshop series for 20 entrepreneurs including materials.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• All Advocate benefits</li>
@@ -180,12 +155,9 @@ export default function DonatePage() {
                   <Building2 className="h-6 w-6 text-orange-600" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Patron</h3>
-                <div className="text-3xl font-bold text-orange-600 mb-4">
-                  $1,000
-                </div>
+                <div className="text-3xl font-bold text-orange-600 mb-4">$1,000</div>
                 <p className="text-sm text-gray-600 mb-6">
-                  Sponsors a major networking event or conference session for
-                  100+ attendees.
+                  Sponsors a major networking event or conference session for 100+ attendees.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600 mb-6">
                   <li>• All Champion benefits</li>
@@ -193,17 +165,13 @@ export default function DonatePage() {
                   <li>• Annual donor dinner</li>
                   <li>• Personal thank you call</li>
                 </ul>
-                <Button className="w-full bg-orange-600 hover:bg-orange-700">
-                  Donate $1,000
-                </Button>
+                <Button className="w-full bg-orange-600 hover:bg-orange-700">Donate $1,000</Button>
               </Card>
             </div>
 
             {/* Custom Donation */}
             <div className="mt-8 text-center">
-              <p className="text-gray-600 mb-4">
-                Want to contribute a different amount?
-              </p>
+              <p className="text-gray-600 mb-4">Want to contribute a different amount?</p>
               <Button size="lg" variant="outline">
                 Custom Donation Amount
               </Button>
@@ -212,13 +180,10 @@ export default function DonatePage() {
             {/* Monthly Giving */}
             <div className="mt-12 bg-gray-50 rounded-lg p-8">
               <div className="text-center">
-                <h3 className="text-2xl font-semibold mb-4">
-                  Monthly Giving Program
-                </h3>
+                <h3 className="text-2xl font-semibold mb-4">Monthly Giving Program</h3>
                 <p className="text-gray-600 mb-6">
-                  Join our monthly giving program for sustained impact. Monthly
-                  donors receive exclusive updates and priority access to
-                  special events.
+                  Join our monthly giving program for sustained impact. Monthly donors receive
+                  exclusive updates and priority access to special events.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button>Give $25/month</Button>
@@ -237,13 +202,10 @@ export default function DonatePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Corporate Sponsorship Packages
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Corporate Sponsorship Packages</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Partner with OPEN Silicon Valley to support entrepreneurship
-                while gaining valuable brand exposure and networking
-                opportunities.
+                Partner with OPEN Silicon Valley to support entrepreneurship while gaining valuable
+                brand exposure and networking opportunities.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -254,9 +216,7 @@ export default function DonatePage() {
                     <Award className="h-8 w-8 text-orange-600" />
                   </div>
                   <CardTitle className="text-xl">Bronze Partner</CardTitle>
-                  <div className="text-3xl font-bold text-orange-600">
-                    $5,000
-                  </div>
+                  <div className="text-3xl font-bold text-orange-600">$5,000</div>
                   <p className="text-sm text-gray-600">Annual partnership</p>
                 </CardHeader>
                 <CardContent>
@@ -300,9 +260,7 @@ export default function DonatePage() {
                     <Star className="h-8 w-8 text-gray-600" />
                   </div>
                   <CardTitle className="text-xl">Silver Partner</CardTitle>
-                  <div className="text-3xl font-bold text-gray-600">
-                    $15,000
-                  </div>
+                  <div className="text-3xl font-bold text-gray-600">$15,000</div>
                   <p className="text-sm text-gray-600">Annual partnership</p>
                 </CardHeader>
                 <CardContent>
@@ -334,9 +292,7 @@ export default function DonatePage() {
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-primary">
-                    Become Silver Partner
-                  </Button>
+                  <Button className="w-full bg-primary">Become Silver Partner</Button>
                 </CardFooter>
               </Card>
 
@@ -347,9 +303,7 @@ export default function DonatePage() {
                     <Globe className="h-8 w-8 text-yellow-600" />
                   </div>
                   <CardTitle className="text-xl">Gold Partner</CardTitle>
-                  <div className="text-3xl font-bold text-yellow-600">
-                    $35,000
-                  </div>
+                  <div className="text-3xl font-bold text-yellow-600">$35,000</div>
                   <p className="text-sm text-gray-600">Annual partnership</p>
                 </CardHeader>
                 <CardContent>
@@ -396,12 +350,10 @@ export default function DonatePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                How Your Support Makes a Difference
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">How Your Support Makes a Difference</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Real stories from entrepreneurs whose lives have been
-                transformed through donor support.
+                Real stories from entrepreneurs whose lives have been transformed through donor
+                support.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -417,16 +369,13 @@ export default function DonatePage() {
                     />
                     <div>
                       <h4 className="font-semibold">Maria Khan</h4>
-                      <p className="text-sm text-gray-600">
-                        Founder, EduTech Solutions
-                      </p>
+                      <p className="text-sm text-gray-600">Founder, EduTech Solutions</p>
                     </div>
                   </div>
                   <p className="text-gray-600 mb-4">
-                    "Thanks to OPEN's scholarship program funded by generous
-                    donors, I was able to attend the startup accelerator that
-                    transformed my education app idea into a $2M ARR business.
-                    The mentorship and connections were invaluable."
+                    "Thanks to OPEN's scholarship program funded by generous donors, I was able to
+                    attend the startup accelerator that transformed my education app idea into a $2M
+                    ARR business. The mentorship and connections were invaluable."
                   </p>
                   <div className="flex items-center gap-2 text-sm text-primary">
                     <TrendingUp className="h-4 w-4" />
@@ -453,12 +402,10 @@ export default function DonatePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl font-bold mb-4">
-                Tax Deductible Donations
-              </h2>
+              <h2 className="text-2xl font-bold mb-4">Tax Deductible Donations</h2>
               <p className="text-gray-600 mb-6">
-                OPEN Silicon Valley is a 501(c)(3) nonprofit organization. Your
-                donations are tax-deductible to the full extent allowed by law.
+                OPEN Silicon Valley is a 501(c)(3) nonprofit organization. Your donations are
+                tax-deductible to the full extent allowed by law.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -501,8 +448,7 @@ export default function DonatePage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Our Valued Partners</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Thank you to our corporate partners who make our mission
-                possible.
+                Thank you to our corporate partners who make our mission possible.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center justify-items-center">
@@ -559,9 +505,8 @@ export default function DonatePage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Make a Difference Today</h2>
             <p className="text-xl mb-8 opacity-90">
-              Your support empowers the next generation of Pakistani
-              entrepreneurs to build innovative companies and create lasting
-              impact in Silicon Valley and beyond.
+              Your support empowers the next generation of Pakistani entrepreneurs to build
+              innovative companies and create lasting impact in Silicon Valley and beyond.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
@@ -579,5 +524,5 @@ export default function DonatePage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

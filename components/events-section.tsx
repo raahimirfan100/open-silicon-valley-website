@@ -1,30 +1,30 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { CalendarIcon, MapPinIcon, ClockIcon } from "lucide-react"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import { CalendarIcon, MapPinIcon, ClockIcon } from 'lucide-react'
 
 export default function EventsSection() {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Startup Pitch Night",
-      date: "June 15, 2025",
-      time: "6:00 PM - 9:00 PM",
-      location: "OpenSV Hub, Palo Alto",
+      title: 'Startup Pitch Night',
+      date: 'June 15, 2025',
+      time: '6:00 PM - 9:00 PM',
+      location: 'OpenSV Hub, Palo Alto',
     },
     {
       id: 2,
-      title: "AI in Healthcare Workshop",
-      date: "June 22, 2025",
-      time: "1:00 PM - 4:00 PM",
-      location: "Virtual Event",
+      title: 'AI in Healthcare Workshop',
+      date: 'June 22, 2025',
+      time: '1:00 PM - 4:00 PM',
+      location: 'Virtual Event',
     },
     {
       id: 3,
-      title: "Founder Fireside Chat",
-      date: "July 8, 2025",
-      time: "5:30 PM - 7:30 PM",
-      location: "OpenSV Hub, Palo Alto",
+      title: 'Founder Fireside Chat',
+      date: 'July 8, 2025',
+      time: '5:30 PM - 7:30 PM',
+      location: 'OpenSV Hub, Palo Alto',
     },
   ]
 
@@ -33,8 +33,8 @@ export default function EventsSection() {
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold mb-4">Upcoming Events</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Join us for our upcoming events where you can connect with fellow entrepreneurs, learn new skills, and be
-          inspired by innovation.
+          Join us for our upcoming events where you can connect with fellow entrepreneurs, learn new
+          skills, and be inspired by innovation.
         </p>
       </div>
 

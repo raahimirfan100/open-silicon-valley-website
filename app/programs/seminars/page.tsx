@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import {
   MapPin,
   Users,
@@ -14,32 +14,27 @@ import {
   Briefcase,
   Brain,
   DollarSign,
-} from "lucide-react";
+} from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Seminars | OPEN Silicon Valley",
+  title: 'Seminars | OPEN Silicon Valley',
   description:
     "Join OPEN Silicon Valley's monthly educational seminars covering essential business topics and emerging trends.",
-};
+}
 
 export default function SeminarsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Educational Seminars
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Educational Seminars</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Monthly educational sessions covering essential business topics
-              and emerging trends. Learn from industry experts and expand your
-              knowledge in interactive, focused sessions.
+              Monthly educational sessions covering essential business topics and emerging trends.
+              Learn from industry experts and expand your knowledge in interactive, focused
+              sessions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -63,9 +58,7 @@ export default function SeminarsPage() {
                 <div className="text-gray-600">Seminars Conducted</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  3000+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">3000+</div>
                 <div className="text-gray-600">Attendees Trained</div>
               </div>
               <div>
@@ -73,9 +66,7 @@ export default function SeminarsPage() {
                 <div className="text-gray-600">Expert Speakers</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  4.8/5
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">4.8/5</div>
                 <div className="text-gray-600">Average Rating</div>
               </div>
             </div>
@@ -90,8 +81,7 @@ export default function SeminarsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Upcoming Seminars</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join our upcoming educational sessions and expand your business
-                knowledge.
+                Join our upcoming educational sessions and expand your business knowledge.
               </p>
             </div>
             <div className="space-y-6">
@@ -99,19 +89,14 @@ export default function SeminarsPage() {
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">
-                        Dec
-                      </div>
+                      <div className="text-2xl font-bold text-primary mb-1">Dec</div>
                       <div className="text-3xl font-bold mb-1">15</div>
                       <div className="text-sm text-gray-600">2024</div>
                     </div>
                   </div>
                   <div className="md:w-3/4 p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Badge
-                        variant="default"
-                        className="bg-blue-100 text-blue-800"
-                      >
+                      <Badge variant="default" className="bg-blue-100 text-blue-800">
                         Business Fundamentals
                       </Badge>
                       <Badge variant="outline">Available Spots</Badge>
@@ -120,9 +105,9 @@ export default function SeminarsPage() {
                       Legal Structures for Startups: LLC vs Corporation
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      Learn about different business structures, their tax
-                      implications, and how to choose the right structure for
-                      your startup. Led by immigration attorney Sarah Khan.
+                      Learn about different business structures, their tax implications, and how to
+                      choose the right structure for your startup. Led by immigration attorney Sarah
+                      Khan.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -150,19 +135,14 @@ export default function SeminarsPage() {
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">
-                        Jan
-                      </div>
+                      <div className="text-2xl font-bold text-primary mb-1">Jan</div>
                       <div className="text-3xl font-bold mb-1">12</div>
                       <div className="text-sm text-gray-600">2025</div>
                     </div>
                   </div>
                   <div className="md:w-3/4 p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Badge
-                        variant="default"
-                        className="bg-green-100 text-green-800"
-                      >
+                      <Badge variant="default" className="bg-green-100 text-green-800">
                         Technology
                       </Badge>
                       <Badge variant="outline">Virtual Event</Badge>
@@ -171,10 +151,9 @@ export default function SeminarsPage() {
                       AI Implementation for Small Businesses
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      Practical guide to implementing AI tools in your business
-                      operations. Discover cost-effective AI solutions and
-                      automation strategies. Presented by AI consultant Dr.
-                      Ahmed Malik.
+                      Practical guide to implementing AI tools in your business operations. Discover
+                      cost-effective AI solutions and automation strategies. Presented by AI
+                      consultant Dr. Ahmed Malik.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -202,19 +181,14 @@ export default function SeminarsPage() {
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary mb-1">
-                        Feb
-                      </div>
+                      <div className="text-2xl font-bold text-primary mb-1">Feb</div>
                       <div className="text-3xl font-bold mb-1">09</div>
                       <div className="text-sm text-gray-600">2025</div>
                     </div>
                   </div>
                   <div className="md:w-3/4 p-6">
                     <div className="flex items-center gap-2 mb-3">
-                      <Badge
-                        variant="default"
-                        className="bg-purple-100 text-purple-800"
-                      >
+                      <Badge variant="default" className="bg-purple-100 text-purple-800">
                         Finance
                       </Badge>
                       <Badge variant="outline">In-Person</Badge>
@@ -223,9 +197,9 @@ export default function SeminarsPage() {
                       Startup Financial Planning & Cash Flow Management
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      Master the fundamentals of financial planning, budgeting,
-                      and cash flow management for startups. Includes templates
-                      and practical tools. Led by CPA Fatima Shah.
+                      Master the fundamentals of financial planning, budgeting, and cash flow
+                      management for startups. Includes templates and practical tools. Led by CPA
+                      Fatima Shah.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -260,8 +234,7 @@ export default function SeminarsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Seminar Categories</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our seminars cover a wide range of topics essential for
-                entrepreneur success.
+                Our seminars cover a wide range of topics essential for entrepreneur success.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -360,8 +333,7 @@ export default function SeminarsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">What to Expect</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our seminars are designed for maximum learning and practical
-                application.
+                Our seminars are designed for maximum learning and practical application.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -370,65 +342,47 @@ export default function SeminarsPage() {
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        1
-                      </span>
+                      <span className="text-primary font-semibold text-sm">1</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">
-                        Expert Presentation (60 min)
-                      </h4>
+                      <h4 className="font-semibold mb-1">Expert Presentation (60 min)</h4>
                       <p className="text-gray-600 text-sm">
-                        Industry expert shares insights, best practices, and
-                        real-world examples.
+                        Industry expert shares insights, best practices, and real-world examples.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        2
-                      </span>
+                      <span className="text-primary font-semibold text-sm">2</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">
-                        Interactive Q&A (20 min)
-                      </h4>
+                      <h4 className="font-semibold mb-1">Interactive Q&A (20 min)</h4>
                       <p className="text-gray-600 text-sm">
-                        Direct engagement with the speaker to clarify concepts
-                        and get specific advice.
+                        Direct engagement with the speaker to clarify concepts and get specific
+                        advice.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        3
-                      </span>
+                      <span className="text-primary font-semibold text-sm">3</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">
-                        Networking Break (15 min)
-                      </h4>
+                      <h4 className="font-semibold mb-1">Networking Break (15 min)</h4>
                       <p className="text-gray-600 text-sm">
-                        Connect with fellow attendees and continue discussions
-                        over refreshments.
+                        Connect with fellow attendees and continue discussions over refreshments.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
-                      <span className="text-primary font-semibold text-sm">
-                        4
-                      </span>
+                      <span className="text-primary font-semibold text-sm">4</span>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">
-                        Practical Workshop (25 min)
-                      </h4>
+                      <h4 className="font-semibold mb-1">Practical Workshop (25 min)</h4>
                       <p className="text-gray-600 text-sm">
-                        Hands-on exercises, templates, and tools you can
-                        immediately apply to your business.
+                        Hands-on exercises, templates, and tools you can immediately apply to your
+                        business.
                       </p>
                     </div>
                   </div>
@@ -475,8 +429,7 @@ export default function SeminarsPage() {
                     Immigration & Visa Options for Entrepreneurs
                   </h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Comprehensive guide to E2, EB5, and O1 visas for
-                    international entrepreneurs.
+                    Comprehensive guide to E2, EB5, and O1 visas for international entrepreneurs.
                   </p>
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <span>📅 Nov 2024</span>
@@ -501,12 +454,9 @@ export default function SeminarsPage() {
                   <Badge variant="outline" className="mb-2">
                     Marketing
                   </Badge>
-                  <h3 className="font-semibold mb-2">
-                    Growth Hacking for Early-Stage Startups
-                  </h3>
+                  <h3 className="font-semibold mb-2">Growth Hacking for Early-Stage Startups</h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Low-cost, high-impact marketing strategies for customer
-                    acquisition.
+                    Low-cost, high-impact marketing strategies for customer acquisition.
                   </p>
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <span>📅 Oct 2024</span>
@@ -531,12 +481,9 @@ export default function SeminarsPage() {
                   <Badge variant="outline" className="mb-2">
                     Finance
                   </Badge>
-                  <h3 className="font-semibold mb-2">
-                    Fundraising Fundamentals: Seed to Series A
-                  </h3>
+                  <h3 className="font-semibold mb-2">Fundraising Fundamentals: Seed to Series A</h3>
                   <p className="text-sm text-gray-600 mb-3">
-                    Step-by-step guide to raising capital including pitch deck
-                    templates.
+                    Step-by-step guide to raising capital including pitch deck templates.
                   </p>
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-3">
                     <span>📅 Sep 2024</span>
@@ -557,9 +504,7 @@ export default function SeminarsPage() {
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to Expand Your Knowledge?
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Expand Your Knowledge?</h2>
             <p className="text-xl mb-8 opacity-90">
               Join our educational seminars and learn from industry experts.
             </p>
@@ -579,5 +524,5 @@ export default function SeminarsPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

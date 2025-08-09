@@ -1,49 +1,30 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import {
-  Calendar,
-  MapPin,
-  Users,
-  Clock,
-  Mic,
-  Award,
-  Building2,
-} from "lucide-react";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
+import { Calendar, MapPin, Users, Clock, Mic, Award, Building2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Conferences | OPEN Silicon Valley",
+  title: 'Conferences | OPEN Silicon Valley',
   description:
     "Join OPEN Silicon Valley's flagship conferences featuring industry leaders, investors, and successful entrepreneurs.",
-};
+}
 
 export default function ConferencesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OPEN Silicon Valley Conferences
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">OPEN Silicon Valley Conferences</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Join our flagship conferences featuring industry leaders,
-              investors, and successful entrepreneurs. Connect, learn, and grow
-              with the Pakistani entrepreneur community in Silicon Valley.
+              Join our flagship conferences featuring industry leaders, investors, and successful
+              entrepreneurs. Connect, learn, and grow with the Pakistani entrepreneur community in
+              Silicon Valley.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -67,9 +48,7 @@ export default function ConferencesPage() {
                 <div className="text-gray-600">Years of Conferences</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  2000+
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">2000+</div>
                 <div className="text-gray-600">Total Attendees</div>
               </div>
               <div>
@@ -92,8 +71,8 @@ export default function ConferencesPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Upcoming Conferences</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Don't miss these upcoming opportunities to connect with industry
-                leaders and fellow entrepreneurs.
+                Don't miss these upcoming opportunities to connect with industry leaders and fellow
+                entrepreneurs.
               </p>
             </div>
             <div className="space-y-8">
@@ -116,14 +95,11 @@ export default function ConferencesPage() {
                       </Badge>
                       <Badge variant="outline">Early Bird Available</Badge>
                     </div>
-                    <h3 className="text-2xl font-bold mb-3">
-                      Annual OPEN Conference 2024
-                    </h3>
+                    <h3 className="text-2xl font-bold mb-3">Annual OPEN Conference 2024</h3>
                     <p className="text-gray-600 mb-4">
-                      Our flagship annual event bringing together 500+
-                      entrepreneurs, investors, and tech leaders. This year's
-                      theme: "Innovation Beyond Borders" featuring keynotes from
-                      unicorn founders and Silicon Valley VCs.
+                      Our flagship annual event bringing together 500+ entrepreneurs, investors, and
+                      tech leaders. This year's theme: "Innovation Beyond Borders" featuring
+                      keynotes from unicorn founders and Silicon Valley VCs.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -144,9 +120,7 @@ export default function ConferencesPage() {
                       </div>
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <Button size="lg">
-                        Register Now - $299 (Early Bird)
-                      </Button>
+                      <Button size="lg">Register Now - $299 (Early Bird)</Button>
                       <Button variant="outline" size="lg">
                         View Full Agenda
                       </Button>
@@ -166,8 +140,8 @@ export default function ConferencesPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Deep dive into financial technology innovations,
-                      blockchain, and the future of digital payments.
+                      Deep dive into financial technology innovations, blockchain, and the future of
+                      digital payments.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -200,9 +174,8 @@ export default function ConferencesPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Exploring the intersection of technology and healthcare,
-                      featuring medical device startups and digital health
-                      platforms.
+                      Exploring the intersection of technology and healthcare, featuring medical
+                      device startups and digital health platforms.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -238,8 +211,8 @@ export default function ConferencesPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">What to Expect</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our conferences are designed to provide maximum value through
-                diverse programming and networking opportunities.
+                Our conferences are designed to provide maximum value through diverse programming
+                and networking opportunities.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -249,8 +222,7 @@ export default function ConferencesPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Keynote Speakers</h3>
                 <p className="text-sm text-gray-600">
-                  Industry leaders, successful entrepreneurs, and thought
-                  leaders sharing insights.
+                  Industry leaders, successful entrepreneurs, and thought leaders sharing insights.
                 </p>
               </Card>
               <Card className="border-gray-100 text-center p-6">
@@ -259,8 +231,7 @@ export default function ConferencesPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Networking Sessions</h3>
                 <p className="text-sm text-gray-600">
-                  Structured networking with entrepreneurs, investors, and
-                  industry professionals.
+                  Structured networking with entrepreneurs, investors, and industry professionals.
                 </p>
               </Card>
               <Card className="border-gray-100 text-center p-6">
@@ -269,8 +240,7 @@ export default function ConferencesPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Startup Showcase</h3>
                 <p className="text-sm text-gray-600">
-                  Pitch competitions and demo sessions featuring emerging
-                  Pakistani startups.
+                  Pitch competitions and demo sessions featuring emerging Pakistani startups.
                 </p>
               </Card>
               <Card className="border-gray-100 text-center p-6">
@@ -279,8 +249,7 @@ export default function ConferencesPage() {
                 </div>
                 <h3 className="font-semibold mb-2">Partner Exhibitions</h3>
                 <p className="text-sm text-gray-600">
-                  Connect with sponsors, service providers, and potential
-                  business partners.
+                  Connect with sponsors, service providers, and potential business partners.
                 </p>
               </Card>
             </div>
@@ -295,8 +264,7 @@ export default function ConferencesPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Past Conferences</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Look back at our successful events and the impact they've had on
-                our community.
+                Look back at our successful events and the impact they've had on our community.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -329,9 +297,7 @@ export default function ConferencesPage() {
                   className="w-full h-48 object-cover"
                 />
                 <CardContent className="p-4">
-                  <h3 className="font-semibold mb-2">
-                    AI & Machine Learning Summit
-                  </h3>
+                  <h3 className="font-semibold mb-2">AI & Machine Learning Summit</h3>
                   <p className="text-sm text-gray-600 mb-3">
                     Deep dive into AI applications and ML for startups
                   </p>
@@ -371,12 +337,9 @@ export default function ConferencesPage() {
       <section className="py-16 bg-primary text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4">
-              Ready to Join Our Next Conference?
-            </h2>
+            <h2 className="text-3xl font-bold mb-4">Ready to Join Our Next Conference?</h2>
             <p className="text-xl mb-8 opacity-90">
-              Don't miss out on the premier gathering of Pakistani entrepreneurs
-              in Silicon Valley.
+              Don't miss out on the premier gathering of Pakistani entrepreneurs in Silicon Valley.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
@@ -394,5 +357,5 @@ export default function ConferencesPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

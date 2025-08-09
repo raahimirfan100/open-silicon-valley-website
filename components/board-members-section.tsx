@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Linkedin, ArrowRight, Award, Users, Globe } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { boardMembers } from "@/data/team-members"
+import Image from 'next/image'
+import Link from 'next/link'
+import { Linkedin, ArrowRight, Award, Users, Globe } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { boardMembers } from '@/data/team-members'
 
 export default function BoardMembersSection() {
   // Show only first 6 board members for the home page
@@ -23,8 +23,9 @@ export default function BoardMembersSection() {
             Board of Directors
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Our board consists of visionary leaders, accomplished entrepreneurs, and distinguished professionals who
-            provide strategic guidance and governance to ensure OPEN Silicon Valley's continued excellence and impact.
+            Our board consists of visionary leaders, accomplished entrepreneurs, and distinguished
+            professionals who provide strategic guidance and governance to ensure OPEN Silicon
+            Valley's continued excellence and impact.
           </p>
 
           <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-500 mb-8">
@@ -59,7 +60,7 @@ export default function BoardMembersSection() {
                       <div className="relative">
                         <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white shadow-xl group-hover:scale-105 transition-transform duration-300">
                           <Image
-                            src={member.image || "/placeholder.svg"}
+                            src={member.image || '/placeholder.svg'}
                             alt={`Photo of ${member.name}, Distinguished Board Member`}
                             fill
                             className="object-cover"
@@ -79,7 +80,9 @@ export default function BoardMembersSection() {
                       <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-semibold rounded-full mb-4">
                         Board Member
                       </div>
-                      <p className="text-gray-600 leading-relaxed mb-6 grow">{member.description}</p>
+                      <p className="text-gray-600 leading-relaxed mb-6 grow">
+                        {member.description}
+                      </p>
                     </div>
 
                     <div className="w-full">
@@ -107,8 +110,8 @@ export default function BoardMembersSection() {
           <div className="bg-linear-to-r from-primary/5 via-white to-primary/5 rounded-2xl p-8 border border-primary/10 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Meet Our Complete Board</h3>
             <p className="text-gray-600 mb-6">
-              Discover the full roster of distinguished leaders who guide our organization's strategic vision and ensure
-              our continued success.
+              Discover the full roster of distinguished leaders who guide our organization's
+              strategic vision and ensure our continued success.
             </p>
             <Button
               asChild

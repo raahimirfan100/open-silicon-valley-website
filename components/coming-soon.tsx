@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft } from 'lucide-react'
 
 interface ComingSoonProps {
   title?: string
@@ -8,8 +8,8 @@ interface ComingSoonProps {
 }
 
 export default function ComingSoon({
-  title = "Coming Soon",
-  description = "This page is under construction. Please check back later.",
+  title = 'Coming Soon',
+  description = 'This page is under construction. Please check back later.',
 }: ComingSoonProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] text-center px-4">

@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowLeft, Home, Search } from "lucide-react"
-import { Input } from "@/components/ui/input"
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowLeft, Home, Search } from 'lucide-react'
+import { Input } from '@/components/ui/input'
 
 export default function NotFound() {
   return (
@@ -20,7 +20,8 @@ export default function NotFound() {
 
         <h1 className="text-3xl font-bold mb-4">Page Not Found</h1>
         <p className="text-gray-600 mb-8">
-          We couldn't find the page you're looking for. It may have been moved, deleted, or never existed.
+          We couldn't find the page you're looking for. It may have been moved, deleted, or never
+          existed.
         </p>
 
         <div className="flex flex-col gap-4 items-center">
