@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 export default function UpcomingEvents() {
+  // TODO(events): Wire up events from a real source (Google Calendar, CMS, or Wild Apricot),
+  // then re-enable the list below.
   /*
   // Sample upcoming events (temporarily disabled)
   const upcomingEvents = [
@@ -49,6 +51,7 @@ export default function UpcomingEvents() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          {/* TODO(copy): Replace with dynamic summary once events are wired. */}
           <div className="mb-16 text-center text-gray-600">
             Event announcements will be posted here soon. In the meantime, subscribe to our calendar
             below.

@@ -10,6 +10,8 @@ export const metadata: Metadata = {
 }
 
 export default function EventsPage() {
+  // TODO(events): Decide on source of truth (Google Calendar sync, CMS, or Wild Apricot)
+  // and re-enable the featured block + tabbed listing below.
   /*
   // Event categories (temporarily disabled)
   const eventCategories = [
@@ -194,6 +196,7 @@ export default function EventsPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Events Calendar</h2>
+              {/* TODO(copy): Replace with dynamic/conditional copy once events are wired. */}
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 Stay updated with all our upcoming events. Subscribe to our calendar to never miss
                 an opportunity to connect and grow.

@@ -2,6 +2,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 export default function EventsSection() {
+  // TODO(events): When real events are available, re-enable the grid below and replace placeholder copy.
   /*
   const upcomingEvents = [
     {
@@ -37,6 +38,7 @@ export default function EventsSection() {
         </p>
       </div>
 
+      {/* TODO(copy): Replace with link or highlights once events are wired. */}
       <div className="text-center text-muted-foreground">
         Event announcements will be posted here soon. In the meantime, visit our Events page for the
         calendar.
