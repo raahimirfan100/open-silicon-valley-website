@@ -177,166 +177,137 @@ export default function JoinUsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Membership Options</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Choose the membership level that best fits your stage and goals.
+                You can become a member to attend member-only events and get discounts on paid
+                events.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              {/* Young Professional */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+              {/* Executive Member */}
               <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Star className="h-6 w-6 text-green-600" />
-                  </div>
-                  <CardTitle>Young Professional</CardTitle>
-                  <div className="text-2xl font-bold text-green-600">$99/year</div>
-                  <p className="text-sm text-gray-600">For early-career professionals under 30</p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-green-500" />
-                      <span>Access to all networking events</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-green-500" />
-                      <span>Basic mentorship program</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-green-500" />
-                      <span>Educational webinars</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-green-500" />
-                      <span>Online community access</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full" variant="outline">
-                    Select Plan
-                  </Button>
-                </CardFooter>
-              </Card>
-
-              {/* Professional */}
-              <Card className="border-gray-100 relative">
-                <CardHeader className="text-center">
-                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Briefcase className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <CardTitle>Professional</CardTitle>
-                  <div className="text-2xl font-bold text-blue-600">$199/year</div>
-                  <p className="text-sm text-gray-600">
-                    For established professionals and entrepreneurs
-                  </p>
-                </CardHeader>
-                <CardContent>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>All Young Professional benefits</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>Premium mentorship matching</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>VIP event access</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>Business resource library</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-blue-500" />
-                      <span>Partner service discounts</span>
-                    </li>
-                  </ul>
-                </CardContent>
-                <CardFooter>
-                  <Button className="w-full">Select Plan</Button>
-                </CardFooter>
-              </Card>
-
-              {/* Executive */}
-              <Card className="border-gray-100 relative border-primary">
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <Badge className="bg-primary">Most Popular</Badge>
-                </div>
                 <CardHeader className="text-center">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Building2 className="h-6 w-6 text-purple-600" />
                   </div>
-                  <CardTitle>Executive</CardTitle>
-                  <div className="text-2xl font-bold text-purple-600">$399/year</div>
-                  <p className="text-sm text-gray-600">For senior executives and founders</p>
+                  <CardTitle>Executive Member</CardTitle>
+                  <div className="text-2xl font-bold text-purple-600">$350/year</div>
+                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
+                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-purple-500" />
-                      <span>All Professional benefits</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-purple-500" />
-                      <span>Executive roundtables</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-purple-500" />
-                      <span>Investor introductions</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-purple-500" />
-                      <span>Speaking opportunities</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-purple-500" />
-                      <span>Priority event seating</span>
+                      <span>All member benefits, plus VIP opportunities</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-primary">Select Plan</Button>
+                  <Button className="w-full" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
+                  </Button>
                 </CardFooter>
               </Card>
 
-              {/* Charter Member */}
-              <Card className="border-gray-100 relative border-orange-500">
+              {/* Member */}
+              <Card className="border-gray-100 relative">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Users className="h-6 w-6 text-blue-600" />
+                  </div>
+                  <CardTitle>Member</CardTitle>
+                  <div className="text-2xl font-bold text-blue-600">$75/year</div>
+                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
+                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-blue-500" />
+                      <span>Member-only events and discounted registration</span>
+                    </li>
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
+                  </Button>
+                </CardFooter>
+              </Card>
+
+              {/* Student Member */}
+              <Card className="border-gray-100 relative">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <BookOpen className="h-6 w-6 text-green-600" />
+                  </div>
+                  <CardTitle>Student Member</CardTitle>
+                  <div className="text-2xl font-bold text-green-600">$30/year</div>
+                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
+                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-green-500" />
+                      <span>Access to member-only events and discounts</span>
+                    </li>
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
+                  </Button>
+                </CardFooter>
+              </Card>
+
+              {/* Volunteer Member */}
+              <Card className="border-gray-100 relative">
                 <CardHeader className="text-center">
                   <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Heart className="h-6 w-6 text-orange-600" />
                   </div>
-                  <CardTitle>Charter Member</CardTitle>
-                  <div className="text-2xl font-bold text-orange-600">$999/year</div>
-                  <p className="text-sm text-gray-600">Lifetime supporters with premium access</p>
+                  <CardTitle>Volunteer Member</CardTitle>
+                  <div className="text-2xl font-bold text-orange-600">$25/year</div>
+                  <p className="text-sm text-gray-600">Subscription period: 1 year</p>
+                  <p className="text-xs text-gray-500 mt-1">No automatically recurring payments</p>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Check className="h-4 w-4 text-orange-500" />
-                      <span>All Executive benefits</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-orange-500" />
-                      <span>Board meeting access</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-orange-500" />
-                      <span>Private events hosting</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-orange-500" />
-                      <span>Legacy recognition</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <Check className="h-4 w-4 text-orange-500" />
-                      <span>Strategic input opportunities</span>
+                      <span>Support OPEN SV and access member benefits</span>
                     </li>
                   </ul>
                 </CardContent>
                 <CardFooter>
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700">Select Plan</Button>
+                  <Button className="w-full" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Select Plan</a>
+                  </Button>
+                </CardFooter>
+              </Card>
+
+              {/* Guest */}
+              <Card className="border-gray-100 relative">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Star className="h-6 w-6 text-gray-700" />
+                  </div>
+                  <CardTitle>Guest</CardTitle>
+                  <div className="text-2xl font-bold text-gray-700">Free</div>
+                  <p className="text-sm text-gray-600">Subscription period: Unlimited</p>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-sm">
+                    <li className="flex items-center gap-2">
+                      <Check className="h-4 w-4 text-gray-500" />
+                      <span>Become a guest to make registration easier</span>
+                    </li>
+                  </ul>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full" variant="outline" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Sign Up</a>
+                  </Button>
                 </CardFooter>
               </Card>
             </div>
