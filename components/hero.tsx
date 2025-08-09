@@ -27,15 +27,14 @@ export default function Hero() {
               id="hero-heading"
               className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance"
             >
-              Connecting <span className="text-gradient">Pakistani</span> talent
-              with <span className="text-gradient">Silicon Valley</span>{" "}
-              opportunities
+              Building <span className="text-primary">relationships</span> among
+              {" "}entrepreneurs in {" "}
+              <span className="text-primary">Silicon Valley</span>
             </h1>
 
             <p className="text-lg text-gray-600 max-w-xl text-pretty">
-              A global network of entrepreneurs, investors, and professionals
-              building bridges between Pakistan and the world's innovation
-              capital.
+              A local network of diaspora founders, investors, and professionals
+              fostering connections in the world's innovation capital.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -99,8 +98,8 @@ export default function Hero() {
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
               <div className="aspect-[4/3] relative">
                 <Image
-                  src="/placeholder.svg?height=600&width=800&text=OPEN+Silicon+Valley"
-                  alt="OPEN Silicon Valley community event showing diverse entrepreneurs networking"
+                  src="/images/hero/golden-gate-bridge.jpeg"
+                  alt="Golden Gate Bridge in San Francisco"
                   fill
                   className="object-cover"
                   priority
