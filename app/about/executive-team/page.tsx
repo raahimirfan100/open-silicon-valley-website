@@ -128,14 +128,14 @@ export default function ExecutiveTeamPage() {
                           size="sm"
                           className="rounded-full"
                         >
-                          <Link
+                          <a
                             href={member.linkedin}
                             className="flex items-center gap-2"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             <Linkedin className="h-4 w-4" /> LinkedIn
-                          </Link>
+                          </a>
                         </Button>
                         <Button
                           asChild

@@ -89,12 +89,12 @@ export default function YouthMembersPage() {
               through mentorship, education, and networking.
             </p>
             <Button asChild size="lg" className="rounded-full">
-              <Link
+              <a
                 href="https://opensv.wildapricot.org/join-us"
                 className="flex items-center gap-2"
               >
                 Join Now <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
@@ -159,9 +159,9 @@ export default function YouthMembersPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button asChild size="lg" className="rounded-full">
-                    <Link href="https://opensv.wildapricot.org/join-us">
+                    <a href="https://opensv.wildapricot.org/join-us">
                       Join Now
-                    </Link>
+                    </a>
                   </Button>
                   <Button
                     asChild
@@ -219,9 +219,9 @@ export default function YouthMembersPage() {
                     programs, educational workshops, and networking events.
                   </p>
                   <Button asChild className="w-full rounded-full">
-                    <Link href="https://opensv.wildapricot.org/join-us">
+                    <a href="https://opensv.wildapricot.org/join-us">
                       Join Now
-                    </Link>
+                    </a>
                   </Button>
                 </CardContent>
               </Card>
@@ -548,12 +548,12 @@ export default function YouthMembersPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
-                <Link
+                <a
                   href="https://opensv.wildapricot.org/join-us"
                   className="flex items-center gap-2"
                 >
                   Join Now <ArrowRight className="h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild

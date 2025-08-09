@@ -87,9 +87,9 @@ export default function PartnersAndSponsors() {
                 </CardHeader>
                 <CardContent className="grow">
                   <CardDescription className="text-base mb-4">{partner.description}</CardDescription>
-                  <Link href={partner.website} className="text-primary hover:underline text-sm">
+                  <a href={partner.website} className="text-primary hover:underline text-sm" target="_blank" rel="noopener noreferrer">
                     Visit Website
-                  </Link>
+                  </a>
                 </CardContent>
               </Card>
             ))}

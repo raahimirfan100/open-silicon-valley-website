@@ -220,7 +220,7 @@ export default function AboutOpenSiliconValley() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="secondary" asChild>
-                <Link href="https://opensv.wildapricot.org/join-us">Become a Member</Link>
+                <a href="https://opensv.wildapricot.org/join-us" target="_blank" rel="noopener noreferrer">Become a Member</a>
               </Button>
               <Button
                 variant="outline"

@@ -35,7 +35,7 @@ export default function SponsorsSection() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
                 {level.sponsors.map((sponsor, index) => (
                   <div key={index} className="group relative">
-                    <Link
+                    <a
                       href={sponsor.url}
                       className="flex items-center justify-center p-6 bg-white rounded-xl shadow-xs hover:shadow-md transition-all duration-300 h-24 w-full border border-gray-100"
                       target="_blank"
@@ -55,7 +55,7 @@ export default function SponsorsSection() {
                           <ExternalLink className="h-3 w-3" />
                         </div>
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 ))}
               </div>

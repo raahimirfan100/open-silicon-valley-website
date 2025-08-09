@@ -39,16 +39,15 @@ export default function LeadershipSection() {
                 </div>
                 <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 w-full">
-                    <Link
+                    <a
                       href={leader.linkedin}
                       className="flex items-center justify-center gap-2 bg-white/90 backdrop-blur-xs text-primary py-2 rounded-full font-medium text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${leader.name}'s LinkedIn profile`}
                     >
-                      <Linkedin className="h-4 w-4" aria-hidden="true" />{" "}
-                      Connect on LinkedIn
-                    </Link>
+                      <Linkedin className="h-4 w-4" aria-hidden="true" /> Connect on LinkedIn
+                    </a>
                   </div>
                 </div>
               </div>

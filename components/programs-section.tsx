@@ -1,4 +1,5 @@
 import Link from "next/link"
+import type { Route } from "next"
 import { programs } from "@/data/programs"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -37,7 +38,7 @@ export default function ProgramsSection() {
 
                 <div className="p-6 pt-0 mt-auto">
                   <Link
-                    href={program.link}
+                    href={program.link as Route}
                     className="inline-flex items-center text-primary font-medium group-hover:underline"
                   >
                     Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

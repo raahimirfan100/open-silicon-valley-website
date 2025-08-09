@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -171,9 +170,9 @@ export default function MembersPage() {
                         type.featured ? "" : "bg-gray-700 hover:bg-gray-800"
                       }`}
                     >
-                      <Link href="https://opensv.wildapricot.org/join-us">
+                      <a href="https://opensv.wildapricot.org/join-us">
                         Apply Now
-                      </Link>
+                      </a>
                     </Button>
                   </CardFooter>
                 </Card>
@@ -213,12 +212,12 @@ export default function MembersPage() {
                   students in our community.
                 </p>
                 <Button asChild className="rounded-full">
-                  <Link
+                  <a
                     href="https://opensv.wildapricot.org/directory"
                     className="flex items-center gap-2"
                   >
                     Access Directory <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -396,12 +395,12 @@ export default function MembersPage() {
               connect with entrepreneurs, investors, and professionals.
             </p>
             <Button asChild size="lg" className="rounded-full">
-              <Link
+              <a
                 href="https://opensv.wildapricot.org/join-us"
                 className="flex items-center gap-2"
               >
                 Join Now <ArrowRight className="h-4 w-4" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

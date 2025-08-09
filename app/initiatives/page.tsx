@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -124,25 +124,27 @@ export default function InitiativesPage() {
                     <p className="text-gray-600 mb-6">{initiative.details}</p>
                   </CardContent>
                   <CardFooter>
-                    <Button asChild className="w-full">
-                      <Link
-                        href={initiative.link}
-                        className="flex items-center justify-center gap-2"
-                        target={initiative.external ? "_blank" : undefined}
-                        rel={
-                          initiative.external
-                            ? "noopener noreferrer"
-                            : undefined
-                        }
-                      >
-                        Learn More{" "}
-                        {initiative.external ? (
-                          <ExternalLink className="h-4 w-4" />
-                        ) : (
-                          <ArrowRight className="h-4 w-4" />
-                        )}
-                      </Link>
-                    </Button>
+                    {initiative.external ? (
+                      <Button asChild className="w-full">
+                        <a
+                          href={initiative.link}
+                          className="flex items-center justify-center gap-2"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Learn More <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    ) : (
+                      <Button asChild className="w-full">
+                        <Link
+                          href={initiative.link as Route}
+                          className="flex items-center justify-center gap-2"
+                        >
+                          Learn More <ArrowRight className="h-4 w-4" />
+                        </Link>
+                      </Button>
+                    )}
                   </CardFooter>
                 </Card>
               ))}

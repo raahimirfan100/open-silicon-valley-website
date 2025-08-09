@@ -121,9 +121,9 @@ export default function RisingStarsPage() {
                 size="lg"
                 className="rounded-full bg-linear-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
               >
-                <Link href="https://opensv.wildapricot.org/join-us">
+                <a href="https://opensv.wildapricot.org/join-us">
                   Apply for Rising Stars <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild
@@ -410,9 +410,9 @@ export default function RisingStarsPage() {
               size="lg"
               className="rounded-full bg-linear-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
             >
-              <Link href="https://opensv.wildapricot.org/join-us">
+              <a href="https://opensv.wildapricot.org/join-us">
                 Apply Now <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

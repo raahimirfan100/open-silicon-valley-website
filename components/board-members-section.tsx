@@ -83,7 +83,7 @@ export default function BoardMembersSection() {
                     </div>
 
                     <div className="w-full">
-                      <Link
+                      <a
                         href={member.linkedin}
                         className="inline-flex items-center justify-center gap-2 w-full py-3 px-4 bg-gray-50 hover:bg-primary hover:text-white transition-all duration-300 rounded-xl border border-gray-200 hover:border-primary group/link"
                         target="_blank"
@@ -93,7 +93,7 @@ export default function BoardMembersSection() {
                         <Linkedin className="h-4 w-4" aria-hidden="true" />
                         <span className="font-medium">Connect</span>
                         <ArrowRight className="h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
-                      </Link>
+                      </a>
                     </div>
                   </div>
                 </div>

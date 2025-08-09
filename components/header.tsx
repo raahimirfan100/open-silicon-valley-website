@@ -215,20 +215,24 @@ export default function Header() {
               </div>
               {isInitiativesOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white shadow-lg rounded-md p-4 z-50 animate-in fade-in-50 slide-in-from-top-5">
-                  <Link
+                  <a
                     href="https://opensvconnect.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary py-1"
                     onClick={() => setIsInitiativesOpen(false)}
                   >
                     SV Connect
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.startupconnect.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary py-1"
                     onClick={() => setIsInitiativesOpen(false)}
                   >
                     Startup Connect
-                  </Link>
+                  </a>
                   <Link
                     href="/initiatives/trusted-partners-network"
                     className="block text-sm hover:text-primary py-1"
@@ -382,13 +386,15 @@ export default function Header() {
                   >
                     OPEN Silicon Valley
                   </Link>
-                  <Link
+                  <a
                     href="https://www.openglobalweb.org/#about"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary py-1"
                     onClick={() => setIsAboutOpen(false)}
                   >
                     OPEN Global
-                  </Link>
+                  </a>
                   <Link
                     href="/about/open-silicon-valley/#officers"
                     className="block text-sm hover:text-primary py-1"
@@ -581,8 +587,10 @@ export default function Header() {
               </div>
               {isInitiativesOpen && (
                 <div className="mt-2 ml-4 space-y-2">
-                  <Link
+                  <a
                     href="https://opensvconnect.org/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
                       setIsInitiativesOpen(false);
@@ -590,9 +598,11 @@ export default function Header() {
                     }}
                   >
                     SV Connect
-                  </Link>
-                  <Link
+                  </a>
+                  <a
                     href="https://www.startupconnect.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
                       setIsInitiativesOpen(false);
@@ -600,7 +610,7 @@ export default function Header() {
                     }}
                   >
                     Startup Connect
-                  </Link>
+                  </a>
                   <Link
                     href="/initiatives/trusted-partners-network"
                     className="block text-sm hover:text-primary"
@@ -789,8 +799,10 @@ export default function Header() {
                   >
                     OPEN Silicon Valley
                   </Link>
-                  <Link
+                  <a
                     href="https://www.openglobalweb.org/#about"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block text-sm hover:text-primary"
                     onClick={() => {
                       setIsAboutOpen(false);
@@ -798,7 +810,7 @@ export default function Header() {
                     }}
                   >
                     OPEN Global
-                  </Link>
+                  </a>
                   <Link
                     href="/about/open-silicon-valley/#officers"
                     className="block text-sm hover:text-primary"

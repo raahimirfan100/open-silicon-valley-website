@@ -250,9 +250,9 @@ export default function WhoWeArePage() {
                   multiple markets, creating a truly international platform for growth and collaboration.
                 </p>
                 <Button asChild className="rounded-full">
-                  <Link href="https://www.openglobalweb.org/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.openglobalweb.org/" target="_blank" rel="noopener noreferrer">
                     Explore OPEN Global <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -271,9 +271,9 @@ export default function WhoWeArePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="rounded-full">
-                <Link href="https://opensv.wildapricot.org/join-us">
+                <a href="https://opensv.wildapricot.org/join-us">
                   Become a Member <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild

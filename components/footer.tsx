@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Route } from "next";
 import { Button } from "@/components/ui/button";
 import {
   Facebook,
@@ -88,34 +89,34 @@ export default function Footer() {
               </div>
 
               <div className="flex space-x-3">
-                <Link
+                <a
                   href="#"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Facebook"
                 >
                   <Facebook size={16} />
-                </Link>
-                <Link
+                </a>
+                <a
                   href="#"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Twitter"
                 >
                   <Twitter size={16} />
-                </Link>
-                <Link
+                </a>
+                <a
                   href="#"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="LinkedIn"
                 >
                   <Linkedin size={16} />
-                </Link>
-                <Link
+                </a>
+                <a
                   href="#"
                   className="text-gray-400 hover:text-primary transition-colors duration-300 p-2 rounded-lg hover:bg-gray-800"
                   aria-label="Instagram"
                 >
                   <Instagram size={16} />
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -138,7 +139,7 @@ export default function Footer() {
                 ].map((item) => (
                   <li key={item.name}>
                     <Link
-                      href={item.href}
+                      href={item.href as Route}
                       className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
                     >
                       {item.name}
@@ -168,12 +169,23 @@ export default function Footer() {
                   },
                 ].map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
-                    >
-                      {item.name}
-                    </Link>
+                    {item.href.startsWith("http") ? (
+                      <a
+                        href={item.href}
+                        className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href as Route}
+                        className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -197,12 +209,23 @@ export default function Footer() {
                   },
                 ].map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
-                    >
-                      {item.name}
-                    </Link>
+                    {item.href.startsWith("http") ? (
+                      <a
+                        href={item.href}
+                        className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href as Route}
+                        className="text-gray-400 hover:text-primary transition-colors duration-300 text-xs"
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>

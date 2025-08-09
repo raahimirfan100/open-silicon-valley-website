@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Route } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -79,7 +79,7 @@ export default function ProgramsPage() {
                   <CardFooter>
                     <Button asChild variant="outline" className="w-full">
                       <Link
-                        href={program.link}
+                        href={program.link as Route}
                         className="flex items-center justify-center gap-2"
                       >
                         Learn More <ArrowRight className="h-4 w-4" />
@@ -117,12 +117,14 @@ export default function ProgramsPage() {
                   events.
                 </p>
                 <Button asChild size="lg" className="rounded-full w-fit">
-                  <Link
+                  <a
                     href="https://opensvforums.org"
                     className="flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Visit Forums Website <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -625,12 +627,12 @@ export default function ProgramsPage() {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
-                <Link
+                <a
                   href="https://opensv.wildapricot.org/join-us"
                   className="flex items-center gap-2"
                 >
                   Become a Member <ArrowRight className="h-4 w-4" />
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild

@@ -182,14 +182,14 @@ export default function BoardMembersPage() {
                             size="sm"
                             className="rounded-full text-xs"
                           >
-                            <Link
+                            <a
                               href={member.linkedin}
                               className="flex items-center gap-1"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               <Linkedin className="h-3 w-3" /> Connect
-                            </Link>
+                            </a>
                           </Button>
                         </div>
                       </div>
