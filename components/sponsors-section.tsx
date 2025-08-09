@@ -25,11 +25,11 @@ export default function SponsorsSection() {
           {sponsorLevels.map((level, levelIndex) => (
             <div key={level.level} className="mb-16">
               <div className="flex items-center justify-center mb-8">
-                <div className="h-px bg-gray-200 flex-grow"></div>
+                <div className="h-px bg-gray-200 grow"></div>
                 <div className="px-6 py-2 bg-primary/10 rounded-full text-primary font-medium mx-4">
                   {level.level} Sponsors
                 </div>
-                <div className="h-px bg-gray-200 flex-grow"></div>
+                <div className="h-px bg-gray-200 grow"></div>
               </div>
 
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
@@ -37,7 +37,7 @@ export default function SponsorsSection() {
                   <div key={index} className="group relative">
                     <Link
                       href={sponsor.url}
-                      className="flex items-center justify-center p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 h-24 w-full border border-gray-100"
+                      className="flex items-center justify-center p-6 bg-white rounded-xl shadow-xs hover:shadow-md transition-all duration-300 h-24 w-full border border-gray-100"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${sponsor.name} website`}

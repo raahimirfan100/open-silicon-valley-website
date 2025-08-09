@@ -82,7 +82,7 @@ export default function MembersPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -132,7 +132,7 @@ export default function MembersPage() {
               {membershipTypes.map((type, index) => (
                 <Card
                   key={index}
-                  className={`border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden h-full ${
+                  className={`border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden h-full ${
                     type.featured ? "border-primary/50 shadow-md" : ""
                   }`}
                 >
@@ -239,7 +239,7 @@ export default function MembersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -263,7 +263,7 @@ export default function MembersPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -287,7 +287,7 @@ export default function MembersPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -328,7 +328,7 @@ export default function MembersPage() {
             </div>
 
             <div className="space-y-6">
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     How do I become a member?
@@ -342,7 +342,7 @@ export default function MembersPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     What are the membership fees?
@@ -356,7 +356,7 @@ export default function MembersPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     How long does membership last?
@@ -369,7 +369,7 @@ export default function MembersPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     Can I upgrade my membership?

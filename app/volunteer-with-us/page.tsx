@@ -100,7 +100,7 @@ export default function VolunteerPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -353,7 +353,7 @@ export default function VolunteerPage() {
               {volunteerRoles.map((role, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardHeader>
                     <CardTitle>{role.title}</CardTitle>
@@ -399,7 +399,7 @@ export default function VolunteerPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+            <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-8">
               <form className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
@@ -568,7 +568,7 @@ export default function VolunteerPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -592,7 +592,7 @@ export default function VolunteerPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -616,7 +616,7 @@ export default function VolunteerPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm p-6">
+              <Card className="border-gray-100 shadow-xs p-6">
                 <div className="flex flex-col items-center text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mb-4">
                     <Image
@@ -658,7 +658,7 @@ export default function VolunteerPage() {
             </div>
 
             <div className="space-y-6">
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     Do I need to be a member to volunteer?
@@ -671,7 +671,7 @@ export default function VolunteerPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     How much time do I need to commit?
@@ -685,7 +685,7 @@ export default function VolunteerPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     Can I volunteer remotely?
@@ -698,7 +698,7 @@ export default function VolunteerPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">
                     How long is the volunteer commitment?

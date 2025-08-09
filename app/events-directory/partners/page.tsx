@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function PartnersAndSponsors() {
   return (
     <main className="flex-1">
-      <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+      <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Collaborations</div>
@@ -85,7 +85,7 @@ export default function PartnersAndSponsors() {
                   </div>
                   <CardTitle>{partner.name}</CardTitle>
                 </CardHeader>
-                <CardContent className="flex-grow">
+                <CardContent className="grow">
                   <CardDescription className="text-base mb-4">{partner.description}</CardDescription>
                   <Link href={partner.website} className="text-primary hover:underline text-sm">
                     Visit Website
@@ -148,7 +148,7 @@ export default function PartnersAndSponsors() {
                 tier: "Bronze",
               },
             ].map((sponsor, index) => (
-              <div key={index} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-sm">
+              <div key={index} className="flex flex-col items-center p-4 bg-white rounded-lg shadow-xs">
                 <div className="relative h-16 w-full mb-4">
                   <Image src={sponsor.logo || "/placeholder.svg"} alt={sponsor.name} fill className="object-contain" />
                 </div>

@@ -29,7 +29,7 @@ export default function LeadershipSection() {
           {leadershipTeam.slice(0, 3).map((leader, index) => (
             <div key={index} className="group">
               <div className="relative mb-6 overflow-hidden rounded-xl">
-                <div className="aspect-[3/4] bg-gray-100 relative">
+                <div className="aspect-3/4 bg-gray-100 relative">
                   <Image
                     src={leader.image || "/placeholder.svg"}
                     alt={`Photo of ${leader.name}, ${leader.role}`}
@@ -37,11 +37,11 @@ export default function LeadershipSection() {
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 w-full">
                     <Link
                       href={leader.linkedin}
-                      className="flex items-center justify-center gap-2 bg-white/90 backdrop-blur-sm text-primary py-2 rounded-full font-medium text-sm"
+                      className="flex items-center justify-center gap-2 bg-white/90 backdrop-blur-xs text-primary py-2 rounded-full font-medium text-sm"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={`${leader.name}'s LinkedIn profile`}

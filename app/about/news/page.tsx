@@ -98,7 +98,7 @@ export default function NewsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -177,7 +177,7 @@ export default function NewsPage() {
               {categories.map((category) => (
                 <Button
                   key={category}
-                  variant={category === "All" ? "default" : "outline"}
+                  variant={category === "All" ? "default" : "outline-solid"}
                   size="sm"
                   className="rounded-full"
                 >
@@ -198,7 +198,7 @@ export default function NewsPage() {
               {newsItems.map((item, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden"
                 >
                   <div className="relative h-48">
                     <Image
@@ -263,7 +263,7 @@ export default function NewsPage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-4 py-3 rounded-full border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 px-4 py-3 rounded-full border border-gray-300 focus:outline-hidden focus:ring-2 focus:ring-primary"
                 required
               />
               <Button type="submit" className="rounded-full px-6">

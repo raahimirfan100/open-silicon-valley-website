@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section
       aria-labelledby="hero-heading"
-      className="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white"
+      className="relative overflow-hidden bg-linear-to-b from-gray-50 to-white"
     >
       {/* Geometric pattern background */}
       <div
@@ -63,7 +63,7 @@ export default function Hero() {
             </div>
 
             <div className="pt-8 grid grid-cols-3 gap-6">
-              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-xs rounded-xl border border-white/20">
                 <span className="text-2xl md:text-3xl font-bold text-primary">
                   15+
                 </span>
@@ -71,7 +71,7 @@ export default function Hero() {
                   Global Chapters
                 </span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-xs rounded-xl border border-white/20">
                 <span className="text-2xl md:text-3xl font-bold text-primary">
                   24+
                 </span>
@@ -79,7 +79,7 @@ export default function Hero() {
                   Years of Impact
                 </span>
               </div>
-              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white/20">
+              <div className="flex flex-col items-center p-4 bg-white/50 backdrop-blur-xs rounded-xl border border-white/20">
                 <span className="text-2xl md:text-3xl font-bold text-primary">
                   100K+
                 </span>
@@ -92,11 +92,11 @@ export default function Hero() {
 
           <div className="relative">
             <div
-              className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-primary/10 rounded-3xl blur-3xl opacity-50"
+              className="absolute -inset-4 bg-linear-to-r from-primary/20 to-primary/10 rounded-3xl blur-3xl opacity-50"
               aria-hidden="true"
             ></div>
             <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-              <div className="aspect-[4/3] relative">
+              <div className="aspect-4/3 relative">
                 <Image
                   src="/images/hero/golden-gate-bridge.jpeg"
                   alt="Golden Gate Bridge in San Francisco"
@@ -106,9 +106,9 @@ export default function Hero() {
                 />
               </div>
 
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">
+              <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-black/80 to-transparent p-6">
                 <div className="flex items-center gap-4">
-                  <div className="bg-white/90 backdrop-blur-sm p-3 rounded-full">
+                  <div className="bg-white/90 backdrop-blur-xs p-3 rounded-full">
                     <Globe
                       className="h-6 w-6 text-primary"
                       aria-hidden="true"
@@ -124,10 +124,10 @@ export default function Hero() {
               </div>
 
               <div className="absolute top-4 right-4 flex flex-col gap-3">
-                <div className="bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg animate-float">
+                <div className="bg-white/90 backdrop-blur-xs p-3 rounded-full shadow-lg animate-float">
                   <Users className="h-5 w-5 text-primary" aria-hidden="true" />
                 </div>
-                <div className="bg-white/90 backdrop-blur-sm p-3 rounded-full shadow-lg animate-float animation-delay-300">
+                <div className="bg-white/90 backdrop-blur-xs p-3 rounded-full shadow-lg animate-float animation-delay-300">
                   <Lightbulb
                     className="h-5 w-5 text-primary"
                     aria-hidden="true"

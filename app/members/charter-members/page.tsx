@@ -74,7 +74,7 @@ export default function CharterMembersPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-24 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -202,7 +202,7 @@ export default function CharterMembersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold mb-6">Membership Fee</h3>
                   <div className="flex items-center justify-center mb-6">
@@ -226,7 +226,7 @@ export default function CharterMembersPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardContent className="p-8">
                   <h3 className="text-xl font-bold mb-6">
                     Eligibility Criteria
@@ -279,7 +279,7 @@ export default function CharterMembersPage() {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300"
+                  className="bg-white p-6 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300"
                 >
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                     <benefit.icon className="h-6 w-6 text-primary" />
@@ -311,7 +311,7 @@ export default function CharterMembersPage() {
               {testimonials.map((testimonial, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardContent className="p-8">
                     <div className="flex flex-col items-center text-center">
@@ -362,7 +362,7 @@ export default function CharterMembersPage() {
                       1
                     </div>
                   </div>
-                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-sm">
+                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-xs">
                     <h3 className="text-xl font-bold mb-4">
                       Submit Application
                     </h3>
@@ -380,7 +380,7 @@ export default function CharterMembersPage() {
                       2
                     </div>
                   </div>
-                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-sm">
+                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-xs">
                     <h3 className="text-xl font-bold mb-4">Review Process</h3>
                     <p className="text-gray-600">
                       Our Membership Committee reviews your application and may
@@ -396,7 +396,7 @@ export default function CharterMembersPage() {
                       3
                     </div>
                   </div>
-                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-sm">
+                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-xs">
                     <h3 className="text-xl font-bold mb-4">
                       Approval & Onboarding
                     </h3>
@@ -414,7 +414,7 @@ export default function CharterMembersPage() {
                       4
                     </div>
                   </div>
-                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-sm">
+                  <div className="md:w-3/4 bg-white p-6 rounded-xl shadow-xs">
                     <h3 className="text-xl font-bold mb-4">
                       Welcome to the Community
                     </h3>

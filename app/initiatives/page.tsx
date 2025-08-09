@@ -61,7 +61,7 @@ export default function InitiativesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -103,9 +103,9 @@ export default function InitiativesPage() {
               {initiatives.map((initiative, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm overflow-hidden"
+                  className="border-gray-100 shadow-xs overflow-hidden"
                 >
-                  <div className="aspect-[16/9] relative">
+                  <div className="aspect-video relative">
                     <Image
                       src={initiative.image || "/placeholder.svg"}
                       alt={initiative.title}
@@ -164,17 +164,17 @@ export default function InitiativesPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-8 rounded-xl shadow-xs text-center">
                 <div className="text-4xl font-bold text-primary mb-2">500+</div>
                 <div className="text-gray-600">Startups Supported</div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-8 rounded-xl shadow-xs text-center">
                 <div className="text-4xl font-bold text-primary mb-2">
                   1000+
                 </div>
                 <div className="text-gray-600">Professionals Connected</div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-sm text-center">
+              <div className="bg-white p-8 rounded-xl shadow-xs text-center">
                 <div className="text-4xl font-bold text-primary mb-2">
                   $50M+
                 </div>
@@ -198,7 +198,7 @@ export default function InitiativesPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border-gray-100 shadow-sm p-8">
+              <Card className="border-gray-100 shadow-xs p-8">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/4">
                     <div className="w-20 h-20 rounded-full overflow-hidden mx-auto">
@@ -226,7 +226,7 @@ export default function InitiativesPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm p-8">
+              <Card className="border-gray-100 shadow-xs p-8">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="md:w-1/4">
                     <div className="w-20 h-20 rounded-full overflow-hidden mx-auto">

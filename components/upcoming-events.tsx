@@ -52,7 +52,7 @@ export default function UpcomingEvents() {
             {upcomingEvents.map((event) => (
               <Card
                 key={event.id}
-                className="overflow-hidden border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 card-hover h-full"
+                className="overflow-hidden border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 card-hover h-full"
               >
                 <div className="h-2 bg-primary" aria-hidden="true"></div>
                 <CardHeader className="pb-2">
@@ -86,7 +86,7 @@ export default function UpcomingEvents() {
             ))}
           </div>
 
-          <div className="bg-gray-50 rounded-2xl p-8 shadow-sm">
+          <div className="bg-gray-50 rounded-2xl p-8 shadow-xs">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold mb-2">OPEN Silicon Valley Events Calendar</h3>
               <p className="text-gray-600 mb-6">
@@ -104,7 +104,7 @@ export default function UpcomingEvents() {
               </Button>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
+            <div className="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100">
               <iframe
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679"
                 style={{ border: 0 }}

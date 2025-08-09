@@ -34,7 +34,7 @@ export default function NetworkingPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -162,7 +162,7 @@ export default function NetworkingPage() {
 
               {/* Speed Networking */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge
@@ -201,7 +201,7 @@ export default function NetworkingPage() {
                   </CardFooter>
                 </Card>
 
-                <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge
@@ -462,7 +462,7 @@ export default function NetworkingPage() {
               <div>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         1
                       </span>
@@ -476,7 +476,7 @@ export default function NetworkingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         2
                       </span>
@@ -490,7 +490,7 @@ export default function NetworkingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         3
                       </span>
@@ -504,7 +504,7 @@ export default function NetworkingPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         4
                       </span>

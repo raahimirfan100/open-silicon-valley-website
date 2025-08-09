@@ -31,7 +31,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white text-sm focus:outline-none focus:ring-2 focus:ring-primary"
+                className="flex-1 md:w-64 px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-white text-sm focus:outline-hidden focus:ring-2 focus:ring-primary"
                 required
               />
               <Button type="submit" size="sm" className="rounded-lg px-4">
@@ -64,11 +64,11 @@ export default function Footer() {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-4 text-sm">
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                  <MapPin className="h-4 w-4 text-primary shrink-0" />
                   <span className="text-gray-400">Palo Alto, CA</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-primary flex-shrink-0" />
+                  <Phone className="h-4 w-4 text-primary shrink-0" />
                   <a
                     href="tel:+16505551234"
                     className="text-gray-400 hover:text-white transition-colors"
@@ -77,7 +77,7 @@ export default function Footer() {
                   </a>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-primary flex-shrink-0" />
+                  <Mail className="h-4 w-4 text-primary shrink-0" />
                   <a
                     href="mailto:info@opensv.org"
                     className="text-gray-400 hover:text-white transition-colors"

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function TrustedPartnersNetwork() {
   return (
     <main className="flex-1">
-      <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+      <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">

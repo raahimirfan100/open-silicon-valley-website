@@ -39,7 +39,7 @@ export default function BoardMembersPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-16 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-20"
           aria-hidden="true"
@@ -73,7 +73,7 @@ export default function BoardMembersPage() {
               </Button>
             </div>
 
-            <div className="bg-gradient-to-r from-primary/5 to-gray-50 rounded-xl p-8 mb-16 border border-primary/10">
+            <div className="bg-linear-to-r from-primary/5 to-gray-50 rounded-xl p-8 mb-16 border border-primary/10">
               <div className="flex flex-col md:flex-row gap-8 items-center">
                 <div className="md:w-1/3">
                   <Image
@@ -117,7 +117,7 @@ export default function BoardMembersPage() {
 
             {extendedBoardMembers.map((member, index) => (
               <div key={index} className="mb-12">
-                <Card className="border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
+                <Card className="border-gray-100 shadow-xs hover:shadow-lg transition-all duration-300 overflow-hidden">
                   <CardContent className="p-0">
                     <div className="flex flex-col lg:flex-row">
                       <div className="lg:w-1/3 relative">
@@ -218,7 +218,7 @@ export default function BoardMembersPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +243,7 @@ export default function BoardMembersPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@ export default function BoardMembersPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -297,7 +297,7 @@ export default function BoardMembersPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +325,7 @@ export default function BoardMembersPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -352,7 +352,7 @@ export default function BoardMembersPage() {
                 </p>
               </div>
 
-              <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+              <div className="bg-white p-8 rounded-xl shadow-xs border border-gray-100 hover:border-primary/20 transition-colors duration-300">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

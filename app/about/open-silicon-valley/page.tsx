@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function AboutOpenSiliconValley() {
   return (
     <main className="flex-1">
-      <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+      <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">About Us</div>
@@ -139,7 +139,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">2000</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Founding of OPEN Silicon Valley</h3>
                 <p className="text-gray-500">
                   OPEN Silicon Valley was established as a chapter of the global OPEN network to serve the growing
@@ -151,7 +151,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">2005</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Expansion of Programs</h3>
                 <p className="text-gray-500">
                   The organization expanded its programs to include regular networking events, educational seminars, and
@@ -163,7 +163,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">2010</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Launch of Annual Conference</h3>
                 <p className="text-gray-500">
                   OPEN Silicon Valley launched its flagship annual conference, bringing together industry leaders,
@@ -175,7 +175,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">2015</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Introduction of SV Connect</h3>
                 <p className="text-gray-500">
                   The organization introduced SV Connect, a platform to connect Pakistani professionals with
@@ -187,7 +187,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">2020</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Virtual Transformation</h3>
                 <p className="text-gray-500">
                   In response to the global pandemic, OPEN Silicon Valley successfully transformed its programs to
@@ -199,7 +199,7 @@ export default function AboutOpenSiliconValley() {
               <div className="flex-none md:w-32 pt-1">
                 <div className="font-bold text-xl text-primary">Today</div>
               </div>
-              <div className="flex-grow space-y-2">
+              <div className="grow space-y-2">
                 <h3 className="text-xl font-bold">Continued Growth & Impact</h3>
                 <p className="text-gray-500">
                   OPEN Silicon Valley continues to grow its membership, expand its programs, and increase its impact on

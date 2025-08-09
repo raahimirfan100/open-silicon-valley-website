@@ -95,14 +95,14 @@ export default function RisingStarsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-purple-50 via-white to-orange-50 overflow-hidden">
+      <section className="relative py-20 bg-linear-to-br from-purple-50 via-white to-orange-50 overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-20"
           aria-hidden="true"
         ></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-linear-to-r from-purple-600 to-orange-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Rocket className="h-4 w-4" />
               Elite Entrepreneur Program
             </div>
@@ -119,7 +119,7 @@ export default function RisingStarsPage() {
               <Button
                 asChild
                 size="lg"
-                className="rounded-full bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
+                className="rounded-full bg-linear-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
               >
                 <Link href="https://opensv.wildapricot.org/join-us">
                   Apply for Rising Stars <ArrowRight className="ml-2 h-4 w-4" />
@@ -160,11 +160,11 @@ export default function RisingStarsPage() {
                   program provides the strategic guidance and connections you
                   need.
                 </p>
-                <div className="bg-gradient-to-r from-purple-50 to-orange-50 p-6 rounded-lg border border-purple-100">
+                <div className="bg-linear-to-r from-purple-50 to-orange-50 p-6 rounded-lg border border-purple-100">
                   <h3 className="font-semibold text-lg mb-2">
                     Membership Investment
                   </h3>
-                  <div className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent mb-2">
+                  <div className="text-3xl font-bold bg-linear-to-r from-purple-600 to-orange-600 bg-clip-text text-transparent mb-2">
                     $250
                   </div>
                   <div className="text-gray-600">
@@ -206,10 +206,10 @@ export default function RisingStarsPage() {
               {benefits.map((benefit, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 group"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 group"
                 >
                   <CardHeader className="text-center">
-                    <div className="mx-auto w-12 h-12 bg-gradient-to-r from-purple-100 to-orange-100 rounded-full flex items-center justify-center mb-4 group-hover:from-purple-200 group-hover:to-orange-200 transition-all duration-300">
+                    <div className="mx-auto w-12 h-12 bg-linear-to-r from-purple-100 to-orange-100 rounded-full flex items-center justify-center mb-4 group-hover:from-purple-200 group-hover:to-orange-200 transition-all duration-300">
                       <benefit.icon className="h-6 w-6 text-purple-600" />
                     </div>
                     <CardTitle className="text-xl">{benefit.title}</CardTitle>
@@ -241,12 +241,12 @@ export default function RisingStarsPage() {
               {programs.map((program, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-xl">{program.title}</CardTitle>
-                      <span className="text-sm bg-gradient-to-r from-purple-100 to-orange-100 text-purple-700 px-3 py-1 rounded-full">
+                      <span className="text-sm bg-linear-to-r from-purple-100 to-orange-100 text-purple-700 px-3 py-1 rounded-full">
                         {program.duration}
                       </span>
                     </div>
@@ -273,7 +273,7 @@ export default function RisingStarsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image
@@ -295,7 +295,7 @@ export default function RisingStarsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image
@@ -317,7 +317,7 @@ export default function RisingStarsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image
@@ -356,7 +356,7 @@ export default function RisingStarsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-linear-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   1
                 </div>
                 <h3 className="font-semibold text-lg mb-2">
@@ -368,7 +368,7 @@ export default function RisingStarsPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-linear-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   2
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Review Process</h3>
@@ -378,7 +378,7 @@ export default function RisingStarsPage() {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-12 h-12 bg-gradient-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-12 h-12 bg-linear-to-r from-purple-600 to-orange-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   3
                 </div>
                 <h3 className="font-semibold text-lg mb-2">
@@ -395,7 +395,7 @@ export default function RisingStarsPage() {
       </section>
 
       {/* Join CTA */}
-      <section className="py-16 bg-gradient-to-r from-purple-50 to-orange-50">
+      <section className="py-16 bg-linear-to-r from-purple-50 to-orange-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">
@@ -408,7 +408,7 @@ export default function RisingStarsPage() {
             <Button
               asChild
               size="lg"
-              className="rounded-full bg-gradient-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
+              className="rounded-full bg-linear-to-r from-purple-600 to-orange-600 hover:from-purple-700 hover:to-orange-700"
             >
               <Link href="https://opensv.wildapricot.org/join-us">
                 Apply Now <ArrowRight className="ml-2 h-4 w-4" />

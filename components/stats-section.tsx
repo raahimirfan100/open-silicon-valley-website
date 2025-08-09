@@ -21,7 +21,7 @@ export default function StatsSection() {
           {networkStats.map((stat, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full"
+              className="bg-white p-6 rounded-xl shadow-xs hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full"
             >
               <div className="flex flex-col items-center">
                 <div className="p-3 rounded-full bg-primary/10 text-primary mb-4">

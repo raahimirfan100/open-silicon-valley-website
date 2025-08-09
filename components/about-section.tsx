@@ -59,7 +59,7 @@ export default function AboutSection() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
+            <div className="bg-gray-50 p-8 rounded-xl shadow-xs hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
               <div className="p-3 rounded-full bg-primary/10 text-primary inline-block mb-6" aria-hidden="true">
                 <Target className="h-6 w-6" />
               </div>
@@ -70,7 +70,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
+            <div className="bg-gray-50 p-8 rounded-xl shadow-xs hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
               <div className="p-3 rounded-full bg-primary/10 text-primary inline-block mb-6" aria-hidden="true">
                 <Compass className="h-6 w-6" />
               </div>
@@ -81,7 +81,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
+            <div className="bg-gray-50 p-8 rounded-xl shadow-xs hover:shadow-md transition-all duration-300 card-hover border border-gray-100 h-full">
               <div className="p-3 rounded-full bg-primary/10 text-primary inline-block mb-6" aria-hidden="true">
                 <Lightbulb className="h-6 w-6" />
               </div>

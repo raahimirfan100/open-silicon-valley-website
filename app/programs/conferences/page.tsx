@@ -32,7 +32,7 @@ export default function ConferencesPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -159,7 +159,7 @@ export default function ConferencesPage() {
 
               {/* Industry Summits */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge variant="outline">Q4 2024</Badge>
@@ -193,7 +193,7 @@ export default function ConferencesPage() {
                   </CardFooter>
                 </Card>
 
-                <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge variant="outline">Q1 2025</Badge>

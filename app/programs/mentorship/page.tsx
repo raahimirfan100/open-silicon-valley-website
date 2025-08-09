@@ -91,7 +91,7 @@ export default function MentorshipPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-primary/10 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-primary/10 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -141,7 +141,7 @@ export default function MentorshipPage() {
               {mentorshipPrograms.map((program, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardHeader>
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -239,7 +239,7 @@ export default function MentorshipPage() {
               {testimonials.map((testimonial, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardContent className="pt-6">
                     <div className="flex flex-col items-center text-center">
@@ -274,7 +274,7 @@ export default function MentorshipPage() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="bg-gradient-to-r from-primary/5 via-white to-primary/5 rounded-2xl p-8 border border-primary/10">
+            <div className="bg-linear-to-r from-primary/5 via-white to-primary/5 rounded-2xl p-8 border border-primary/10">
               <h2 className="text-3xl font-bold mb-4">
                 Ready to Start Your Journey?
               </h2>

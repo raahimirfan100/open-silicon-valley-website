@@ -33,7 +33,7 @@ export default function WebinarsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -103,7 +103,7 @@ export default function WebinarsPage() {
               </p>
             </div>
             <div className="space-y-6">
-              <Card className="border-gray-100 shadow-sm overflow-hidden">
+              <Card className="border-gray-100 shadow-xs overflow-hidden">
                 <div className="md:flex">
                   <div className="md:w-1/3">
                     <Image
@@ -163,7 +163,7 @@ export default function WebinarsPage() {
               </Card>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Card className="border-gray-100 shadow-sm">
+                <Card className="border-gray-100 shadow-xs">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge
@@ -203,7 +203,7 @@ export default function WebinarsPage() {
                   </CardFooter>
                 </Card>
 
-                <Card className="border-gray-100 shadow-sm">
+                <Card className="border-gray-100 shadow-xs">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
                       <Badge

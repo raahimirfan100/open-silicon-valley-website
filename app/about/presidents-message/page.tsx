@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function PresidentsMessage() {
   return (
     <main className="flex-1">
-      <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+      <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Leadership</div>
@@ -101,7 +101,7 @@ export default function PresidentsMessage() {
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-sm">
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-xs">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function PresidentsMessage() {
                 beyond.
               </p>
             </div>
-            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-sm">
+            <div className="flex flex-col items-center text-center space-y-4 p-6 bg-white rounded-lg shadow-xs">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

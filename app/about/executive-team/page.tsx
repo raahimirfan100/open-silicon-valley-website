@@ -23,7 +23,7 @@ export default function ExecutiveTeamPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -98,10 +98,10 @@ export default function ExecutiveTeamPage() {
               {extendedLeadershipTeam.map((member, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden"
                 >
                   <CardContent className="p-0">
-                    <div className="aspect-[3/2] relative">
+                    <div className="aspect-3/2 relative">
                       <Image
                         src={member.image || "/placeholder.svg"}
                         alt={`Photo of ${member.name}`}
@@ -176,7 +176,7 @@ export default function ExecutiveTeamPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Executive Leadership</h3>
                 <p className="text-gray-600 mb-4">
                   Core leadership providing strategic direction, governance, and
@@ -189,7 +189,7 @@ export default function ExecutiveTeamPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Programs & Events</h3>
                 <p className="text-gray-600 mb-4">
                   Teams managing our diverse programming including forums,
@@ -203,7 +203,7 @@ export default function ExecutiveTeamPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Member Services</h3>
                 <p className="text-gray-600 mb-4">
                   Dedicated teams focused on member growth, engagement, and
@@ -217,7 +217,7 @@ export default function ExecutiveTeamPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">
                   Marketing & Communications
                 </h3>
@@ -233,7 +233,7 @@ export default function ExecutiveTeamPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Operations & Support</h3>
                 <p className="text-gray-600 mb-4">
                   Backend support teams ensuring smooth operations and
@@ -247,7 +247,7 @@ export default function ExecutiveTeamPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm">
+              <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">
                   Community & Partnerships
                 </h3>

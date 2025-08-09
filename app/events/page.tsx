@@ -119,7 +119,7 @@ export default function EventsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -232,9 +232,9 @@ export default function EventsPage() {
                       .map((event) => (
                         <Card
                           key={event.id}
-                          className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden"
+                          className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden"
                         >
-                          <div className="aspect-[16/9] relative">
+                          <div className="aspect-video relative">
                             <Image
                               src={event.image || "/placeholder.svg"}
                               alt={event.title}
@@ -293,7 +293,7 @@ export default function EventsPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 mb-8">
+            <div className="bg-white rounded-xl overflow-hidden shadow-xs border border-gray-100 mb-8">
               <iframe
                 src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FLos_Angeles&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&src=Y184YTExOTQyYWU1YzM4NmJhYWVhNGQ0ZmZjZDQxYmIyN2I5Yjk4YTJiOWFiMDNlNGY1OTZiM2FhNGI1MjYyMWVjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%2333B679"
                 style={{ border: 0 }}

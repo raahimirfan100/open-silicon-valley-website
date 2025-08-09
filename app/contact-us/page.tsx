@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function ContactUs() {
   return (
     <main className="flex-1">
-      <section className="bg-gradient-to-b from-primary/10 to-background py-12 md:py-16">
+      <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Get In Touch</div>
@@ -41,21 +41,21 @@ export default function ContactUs() {
               </div>
               <div className="space-y-4">
                 <div className="flex items-start space-x-4">
-                  <Mail className="h-6 w-6 text-primary flex-shrink-0" />
+                  <Mail className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-bold">Email Us</h3>
                     <p className="text-gray-500">info@opensiliconvalley.org</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-primary flex-shrink-0" />
+                  <Phone className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-bold">Call Us</h3>
                     <p className="text-gray-500">(650) 555-0123</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
-                  <MapPin className="h-6 w-6 text-primary flex-shrink-0" />
+                  <MapPin className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-bold">Visit Us</h3>
                     <p className="text-gray-500">

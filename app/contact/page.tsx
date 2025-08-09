@@ -14,7 +14,7 @@ export default function ContactPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -112,7 +112,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
+                <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-8">
                   <h2 className="text-2xl font-bold mb-6">Contact Form</h2>
                   <form className="space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -175,7 +175,7 @@ export default function ContactPage() {
             <div className="flex justify-center gap-6">
               <a
                 href="#"
-                className="bg-white p-4 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white p-4 rounded-full shadow-xs hover:shadow-md transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Image
@@ -188,7 +188,7 @@ export default function ContactPage() {
               </a>
               <a
                 href="#"
-                className="bg-white p-4 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white p-4 rounded-full shadow-xs hover:shadow-md transition-all duration-300"
                 aria-label="Twitter"
               >
                 <Image
@@ -201,7 +201,7 @@ export default function ContactPage() {
               </a>
               <a
                 href="#"
-                className="bg-white p-4 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white p-4 rounded-full shadow-xs hover:shadow-md transition-all duration-300"
                 aria-label="LinkedIn"
               >
                 <Image
@@ -214,7 +214,7 @@ export default function ContactPage() {
               </a>
               <a
                 href="#"
-                className="bg-white p-4 rounded-full shadow-sm hover:shadow-md transition-all duration-300"
+                className="bg-white p-4 rounded-full shadow-xs hover:shadow-md transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Image
@@ -244,7 +244,7 @@ export default function ContactPage() {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+              <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   How can I become a member of OPEN Silicon Valley?
                 </h3>
@@ -256,7 +256,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+              <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   How can I volunteer with OPEN Silicon Valley?
                 </h3>
@@ -268,7 +268,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+              <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   How can I sponsor an OPEN Silicon Valley event?
                 </h3>
@@ -279,7 +279,7 @@ export default function ContactPage() {
                 </p>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+              <div className="bg-white rounded-xl shadow-xs border border-gray-100 p-6">
                 <h3 className="text-xl font-semibold mb-2">
                   How can I propose a speaker for an OPEN Silicon Valley event?
                 </h3>

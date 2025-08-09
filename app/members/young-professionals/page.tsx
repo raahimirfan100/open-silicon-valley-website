@@ -81,7 +81,7 @@ export default function YoungProfessionalsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-50 via-white to-green-50 overflow-hidden">
+      <section className="relative py-20 bg-linear-to-br from-blue-50 via-white to-green-50 overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-20"
           aria-hidden="true"
@@ -175,7 +175,7 @@ export default function YoungProfessionalsPage() {
               {benefits.map((benefit, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardHeader className="text-center">
                     <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -208,7 +208,7 @@ export default function YoungProfessionalsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {events.map((event, index) => (
-                <Card key={index} className="border-gray-100 shadow-sm">
+                <Card key={index} className="border-gray-100 shadow-xs">
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-xl">{event.title}</CardTitle>
@@ -239,7 +239,7 @@ export default function YoungProfessionalsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image
@@ -262,7 +262,7 @@ export default function YoungProfessionalsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image
@@ -285,7 +285,7 @@ export default function YoungProfessionalsPage() {
                 </CardContent>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <CardContent className="p-6 text-center">
                   <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4">
                     <Image

@@ -23,15 +23,15 @@ export default function ProgramsSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {programs.map((program, index) => (
             <div key={index} className="group h-full">
-              <div className="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden border border-gray-100">
+              <div className="bg-white rounded-xl shadow-xs hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden border border-gray-100">
                 <div className="p-6 bg-primary/5 flex items-center">
-                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm mr-4">
+                  <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-xs mr-4">
                     <program.icon className="h-6 w-6 text-primary" aria-hidden="true" />
                   </div>
                   <h3 className="text-xl font-semibold">{program.title}</h3>
                 </div>
 
-                <div className="p-6 flex-grow">
+                <div className="p-6 grow">
                   <p className="text-gray-600 mb-6 text-pretty">{program.description}</p>
                 </div>
 

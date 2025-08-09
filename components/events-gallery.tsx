@@ -60,10 +60,10 @@ export default function EventsGallery() {
             {galleryImages.map((image, index) => (
               <div
                 key={index}
-                className={`${image.gridClass} overflow-hidden rounded-xl shadow-sm hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 group`}
+                className={`${image.gridClass} overflow-hidden rounded-xl shadow-xs hover:shadow-xl transition-all duration-500 transform hover:-translate-y-1 border border-gray-100 group`}
               >
                 <Link href="/events-directory/events-gallery" className="block h-full w-full relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-end">
+                  <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-end">
                     <div className="p-3 md:p-4 w-full">
                       <span className="text-white font-medium text-xs md:text-sm leading-tight">
                         {image.alt.split(" - ")[0]}

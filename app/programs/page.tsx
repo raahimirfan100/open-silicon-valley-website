@@ -22,7 +22,7 @@ export default function ProgramsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -65,7 +65,7 @@ export default function ProgramsPage() {
               {programs.map((program, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300"
                 >
                   <CardHeader className="pb-2">
                     <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -197,7 +197,7 @@ export default function ProgramsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <CardTitle>Annual OPEN Conference</CardTitle>
                 </CardHeader>
@@ -218,7 +218,7 @@ export default function ProgramsPage() {
                   </Button>
                 </CardFooter>
               </Card>
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <CardTitle>Industry Summits</CardTitle>
                 </CardHeader>
@@ -239,7 +239,7 @@ export default function ProgramsPage() {
                   </Button>
                 </CardFooter>
               </Card>
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <CardTitle>Startup Showcase</CardTitle>
                 </CardHeader>
@@ -277,7 +277,7 @@ export default function ProgramsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <CardTitle>Business Fundamentals</CardTitle>
                 </CardHeader>
@@ -299,7 +299,7 @@ export default function ProgramsPage() {
                   </Button>
                 </CardFooter>
               </Card>
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <CardTitle>Technology & Innovation</CardTitle>
                 </CardHeader>
@@ -415,7 +415,7 @@ export default function ProgramsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Users className="h-6 w-6 text-primary" />
@@ -439,7 +439,7 @@ export default function ProgramsPage() {
                   </Button>
                 </CardFooter>
               </Card>
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <Calendar className="h-6 w-6 text-primary" />
@@ -463,7 +463,7 @@ export default function ProgramsPage() {
                   </Button>
                 </CardFooter>
               </Card>
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                     <BookOpen className="h-6 w-6 text-primary" />
@@ -507,7 +507,7 @@ export default function ProgramsPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-xs font-medium mb-2">
                     Workshop
@@ -538,7 +538,7 @@ export default function ProgramsPage() {
                 </CardFooter>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-xs font-medium mb-2">
                     Women Forum
@@ -569,7 +569,7 @@ export default function ProgramsPage() {
                 </CardFooter>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <Card className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300">
                 <CardHeader>
                   <div className="inline-block px-3 py-1 bg-primary/10 rounded-full text-primary text-xs font-medium mb-2">
                     Mentorship

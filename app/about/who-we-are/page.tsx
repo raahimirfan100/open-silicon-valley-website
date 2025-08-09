@@ -71,7 +71,7 @@ export default function WhoWeArePage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div className="absolute inset-0 islamic-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -133,7 +133,7 @@ export default function WhoWeArePage() {
               {values.map((value, index) => (
                 <Card
                   key={index}
-                  className="border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 text-center"
+                  className="border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 text-center"
                 >
                   <CardHeader>
                     <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -169,7 +169,7 @@ export default function WhoWeArePage() {
                 {milestones.map((milestone, index) => (
                   <div key={index} className={`flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}>
                     <div className={`w-1/2 ${index % 2 === 0 ? "pr-8 text-right" : "pl-8 text-left"}`}>
-                      <Card className="border-gray-100 shadow-sm">
+                      <Card className="border-gray-100 shadow-xs">
                         <CardHeader>
                           <div className="flex items-center gap-2">
                             <span className="text-2xl font-bold text-primary">{milestone.year}</span>

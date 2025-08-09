@@ -33,7 +33,7 @@ export default function SeminarsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -102,7 +102,7 @@ export default function SeminarsPage() {
               </p>
             </div>
             <div className="space-y-6">
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
@@ -153,7 +153,7 @@ export default function SeminarsPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
@@ -205,7 +205,7 @@ export default function SeminarsPage() {
                 </div>
               </Card>
 
-              <Card className="border-gray-100 shadow-sm">
+              <Card className="border-gray-100 shadow-xs">
                 <div className="md:flex">
                   <div className="md:w-1/4 p-6 bg-primary/5 flex flex-col justify-center">
                     <div className="text-center">
@@ -376,7 +376,7 @@ export default function SeminarsPage() {
                 <h3 className="text-2xl font-semibold mb-6">Seminar Format</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         1
                       </span>
@@ -392,7 +392,7 @@ export default function SeminarsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         2
                       </span>
@@ -408,7 +408,7 @@ export default function SeminarsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         3
                       </span>
@@ -424,7 +424,7 @@ export default function SeminarsPage() {
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center shrink-0 mt-1">
                       <span className="text-primary font-semibold text-sm">
                         4
                       </span>

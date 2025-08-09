@@ -33,7 +33,7 @@ export default function DonatePage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -263,23 +263,23 @@ export default function DonatePage() {
                 <CardContent>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Logo on website and newsletters</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Recognition at 2 major events</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Social media mentions (quarterly)</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Access to member directory</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>4 complimentary event tickets</span>
                     </li>
                   </ul>
@@ -309,27 +309,27 @@ export default function DonatePage() {
                 <CardContent>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>All Bronze benefits included</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Prominent logo placement</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Speaking opportunity at annual conference</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Networking event co-hosting</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>10 complimentary event tickets</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Quarterly business showcase</span>
                     </li>
                   </ul>
@@ -356,27 +356,27 @@ export default function DonatePage() {
                 <CardContent>
                   <ul className="space-y-3 text-sm">
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>All Silver benefits included</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Title sponsor of major event</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Executive advisory board seat</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Custom partnership activations</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>20 complimentary event tickets</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-green-500 mt-0.5 flex-shrink-0" />
+                      <Check className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
                       <span>Exclusive networking reception</span>
                     </li>
                   </ul>

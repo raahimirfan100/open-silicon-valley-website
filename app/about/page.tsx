@@ -15,7 +15,7 @@ export default function AboutPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -133,7 +133,7 @@ export default function AboutPage() {
               <Card className="mb-12 border-gray-100">
                 <CardContent className="p-8">
                   <div className="flex flex-col md:flex-row gap-8 items-center">
-                    <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                    <div className="w-32 h-32 rounded-full overflow-hidden shrink-0">
                       <Image
                         src="/placeholder.svg?height=128&width=128&text=AH"
                         alt="Amer Haider"

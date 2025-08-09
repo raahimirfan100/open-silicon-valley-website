@@ -162,7 +162,7 @@ export default function EventsGalleryPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+      <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
         <div
           className="absolute inset-0 pakistani-pattern opacity-30"
           aria-hidden="true"
@@ -247,9 +247,9 @@ export default function EventsGalleryPage() {
                       .map((image) => (
                         <div
                           key={image.id}
-                          className="group relative overflow-hidden rounded-lg shadow-sm"
+                          className="group relative overflow-hidden rounded-lg shadow-xs"
                         >
-                          <div className="aspect-[4/3] relative">
+                          <div className="aspect-4/3 relative">
                             <Image
                               src={image.src || "/placeholder.svg"}
                               alt={image.alt}
@@ -258,7 +258,7 @@ export default function EventsGalleryPage() {
                               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
+                          <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                             <div className="text-white">
                               <div className="font-medium">{image.event}</div>
                               <div className="text-sm text-white/80">
@@ -294,7 +294,7 @@ export default function EventsGalleryPage() {
           <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl font-bold mb-8">Event Archives</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div className="bg-white rounded-xl shadow-xs p-6 border border-gray-100">
                 <h3 className="text-xl font-bold mb-4">2024 Events</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
@@ -318,7 +318,7 @@ export default function EventsGalleryPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div className="bg-white rounded-xl shadow-xs p-6 border border-gray-100">
                 <h3 className="text-xl font-bold mb-4">2023 Events</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
@@ -342,7 +342,7 @@ export default function EventsGalleryPage() {
                 </ul>
               </div>
 
-              <div className="bg-white rounded-xl shadow-sm p-6 border border-gray-100">
+              <div className="bg-white rounded-xl shadow-xs p-6 border border-gray-100">
                 <h3 className="text-xl font-bold mb-4">2022 Events</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
