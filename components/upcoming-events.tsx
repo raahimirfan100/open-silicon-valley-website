@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { Calendar, ArrowRight, Clock, MapPin } from 'lucide-react'
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
+import { ArrowRight } from 'lucide-react'
 
 export default function UpcomingEvents() {
-  // Sample upcoming events
+  /*
+  // Sample upcoming events (temporarily disabled)
   const upcomingEvents = [
     {
       id: 1,
@@ -31,7 +31,7 @@ export default function UpcomingEvents() {
       category: 'Speaker Series',
     },
   ]
-
+  */
   return (
     <section aria-labelledby="events-heading" className="py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -49,6 +49,14 @@ export default function UpcomingEvents() {
         </div>
 
         <div className="max-w-5xl mx-auto">
+          <div className="mb-16 text-center text-gray-600">
+            Event announcements will be posted here soon. In the meantime, subscribe to our calendar
+            below.
+          </div>
+          {/**
+           * Previously displayed a grid of dummy upcoming events. Keeping for reference.
+           */}
+          {/**
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {upcomingEvents.map((event) => (
               <Card
@@ -86,6 +94,7 @@ export default function UpcomingEvents() {
               </Card>
             ))}
           </div>
+          */}
 
           <div className="bg-gray-50 rounded-2xl p-8 shadow-xs">
             <div className="text-center mb-8">

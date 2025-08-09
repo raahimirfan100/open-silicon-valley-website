@@ -1,9 +1,8 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
-import { CalendarIcon, MapPinIcon, ClockIcon } from 'lucide-react'
 
 export default function EventsSection() {
+  /*
   const upcomingEvents = [
     {
       id: 1,
@@ -27,7 +26,7 @@ export default function EventsSection() {
       location: 'OpenSV Hub, Palo Alto',
     },
   ]
-
+  */
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
@@ -38,6 +37,14 @@ export default function EventsSection() {
         </p>
       </div>
 
+      <div className="text-center text-muted-foreground">
+        Event announcements will be posted here soon. In the meantime, visit our Events page for the
+        calendar.
+      </div>
+      {/**
+       * Previously displayed dummy events grid. Keeping commented for later use.
+       */}
+      {/**
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {upcomingEvents.map((event) => (
           <Card key={event.id}>
@@ -68,6 +75,7 @@ export default function EventsSection() {
           </Card>
         ))}
       </div>
+      */}
 
       <div className="text-center mt-12">
         <Button asChild size="lg">
