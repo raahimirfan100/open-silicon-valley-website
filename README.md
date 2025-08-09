@@ -1,30 +1,32 @@
-# Opensv.org clone
+# OPEN Silicon Valley
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Official website for the Organization of Pakistani Entrepreneurs - Silicon Valley Chapter.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/raahims-projects-f828742c/v0-opensv-org-clone)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/3aWZXqOfumz)
+## About
 
-## Overview
+OPEN Silicon Valley is part of a global network of entrepreneurs, investors, and professionals dedicated to fostering connections and growth within the Pakistani diaspora community.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
 
-## Deployment
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- Radix UI
 
-Your project is live at:
+## Development
 
-**[https://vercel.com/raahims-projects-f828742c/v0-opensv-org-clone](https://vercel.com/raahims-projects-f828742c/v0-opensv-org-clone)**
+```bash
+# Install dependencies
+npm install
 
-## Build your app
+# Start development server
+npm run dev
 
-Continue building your app on:
+# Build for production
+npm run build
+```
 
-**[https://v0.dev/chat/projects/3aWZXqOfumz](https://v0.dev/chat/projects/3aWZXqOfumz)**
+## License
 
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+MIT
