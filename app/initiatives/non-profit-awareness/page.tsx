@@ -1,11 +1,11 @@
-import type { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 
 export const metadata: Metadata = {
-  title: "Non-Profit Awareness | OPEN Silicon Valley",
+  title: 'Non-Profit Awareness | OPEN Silicon Valley',
   description:
     "OPEN Silicon Valley's Non-Profit Awareness initiative highlights and supports impactful non-profit organizations.",
 }
@@ -19,9 +19,12 @@ export default function NonProfitAwareness() {
             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
               OPEN Silicon Valley Initiative
             </div>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Non-Profit Awareness</h1>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Non-Profit Awareness
+            </h1>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Highlighting and supporting impactful non-profit organizations making a difference in our communities.
+              Highlighting and supporting impactful non-profit organizations making a difference in
+              our communities.
             </p>
           </div>
         </div>
@@ -33,14 +36,16 @@ export default function NonProfitAwareness() {
             <div className="space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">About the Initiative</h2>
               <p className="text-gray-500 md:text-lg/relaxed">
-                The Non-Profit Awareness initiative by OPEN Silicon Valley aims to spotlight the incredible work being
-                done by non-profit organizations both locally and globally. We believe in the power of community support
-                and the impact that can be made when we come together to address social challenges.
+                The Non-Profit Awareness initiative by OPEN Silicon Valley aims to spotlight the
+                incredible work being done by non-profit organizations both locally and globally. We
+                believe in the power of community support and the impact that can be made when we
+                come together to address social challenges.
               </p>
               <p className="text-gray-500 md:text-lg/relaxed">
-                Through this initiative, we provide a platform for non-profits to share their mission, connect with
-                potential volunteers and donors, and collaborate with other organizations to amplify their impact. We
-                also organize events, fundraisers, and awareness campaigns to support these causes.
+                Through this initiative, we provide a platform for non-profits to share their
+                mission, connect with potential volunteers and donors, and collaborate with other
+                organizations to amplify their impact. We also organize events, fundraisers, and
+                awareness campaigns to support these causes.
               </p>
             </div>
             <div className="flex items-center justify-center">
@@ -67,39 +72,43 @@ export default function NonProfitAwareness() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                name: "Education For All",
-                mission: "Providing educational resources and opportunities to underserved communities.",
-                image: "/placeholder.svg?height=200&width=300&text=Education+For+All",
+                name: 'Education For All',
+                mission:
+                  'Providing educational resources and opportunities to underserved communities.',
+                image: '/placeholder.svg?height=200&width=300&text=Education+For+All',
               },
               {
-                name: "Green Earth Initiative",
-                mission: "Working towards environmental conservation and sustainable practices.",
-                image: "/placeholder.svg?height=200&width=300&text=Green+Earth",
+                name: 'Green Earth Initiative',
+                mission: 'Working towards environmental conservation and sustainable practices.',
+                image: '/placeholder.svg?height=200&width=300&text=Green+Earth',
               },
               {
-                name: "Health Access Network",
-                mission: "Ensuring healthcare access for vulnerable populations around the world.",
-                image: "/placeholder.svg?height=200&width=300&text=Health+Access",
+                name: 'Health Access Network',
+                mission: 'Ensuring healthcare access for vulnerable populations around the world.',
+                image: '/placeholder.svg?height=200&width=300&text=Health+Access',
               },
               {
-                name: "Tech For Good",
-                mission: "Leveraging technology to solve social challenges and empower communities.",
-                image: "/placeholder.svg?height=200&width=300&text=Tech+For+Good",
+                name: 'Tech For Good',
+                mission:
+                  'Leveraging technology to solve social challenges and empower communities.',
+                image: '/placeholder.svg?height=200&width=300&text=Tech+For+Good',
               },
               {
-                name: "Women Empowerment Coalition",
-                mission: "Supporting women's rights, education, and economic opportunities globally.",
-                image: "/placeholder.svg?height=200&width=300&text=Women+Empowerment",
+                name: 'Women Empowerment Coalition',
+                mission:
+                  "Supporting women's rights, education, and economic opportunities globally.",
+                image: '/placeholder.svg?height=200&width=300&text=Women+Empowerment',
               },
               {
-                name: "Youth Development Fund",
-                mission: "Investing in programs that develop leadership and skills in young people.",
-                image: "/placeholder.svg?height=200&width=300&text=Youth+Development",
+                name: 'Youth Development Fund',
+                mission:
+                  'Investing in programs that develop leadership and skills in young people.',
+                image: '/placeholder.svg?height=200&width=300&text=Youth+Development',
               },
             ].map((org, index) => (
               <Card key={index} className="overflow-hidden">
                 <Image
-                  src={org.image || "/placeholder.svg"}
+                  src={org.image || '/placeholder.svg'}
                   alt={org.name}
                   width={300}
                   height={200}
@@ -145,7 +154,9 @@ export default function NonProfitAwareness() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold">Fundraising</h3>
-              <p className="text-gray-500">Organizing events and campaigns to raise funds for non-profit causes.</p>
+              <p className="text-gray-500">
+                Organizing events and campaigns to raise funds for non-profit causes.
+              </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
@@ -166,7 +177,9 @@ export default function NonProfitAwareness() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold">Awareness</h3>
-              <p className="text-gray-500">Amplifying the mission and impact of non-profits through our platforms.</p>
+              <p className="text-gray-500">
+                Amplifying the mission and impact of non-profits through our platforms.
+              </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
@@ -189,7 +202,9 @@ export default function NonProfitAwareness() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold">Volunteering</h3>
-              <p className="text-gray-500">Connecting skilled volunteers with non-profits that need their expertise.</p>
+              <p className="text-gray-500">
+                Connecting skilled volunteers with non-profits that need their expertise.
+              </p>
             </div>
             <div className="flex flex-col items-center text-center space-y-2">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
@@ -211,7 +226,9 @@ export default function NonProfitAwareness() {
                 </svg>
               </div>
               <h3 className="text-xl font-bold">Partnerships</h3>
-              <p className="text-gray-500">Facilitating collaborations between non-profits and corporate partners.</p>
+              <p className="text-gray-500">
+                Facilitating collaborations between non-profits and corporate partners.
+              </p>
             </div>
           </div>
         </div>
@@ -222,7 +239,8 @@ export default function NonProfitAwareness() {
           <div className="flex flex-col items-center text-center space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter">Get Involved</h2>
             <p className="max-w-[700px] md:text-lg/relaxed">
-              There are many ways to support our Non-Profit Awareness initiative and make a difference.
+              There are many ways to support our Non-Profit Awareness initiative and make a
+              difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="secondary" asChild>

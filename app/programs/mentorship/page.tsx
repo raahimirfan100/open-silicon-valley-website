@@ -1,124 +1,98 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  Users,
-  Target,
-  Lightbulb,
-  GraduationCap,
-  Briefcase,
-} from "lucide-react";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, Target, Lightbulb, Briefcase } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Mentorship | OPEN Silicon Valley",
+  title: 'Mentorship | OPEN Silicon Valley',
   description:
-    "Connect with experienced mentors who can guide you through your entrepreneurial and professional journey",
-};
+    'Connect with experienced mentors who can guide you through your entrepreneurial and professional journey',
+}
 
 export default function MentorshipPage() {
   const mentorshipPrograms = [
     {
-      title: "Startup Mentorship",
+      title: 'Startup Mentorship',
       description:
-        "Get guidance from successful entrepreneurs on launching and scaling your startup.",
+        'Get guidance from successful entrepreneurs on launching and scaling your startup.',
       icon: Lightbulb,
       benefits: [
-        "One-on-one mentoring sessions",
-        "Business strategy development",
-        "Investor connections",
-        "Market validation support",
+        'One-on-one mentoring sessions',
+        'Business strategy development',
+        'Investor connections',
+        'Market validation support',
       ],
     },
     {
-      title: "Career Development",
-      description:
-        "Navigate your career path with insights from industry leaders and executives.",
+      title: 'Career Development',
+      description: 'Navigate your career path with insights from industry leaders and executives.',
       icon: Briefcase,
       benefits: [
-        "Career path planning",
-        "Skill development guidance",
-        "Industry insights",
-        "Professional networking",
+        'Career path planning',
+        'Skill development guidance',
+        'Industry insights',
+        'Professional networking',
       ],
     },
     {
-      title: "Leadership Growth",
-      description:
-        "Develop your leadership skills with guidance from experienced executives.",
+      title: 'Leadership Growth',
+      description: 'Develop your leadership skills with guidance from experienced executives.',
       icon: Target,
       benefits: [
-        "Leadership style assessment",
-        "Team management strategies",
-        "Decision-making frameworks",
-        "Executive presence development",
+        'Leadership style assessment',
+        'Team management strategies',
+        'Decision-making frameworks',
+        'Executive presence development',
       ],
     },
-  ];
+  ]
 
   const testimonials = [
     {
       quote:
-        "The mentorship program helped me pivot my startup strategy and secure our first round of funding.",
-      author: "Sarah Khan",
-      role: "Founder, TechStart",
-      image: "/placeholder.svg?height=100&width=100&text=SK",
+        'The mentorship program helped me pivot my startup strategy and secure our first round of funding.',
+      author: 'Sarah Khan',
+      role: 'Founder, TechStart',
+      image: '/placeholder.svg?height=100&width=100&text=SK',
     },
     {
       quote:
         "My mentor's guidance was instrumental in my transition from engineering to product management.",
-      author: "Ahmed Malik",
-      role: "Product Manager, Tech Corp",
-      image: "/placeholder.svg?height=100&width=100&text=AM",
+      author: 'Ahmed Malik',
+      role: 'Product Manager, Tech Corp',
+      image: '/placeholder.svg?height=100&width=100&text=AM',
     },
     {
       quote:
-        "The leadership mentorship helped me develop the skills needed to lead my team effectively.",
-      author: "Fatima Ali",
-      role: "Engineering Director, Innovate Inc",
-      image: "/placeholder.svg?height=100&width=100&text=FA",
+        'The leadership mentorship helped me develop the skills needed to lead my team effectively.',
+      author: 'Fatima Ali',
+      role: 'Engineering Director, Innovate Inc',
+      image: '/placeholder.svg?height=100&width=100&text=FA',
     },
-  ];
+  ]
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-primary/10 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-block px-4 py-1.5 bg-primary/10 rounded-full text-primary font-medium text-sm mb-4">
               Professional Growth
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Mentorship Program
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Mentorship Program</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Connect with experienced mentors who can guide you through your
-              entrepreneurial and professional journey, helping you achieve your
-              goals faster and more effectively.
+              Connect with experienced mentors who can guide you through your entrepreneurial and
+              professional journey, helping you achieve your goals faster and more effectively.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
                 <Link href="#programs">Explore Programs</Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-full"
-              >
+              <Button asChild variant="outline" size="lg" className="rounded-full">
                 <Link href="/contact">Become a Mentor</Link>
               </Button>
             </div>
@@ -133,8 +107,7 @@ export default function MentorshipPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Mentorship Programs</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Choose the program that best aligns with your goals and
-                aspirations.
+                Choose the program that best aligns with your goals and aspirations.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -148,9 +121,7 @@ export default function MentorshipPage() {
                       <program.icon className="h-6 w-6 text-primary" />
                     </div>
                     <CardTitle className="text-xl">{program.title}</CardTitle>
-                    <CardDescription className="text-base">
-                      {program.description}
-                    </CardDescription>
+                    <CardDescription className="text-base">{program.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
@@ -178,8 +149,8 @@ export default function MentorshipPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">How It Works</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our mentorship program is designed to create meaningful
-                connections and lasting impact.
+                Our mentorship program is designed to create meaningful connections and lasting
+                impact.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -197,27 +168,21 @@ export default function MentorshipPage() {
                   <span className="text-xl font-bold text-primary">2</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Match</h3>
-                <p className="text-gray-600">
-                  We'll match you with the perfect mentor
-                </p>
+                <p className="text-gray-600">We'll match you with the perfect mentor</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">3</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Connect</h3>
-                <p className="text-gray-600">
-                  Meet your mentor and establish goals
-                </p>
+                <p className="text-gray-600">Meet your mentor and establish goals</p>
               </div>
               <div className="text-center">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-xl font-bold text-primary">4</span>
                 </div>
                 <h3 className="font-semibold text-lg mb-2">Grow</h3>
-                <p className="text-gray-600">
-                  Regular sessions to track progress
-                </p>
+                <p className="text-gray-600">Regular sessions to track progress</p>
               </div>
             </div>
           </div>
@@ -231,8 +196,7 @@ export default function MentorshipPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Success Stories</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Hear from our mentees about their journey and growth through our
-                mentorship program.
+                Hear from our mentees about their journey and growth through our mentorship program.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -257,9 +221,7 @@ export default function MentorshipPage() {
                       </blockquote>
                       <div>
                         <p className="font-semibold">{testimonial.author}</p>
-                        <p className="text-sm text-gray-500">
-                          {testimonial.role}
-                        </p>
+                        <p className="text-sm text-gray-500">{testimonial.role}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -275,12 +237,9 @@ export default function MentorshipPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <div className="bg-linear-to-r from-primary/5 via-white to-primary/5 rounded-2xl p-8 border border-primary/10">
-              <h2 className="text-3xl font-bold mb-4">
-                Ready to Start Your Journey?
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
               <p className="text-lg text-gray-600 mb-8">
-                Join our mentorship program and take the next step in your
-                professional development.
+                Join our mentorship program and take the next step in your professional development.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <Button asChild size="lg" className="rounded-full">
@@ -288,12 +247,7 @@ export default function MentorshipPage() {
                     Apply as Mentee <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="lg"
-                  className="rounded-full"
-                >
+                <Button asChild variant="outline" size="lg" className="rounded-full">
                   <Link href="/contact">Become a Mentor</Link>
                 </Button>
               </div>
@@ -302,5 +256,5 @@ export default function MentorshipPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

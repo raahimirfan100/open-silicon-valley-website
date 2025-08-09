@@ -1,8 +1,8 @@
-import type { Metadata } from "next"
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | OPEN Silicon Valley",
-  description: "Privacy Policy for OPEN Silicon Valley website and services",
+  title: 'Privacy Policy | OPEN Silicon Valley',
+  description: 'Privacy Policy for OPEN Silicon Valley website and services',
 }
 
 export default function PrivacyPolicyPage() {
@@ -17,9 +17,9 @@ export default function PrivacyPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">1. Introduction</h2>
               <p className="text-gray-600 mb-4">
-                OPEN Silicon Valley ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy
-                explains how we collect, use, disclose, and safeguard your information when you visit our website
-                opensv.org and use our services.
+                OPEN Silicon Valley ("we," "our," or "us") is committed to protecting your privacy.
+                This Privacy Policy explains how we collect, use, disclose, and safeguard your
+                information when you visit our website opensv.org and use our services.
               </p>
             </section>
 
@@ -39,8 +39,8 @@ export default function PrivacyPolicyPage() {
 
               <h3 className="text-xl font-semibold mb-3">Automatically Collected Information</h3>
               <p className="text-gray-600 mb-4">
-                When you visit our website, we may automatically collect certain information about your device and usage
-                patterns, including:
+                When you visit our website, we may automatically collect certain information about
+                your device and usage patterns, including:
               </p>
               <ul className="list-disc pl-6 text-gray-600 mb-4">
                 <li>IP address and location data</li>
@@ -68,11 +68,14 @@ export default function PrivacyPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">4. Information Sharing and Disclosure</h2>
               <p className="text-gray-600 mb-4">
-                We do not sell, trade, or otherwise transfer your personal information to third parties without your
-                consent, except in the following circumstances:
+                We do not sell, trade, or otherwise transfer your personal information to third
+                parties without your consent, except in the following circumstances:
               </p>
               <ul className="list-disc pl-6 text-gray-600 mb-4">
-                <li>With service providers who assist us in operating our website and conducting our business</li>
+                <li>
+                  With service providers who assist us in operating our website and conducting our
+                  business
+                </li>
                 <li>When required by law or to protect our rights</li>
                 <li>In connection with a merger, acquisition, or sale of assets</li>
                 <li>With your explicit consent</li>
@@ -82,15 +85,18 @@ export default function PrivacyPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">5. Data Security</h2>
               <p className="text-gray-600 mb-4">
-                We implement appropriate technical and organizational security measures to protect your personal
-                information against unauthorized access, alteration, disclosure, or destruction. However, no method of
-                transmission over the internet or electronic storage is 100% secure.
+                We implement appropriate technical and organizational security measures to protect
+                your personal information against unauthorized access, alteration, disclosure, or
+                destruction. However, no method of transmission over the internet or electronic
+                storage is 100% secure.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">6. Your Rights</h2>
-              <p className="text-gray-600 mb-4">Depending on your location, you may have the following rights:</p>
+              <p className="text-gray-600 mb-4">
+                Depending on your location, you may have the following rights:
+              </p>
               <ul className="list-disc pl-6 text-gray-600 mb-4">
                 <li>Access to your personal information</li>
                 <li>Correction of inaccurate information</li>
@@ -104,32 +110,33 @@ export default function PrivacyPolicyPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">7. Cookies and Tracking Technologies</h2>
               <p className="text-gray-600 mb-4">
-                We use cookies and similar tracking technologies to enhance your experience on our website. You can
-                control cookie settings through your browser preferences.
+                We use cookies and similar tracking technologies to enhance your experience on our
+                website. You can control cookie settings through your browser preferences.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">8. Third-Party Links</h2>
               <p className="text-gray-600 mb-4">
-                Our website may contain links to third-party websites. We are not responsible for the privacy practices
-                or content of these external sites.
+                Our website may contain links to third-party websites. We are not responsible for
+                the privacy practices or content of these external sites.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">9. Children's Privacy</h2>
               <p className="text-gray-600 mb-4">
-                Our services are not intended for children under 13 years of age. We do not knowingly collect personal
-                information from children under 13.
+                Our services are not intended for children under 13 years of age. We do not
+                knowingly collect personal information from children under 13.
               </p>
             </section>
 
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">10. Changes to This Privacy Policy</h2>
               <p className="text-gray-600 mb-4">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the
-                new Privacy Policy on this page and updating the "Last updated" date.
+                We may update this Privacy Policy from time to time. We will notify you of any
+                changes by posting the new Privacy Policy on this page and updating the "Last
+                updated" date.
               </p>
             </section>
 

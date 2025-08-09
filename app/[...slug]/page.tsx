@@ -1,11 +1,6 @@
-import { notFound } from "next/navigation";
-import ComingSoon from "@/components/coming-soon";
+import { notFound } from 'next/navigation'
 
-export default function CatchAllPage({
-  params,
-}: {
-  params: { slug: string[] };
-}) {
+export default function CatchAllPage() {
   // Trigger the 404 page for any undefined routes
-  notFound();
+  notFound()
 }

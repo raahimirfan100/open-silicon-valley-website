@@ -1,53 +1,33 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Users, BookOpen, Calendar } from "lucide-react";
-import { programs } from "@/data/programs";
+import type { Metadata, Route } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, Users, BookOpen, Calendar } from 'lucide-react'
+import { programs } from '@/data/programs'
 
 export const metadata: Metadata = {
-  title: "Programs | OPEN Silicon Valley",
-  description:
-    "Explore OPEN Silicon Valley's programs supporting entrepreneurs and professionals",
-};
+  title: 'Programs | OPEN Silicon Valley',
+  description: "Explore OPEN Silicon Valley's programs supporting entrepreneurs and professionals",
+}
 
 export default function ProgramsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Our Programs
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Programs</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Supporting entrepreneurs, professionals, and students at every
-              stage of their journey with targeted programs designed to foster
-              growth, innovation, and success.
+              Supporting entrepreneurs, professionals, and students at every stage of their journey
+              with targeted programs designed to foster growth, innovation, and success.
             </p>
           </div>
         </div>
-        <div
-          className="absolute bottom-0 left-0 right-0 text-white"
-          aria-hidden="true"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 100"
-            className="w-full h-auto"
-          >
+        <div className="absolute bottom-0 left-0 right-0 text-white" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto">
             <path
               fill="currentColor"
               fillOpacity="1"
@@ -79,7 +59,7 @@ export default function ProgramsPage() {
                   <CardFooter>
                     <Button asChild variant="outline" className="w-full">
                       <Link
-                        href={program.link}
+                        href={program.link as Route}
                         className="flex items-center justify-center gap-2"
                       >
                         Learn More <ArrowRight className="h-4 w-4" />
@@ -111,18 +91,19 @@ export default function ProgramsPage() {
               <div className="flex flex-col justify-center">
                 <h2 className="text-3xl font-bold mb-6">Forums</h2>
                 <p className="text-lg text-gray-600 mb-8">
-                  Join our community of entrepreneurs, investors, and
-                  professionals at our forums. Visit our dedicated forums
-                  website for more information and to register for upcoming
-                  events.
+                  Join our community of entrepreneurs, investors, and professionals at our forums.
+                  Visit our dedicated forums website for more information and to register for
+                  upcoming events.
                 </p>
                 <Button asChild size="lg" className="rounded-full w-fit">
-                  <Link
+                  <a
                     href="https://opensvforums.org"
                     className="flex items-center gap-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Visit Forums Website <ArrowRight className="h-4 w-4" />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -152,14 +133,14 @@ export default function ProgramsPage() {
                 </div>
                 <h2 className="text-3xl font-bold mb-6">Workshops</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  SIG events are arranged on a regular basis where people in a
-                  particular domain or with a particular interest gather and
-                  learn from others via meetups, talks and workshops.
+                  SIG events are arranged on a regular basis where people in a particular domain or
+                  with a particular interest gather and learn from others via meetups, talks and
+                  workshops.
                 </p>
                 <p className="text-lg text-gray-600 mb-6">
-                  Our workshops cover a wide range of topics including startup
-                  funding, marketing, product development, leadership, and more,
-                  providing practical skills and knowledge.
+                  Our workshops cover a wide range of topics including startup funding, marketing,
+                  product development, leadership, and more, providing practical skills and
+                  knowledge.
                 </p>
                 <div className="flex items-center gap-4 mb-8">
                   <div className="flex items-center gap-2">
@@ -172,10 +153,7 @@ export default function ProgramsPage() {
                   </div>
                 </div>
                 <Button asChild className="rounded-full">
-                  <Link
-                    href="/programs/workshops"
-                    className="flex items-center gap-2"
-                  >
+                  <Link href="/programs/workshops" className="flex items-center gap-2">
                     Learn More <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
@@ -192,8 +170,8 @@ export default function ProgramsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Conferences</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join our flagship conferences featuring industry leaders,
-                investors, and successful entrepreneurs.
+                Join our flagship conferences featuring industry leaders, investors, and successful
+                entrepreneurs.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,8 +181,8 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Our flagship annual event bringing together 500+
-                    entrepreneurs, investors, and tech leaders.
+                    Our flagship annual event bringing together 500+ entrepreneurs, investors, and
+                    tech leaders.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>📅 Next: Fall 2024</div>
@@ -224,8 +202,8 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Sector-specific conferences focusing on tech, healthcare,
-                    fintech, and emerging industries.
+                    Sector-specific conferences focusing on tech, healthcare, fintech, and emerging
+                    industries.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>📅 Quarterly Events</div>
@@ -245,8 +223,7 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Pitch competitions and demo days for emerging startups to
-                    present to investors.
+                    Pitch competitions and demo days for emerging startups to present to investors.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>📅 Bi-Annual</div>
@@ -272,8 +249,7 @@ export default function ProgramsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Seminars</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Monthly educational sessions covering essential business topics
-                and emerging trends.
+                Monthly educational sessions covering essential business topics and emerging trends.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -283,8 +259,8 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Essential topics covering legal structures, taxation,
-                    intellectual property, and compliance.
+                    Essential topics covering legal structures, taxation, intellectual property, and
+                    compliance.
                   </p>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Business Registration & Legal Structures</li>
@@ -305,8 +281,7 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Cutting-edge topics in AI, blockchain, cybersecurity, and
-                    emerging technologies.
+                    Cutting-edge topics in AI, blockchain, cybersecurity, and emerging technologies.
                   </p>
                   <ul className="text-sm text-gray-600 space-y-1">
                     <li>• AI & Machine Learning Applications</li>
@@ -333,51 +308,42 @@ export default function ProgramsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Webinars</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Virtual learning sessions accessible from anywhere, featuring
-                expert speakers and interactive Q&A.
+                Virtual learning sessions accessible from anywhere, featuring expert speakers and
+                interactive Q&A.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-6">
-                  Upcoming Webinars
-                </h3>
+                <h3 className="text-2xl font-semibold mb-6">Upcoming Webinars</h3>
                 <div className="space-y-4">
                   <Card className="border-gray-100">
                     <CardContent className="p-4">
                       <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">
-                          Startup Funding Strategies
-                        </h4>
+                        <h4 className="font-semibold">Startup Funding Strategies</h4>
                         <span className="text-sm bg-primary/10 text-primary px-2 py-1 rounded">
                           Live
                         </span>
                       </div>
                       <p className="text-sm text-gray-600 mb-2">
-                        Learn about seed funding, venture capital, and
-                        alternative financing options.
+                        Learn about seed funding, venture capital, and alternative financing
+                        options.
                       </p>
                       <div className="text-xs text-gray-500">
                         <div>📅 Next Friday, 2:00 PM PST</div>
-                        <div>
-                          🎤 Speaker: Sarah Chen, Partner at Kleiner Perkins
-                        </div>
+                        <div>🎤 Speaker: Sarah Chen, Partner at Kleiner Perkins</div>
                       </div>
                     </CardContent>
                   </Card>
                   <Card className="border-gray-100">
                     <CardContent className="p-4">
                       <div className="flex justify-between items-start mb-2">
-                        <h4 className="font-semibold">
-                          Digital Marketing for Startups
-                        </h4>
+                        <h4 className="font-semibold">Digital Marketing for Startups</h4>
                         <span className="text-sm bg-gray-100 text-gray-600 px-2 py-1 rounded">
                           On-Demand
                         </span>
                       </div>
                       <p className="text-sm text-gray-600 mb-2">
-                        Effective strategies for customer acquisition and brand
-                        building online.
+                        Effective strategies for customer acquisition and brand building online.
                       </p>
                       <div className="text-xs text-gray-500">
                         <div>🎤 Speaker: Ahmed Malik, CMO at Dropbox</div>
@@ -410,8 +376,8 @@ export default function ProgramsPage() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold mb-4">Networking</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Connect with fellow entrepreneurs, investors, and industry
-                professionals through our structured networking events.
+                Connect with fellow entrepreneurs, investors, and industry professionals through our
+                structured networking events.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -424,8 +390,7 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Casual evening events at premier venues across Silicon
-                    Valley.
+                    Casual evening events at premier venues across Silicon Valley.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>📅 First Thursday of each month</div>
@@ -448,8 +413,7 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Structured sessions designed to maximize meaningful
-                    connections in minimal time.
+                    Structured sessions designed to maximize meaningful connections in minimal time.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>📅 Quarterly events</div>
@@ -472,8 +436,7 @@ export default function ProgramsPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">
-                    Sector-specific gatherings for deep-dive discussions and
-                    specialized networking.
+                    Sector-specific gatherings for deep-dive discussions and specialized networking.
                   </p>
                   <div className="text-sm text-gray-500">
                     <div>🎯 Tech, Healthcare, Fintech</div>
@@ -497,12 +460,10 @@ export default function ProgramsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Upcoming Program Events
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Upcoming Program Events</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join us for our upcoming program events and take advantage of
-                the learning and networking opportunities.
+                Join us for our upcoming program events and take advantage of the learning and
+                networking opportunities.
               </p>
             </div>
 
@@ -526,9 +487,8 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    A workshop on fundraising strategies for early-stage
-                    startups, covering angel investment, venture capital, and
-                    alternative funding sources.
+                    A workshop on fundraising strategies for early-stage startups, covering angel
+                    investment, venture capital, and alternative funding sources.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -557,9 +517,8 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    A seminar focused on challenges and opportunities for women
-                    entrepreneurs in the tech industry, featuring successful
-                    women leaders.
+                    A seminar focused on challenges and opportunities for women entrepreneurs in the
+                    tech industry, featuring successful women leaders.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -588,9 +547,8 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                   <p className="text-gray-600">
-                    Connect with experienced mentors who can provide guidance
-                    and support for your entrepreneurial journey or professional
-                    development.
+                    Connect with experienced mentors who can provide guidance and support for your
+                    entrepreneurial journey or professional development.
                   </p>
                 </CardContent>
                 <CardFooter>
@@ -618,30 +576,21 @@ export default function ProgramsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Get Involved</h2>
             <p className="text-lg text-gray-600 mb-8">
-              Whether you're an entrepreneur, investor, professional, or
-              student, there's a place for you in our community. Join OPEN
-              Silicon Valley today and take advantage of our programs and
-              network.
+              Whether you're an entrepreneur, investor, professional, or student, there's a place
+              for you in our community. Join OPEN Silicon Valley today and take advantage of our
+              programs and network.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
-                <Link
+                <a
                   href="https://opensv.wildapricot.org/join-us"
                   className="flex items-center gap-2"
                 >
                   Become a Member <ArrowRight className="h-4 w-4" />
-                </Link>
+                </a>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-full"
-              >
-                <Link
-                  href="/volunteer-with-us"
-                  className="flex items-center gap-2"
-                >
+              <Button asChild variant="outline" size="lg" className="rounded-full">
+                <Link href="/volunteer-with-us" className="flex items-center gap-2">
                   Volunteer With Us <ArrowRight className="h-4 w-4" />
                 </Link>
               </Button>
@@ -650,5 +599,5 @@ export default function ProgramsPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

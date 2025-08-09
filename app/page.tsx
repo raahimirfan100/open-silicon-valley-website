@@ -1,15 +1,15 @@
-import type { Metadata } from "next"
-import Hero from "@/components/hero"
-import StatsSection from "@/components/stats-section"
-import AboutSection from "@/components/about-section"
-import SponsorsSection from "@/components/sponsors-section"
-import LeadershipSection from "@/components/leadership-section"
-import ProgramsSection from "@/components/programs-section"
-import PresidentMessage from "@/components/president-message"
-import EventsGallery from "@/components/events-gallery"
-import UpcomingEvents from "@/components/upcoming-events"
-import BoardMembersSection from "@/components/board-members-section"
-import { siteMetadata } from "@/data/site-metadata"
+import type { Metadata } from 'next'
+import Hero from '@/components/hero'
+import StatsSection from '@/components/stats-section'
+import AboutSection from '@/components/about-section'
+import SponsorsSection from '@/components/sponsors-section'
+import LeadershipSection from '@/components/leadership-section'
+import ProgramsSection from '@/components/programs-section'
+import PresidentMessage from '@/components/president-message'
+import EventsGallery from '@/components/events-gallery'
+import UpcomingEvents from '@/components/upcoming-events'
+import BoardMembersSection from '@/components/board-members-section'
+import { siteMetadata } from '@/data/site-metadata'
 
 export const metadata: Metadata = {
   title: siteMetadata.title,
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
         alt: siteMetadata.organization.name,
       },
     ],
-    locale: "en_US",
-    type: "website",
+    locale: 'en_US',
+    type: 'website',
   },
 }
 

@@ -1,52 +1,40 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Linkedin, ExternalLink, Mail } from "lucide-react";
-import { leadershipTeam } from "@/data/team-members";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { ArrowLeft, Linkedin, ExternalLink, Mail } from 'lucide-react'
+import { leadershipTeam } from '@/data/team-members'
 
 export const metadata: Metadata = {
-  title: "Leadership Team | OPEN Silicon Valley",
+  title: 'Leadership Team | OPEN Silicon Valley',
   description:
-    "Meet the leadership team - our dedicated volunteers helping build a stronger community",
-};
+    'Meet the leadership team - our dedicated volunteers helping build a stronger community',
+}
 
 export default function ExecutiveTeamPage() {
   // Extended leadership team data with more details
   const extendedLeadershipTeam = leadershipTeam.map((member) => ({
     ...member,
-    company: Math.random() > 0.5 ? "Tech Company" : "Startup Founder",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, vel aliquam nisl nisl vel nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, vel aliquam nisl nisl vel nisl.",
-  }));
+    company: Math.random() > 0.5 ? 'Tech Company' : 'Startup Founder',
+    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, vel aliquam nisl nisl vel nisl. Sed euismod, nisl vel ultricies lacinia, nisl nisl aliquam nisl, vel aliquam nisl nisl vel nisl.',
+  }))
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Meet the Leadership Team
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet the Leadership Team</h1>
             <p className="text-xl text-gray-600 mb-8">
               Our dedicated volunteers helping build a stronger community
             </p>
           </div>
         </div>
-        <div
-          className="absolute bottom-0 left-0 right-0 text-white"
-          aria-hidden="true"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 100"
-            className="w-full h-auto"
-          >
+        <div className="absolute bottom-0 left-0 right-0 text-white" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" className="w-full h-auto">
             <path
               fill="currentColor"
               fillOpacity="1"
@@ -61,11 +49,7 @@ export default function ExecutiveTeamPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="flex justify-between items-center mb-8">
-              <Button
-                asChild
-                variant="outline"
-                className="flex items-center gap-2"
-              >
+              <Button asChild variant="outline" className="flex items-center gap-2">
                 <Link href="/about">
                   <ArrowLeft className="h-4 w-4" /> Back to About
                 </Link>
@@ -73,24 +57,19 @@ export default function ExecutiveTeamPage() {
             </div>
 
             <div className="bg-gray-50 rounded-xl p-8 mb-16">
-              <h2 className="text-2xl font-bold mb-4">
-                About Our Leadership Team
-              </h2>
+              <h2 className="text-2xl font-bold mb-4">About Our Leadership Team</h2>
               <p className="text-lg text-gray-600 mb-6">
-                Our leadership team is comprised of over 30 dedicated volunteers
-                who are passionate about supporting entrepreneurs and
-                professionals in Silicon Valley. They bring diverse expertise
-                and experience to their roles and are committed to advancing
-                OPEN Silicon Valley's mission through specialized functions
-                ranging from marketing and programming to youth engagement and
-                global partnerships.
+                Our leadership team is comprised of over 30 dedicated volunteers who are passionate
+                about supporting entrepreneurs and professionals in Silicon Valley. They bring
+                diverse expertise and experience to their roles and are committed to advancing OPEN
+                Silicon Valley's mission through specialized functions ranging from marketing and
+                programming to youth engagement and global partnerships.
               </p>
               <p className="text-lg text-gray-600">
-                Each team leader is responsible for implementing strategic
-                initiatives, managing specialized programs, and fostering
-                community growth within their areas of expertise. Together, they
-                form a comprehensive support system that serves our growing
-                member base.
+                Each team leader is responsible for implementing strategic initiatives, managing
+                specialized programs, and fostering community growth within their areas of
+                expertise. Together, they form a comprehensive support system that serves our
+                growing member base.
               </p>
             </div>
 
@@ -103,7 +82,7 @@ export default function ExecutiveTeamPage() {
                   <CardContent className="p-0">
                     <div className="aspect-3/2 relative">
                       <Image
-                        src={member.image || "/placeholder.svg"}
+                        src={member.image || '/placeholder.svg'}
                         alt={`Photo of ${member.name}`}
                         fill
                         className="object-cover"
@@ -112,41 +91,22 @@ export default function ExecutiveTeamPage() {
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                      <p className="text-primary font-medium text-sm mb-2">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-500 text-sm mb-4">
-                        {member.company}
-                      </p>
-                      <p className="text-gray-600 mb-6 line-clamp-3">
-                        {member.bio}
-                      </p>
+                      <p className="text-primary font-medium text-sm mb-2">{member.role}</p>
+                      <p className="text-gray-500 text-sm mb-4">{member.company}</p>
+                      <p className="text-gray-600 mb-6 line-clamp-3">{member.bio}</p>
                       <div className="flex gap-3">
-                        <Button
-                          asChild
-                          variant="outline"
-                          size="sm"
-                          className="rounded-full"
-                        >
-                          <Link
+                        <Button asChild variant="outline" size="sm" className="rounded-full">
+                          <a
                             href={member.linkedin}
                             className="flex items-center gap-2"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             <Linkedin className="h-4 w-4" /> LinkedIn
-                          </Link>
+                          </a>
                         </Button>
-                        <Button
-                          asChild
-                          variant="ghost"
-                          size="sm"
-                          className="rounded-full"
-                        >
-                          <Link
-                            href={`mailto:info@opensv.org`}
-                            className="flex items-center gap-2"
-                          >
+                        <Button asChild variant="ghost" size="sm" className="rounded-full">
+                          <Link href={`mailto:info@opensv.org`} className="flex items-center gap-2">
                             <Mail className="h-4 w-4" /> Contact
                           </Link>
                         </Button>
@@ -165,13 +125,10 @@ export default function ExecutiveTeamPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Organizational Structure
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Organizational Structure</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Our leadership team is organized into specialized functional
-                areas to effectively serve our community and manage diverse
-                programs.
+                Our leadership team is organized into specialized functional areas to effectively
+                serve our community and manage diverse programs.
               </p>
             </div>
 
@@ -179,8 +136,8 @@ export default function ExecutiveTeamPage() {
               <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Executive Leadership</h3>
                 <p className="text-gray-600 mb-4">
-                  Core leadership providing strategic direction, governance, and
-                  organizational management.
+                  Core leadership providing strategic direction, governance, and organizational
+                  management.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>President & Executive Team</li>
@@ -192,8 +149,8 @@ export default function ExecutiveTeamPage() {
               <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Programs & Events</h3>
                 <p className="text-gray-600 mb-4">
-                  Teams managing our diverse programming including forums,
-                  workshops, and networking events.
+                  Teams managing our diverse programming including forums, workshops, and networking
+                  events.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>Programming Team</li>
@@ -206,8 +163,7 @@ export default function ExecutiveTeamPage() {
               <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Member Services</h3>
                 <p className="text-gray-600 mb-4">
-                  Dedicated teams focused on member growth, engagement, and
-                  career development.
+                  Dedicated teams focused on member growth, engagement, and career development.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>Membership Development</li>
@@ -218,12 +174,9 @@ export default function ExecutiveTeamPage() {
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-xs">
-                <h3 className="text-xl font-bold mb-4">
-                  Marketing & Communications
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Marketing & Communications</h3>
                 <p className="text-gray-600 mb-4">
-                  Comprehensive marketing, brand management, and digital
-                  strategy teams.
+                  Comprehensive marketing, brand management, and digital strategy teams.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>Marketing & Brand Identity</li>
@@ -236,8 +189,7 @@ export default function ExecutiveTeamPage() {
               <div className="bg-white p-6 rounded-xl shadow-xs">
                 <h3 className="text-xl font-bold mb-4">Operations & Support</h3>
                 <p className="text-gray-600 mb-4">
-                  Backend support teams ensuring smooth operations and
-                  data-driven decisions.
+                  Backend support teams ensuring smooth operations and data-driven decisions.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>Program Administration</li>
@@ -248,12 +200,10 @@ export default function ExecutiveTeamPage() {
               </div>
 
               <div className="bg-white p-6 rounded-xl shadow-xs">
-                <h3 className="text-xl font-bold mb-4">
-                  Community & Partnerships
-                </h3>
+                <h3 className="text-xl font-bold mb-4">Community & Partnerships</h3>
                 <p className="text-gray-600 mb-4">
-                  Teams focused on external partnerships, community outreach,
-                  and global connections.
+                  Teams focused on external partnerships, community outreach, and global
+                  connections.
                 </p>
                 <ul className="list-disc pl-5 space-y-1 text-gray-600">
                   <li>Sponsorships</li>
@@ -273,26 +223,17 @@ export default function ExecutiveTeamPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Join Our Team</h2>
             <p className="text-lg text-gray-600 mb-8">
-              We're always looking for passionate volunteers to join our
-              executive team. If you're interested in contributing your skills
-              and expertise to support entrepreneurs and professionals in
-              Silicon Valley, we'd love to hear from you.
+              We're always looking for passionate volunteers to join our executive team. If you're
+              interested in contributing your skills and expertise to support entrepreneurs and
+              professionals in Silicon Valley, we'd love to hear from you.
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg" className="rounded-full">
-                <Link
-                  href="/volunteer-with-us"
-                  className="flex items-center gap-2"
-                >
+                <Link href="/volunteer-with-us" className="flex items-center gap-2">
                   Volunteer With Us <ExternalLink className="h-4 w-4" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="rounded-full"
-              >
+              <Button asChild variant="outline" size="lg" className="rounded-full">
                 <Link href="/contact" className="flex items-center gap-2">
                   Contact Us <Mail className="h-4 w-4" />
                 </Link>
@@ -302,5 +243,5 @@ export default function ExecutiveTeamPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

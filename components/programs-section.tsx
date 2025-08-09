@@ -1,7 +1,8 @@
-import Link from "next/link"
-import { programs } from "@/data/programs"
-import { ArrowRight } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import Link from 'next/link'
+import type { Route } from 'next'
+import { programs } from '@/data/programs'
+import { ArrowRight } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 export default function ProgramsSection() {
   return (
@@ -15,8 +16,8 @@ export default function ProgramsSection() {
             Our Programs
           </h2>
           <p className="text-gray-600 text-pretty">
-            Supporting entrepreneurs, professionals, and students at every stage of their journey with targeted programs
-            designed to foster growth, innovation, and success.
+            Supporting entrepreneurs, professionals, and students at every stage of their journey
+            with targeted programs designed to foster growth, innovation, and success.
           </p>
         </div>
 
@@ -37,10 +38,11 @@ export default function ProgramsSection() {
 
                 <div className="p-6 pt-0 mt-auto">
                   <Link
-                    href={program.link}
+                    href={program.link as Route}
                     className="inline-flex items-center text-primary font-medium group-hover:underline"
                   >
-                    Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    Learn more{' '}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
               </div>

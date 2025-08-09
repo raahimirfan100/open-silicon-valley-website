@@ -1,16 +1,15 @@
-import type { Metadata } from "next"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, MapPin, Phone } from "lucide-react"
+import type { Metadata } from 'next'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
+import { Textarea } from '@/components/ui/textarea'
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Contact Us | OPEN Silicon Valley",
+  title: 'Contact Us | OPEN Silicon Valley',
   description:
-    "Get in touch with OPEN Silicon Valley for inquiries, partnerships, or to learn more about our organization.",
+    'Get in touch with OPEN Silicon Valley for inquiries, partnerships, or to learn more about our organization.',
 }
 
 export default function ContactUs() {
@@ -19,8 +18,12 @@ export default function ContactUs() {
       <section className="bg-linear-to-b from-primary/10 to-background py-12 md:py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center text-center space-y-4">
-            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">Get In Touch</div>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h1>
+            <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary">
+              Get In Touch
+            </div>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              Contact Us
+            </h1>
             <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               We'd love to hear from you. Reach out with any questions, feedback, or inquiries.
             </p>
@@ -35,8 +38,8 @@ export default function ContactUs() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter">Get in Touch</h2>
                 <p className="text-gray-500 md:text-lg/relaxed">
-                  Have a question or want to learn more about OPEN Silicon Valley? Fill out the form and we'll get back
-                  to you as soon as possible.
+                  Have a question or want to learn more about OPEN Silicon Valley? Fill out the form
+                  and we'll get back to you as soon as possible.
                 </p>
               </div>
               <div className="space-y-4">
@@ -69,7 +72,12 @@ export default function ContactUs() {
               <div className="space-y-2">
                 <h3 className="text-xl font-bold">Connect With Us</h3>
                 <div className="flex space-x-4">
-                  <Link href="https://twitter.com" className="text-gray-500 hover:text-primary">
+                  <a
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-primary"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -85,8 +93,13 @@ export default function ContactUs() {
                       <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
                     </svg>
                     <span className="sr-only">Twitter</span>
-                  </Link>
-                  <Link href="https://facebook.com" className="text-gray-500 hover:text-primary">
+                  </a>
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-primary"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -102,8 +115,13 @@ export default function ContactUs() {
                       <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                     </svg>
                     <span className="sr-only">Facebook</span>
-                  </Link>
-                  <Link href="https://linkedin.com" className="text-gray-500 hover:text-primary">
+                  </a>
+                  <a
+                    href="https://linkedin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-primary"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -121,8 +139,13 @@ export default function ContactUs() {
                       <circle cx="4" cy="4" r="2" />
                     </svg>
                     <span className="sr-only">LinkedIn</span>
-                  </Link>
-                  <Link href="https://instagram.com" className="text-gray-500 hover:text-primary">
+                  </a>
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-primary"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -140,7 +163,7 @@ export default function ContactUs() {
                       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
                     </svg>
                     <span className="sr-only">Instagram</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -174,7 +197,11 @@ export default function ContactUs() {
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="message">Message</Label>
-                      <Textarea id="message" placeholder="Enter your message" className="min-h-[120px]" />
+                      <Textarea
+                        id="message"
+                        placeholder="Enter your message"
+                        className="min-h-[120px]"
+                      />
                     </div>
                     <Button type="submit" className="w-full">
                       Send Message
@@ -198,32 +225,32 @@ export default function ContactUs() {
           <div className="grid gap-6 md:grid-cols-2">
             {[
               {
-                question: "How can I become a member of OPEN Silicon Valley?",
+                question: 'How can I become a member of OPEN Silicon Valley?',
                 answer:
-                  "You can become a member by visiting our membership page and completing the registration process. We offer different membership tiers to suit your needs and involvement level.",
+                  'You can become a member by visiting our membership page and completing the registration process. We offer different membership tiers to suit your needs and involvement level.',
               },
               {
-                question: "What types of events does OPEN Silicon Valley organize?",
+                question: 'What types of events does OPEN Silicon Valley organize?',
                 answer:
-                  "We organize a variety of events including networking sessions, workshops, seminars, conferences, and mentorship programs. Check our events page for upcoming opportunities.",
+                  'We organize a variety of events including networking sessions, workshops, seminars, conferences, and mentorship programs. Check our events page for upcoming opportunities.',
               },
               {
-                question: "How can I volunteer with OPEN Silicon Valley?",
+                question: 'How can I volunteer with OPEN Silicon Valley?',
                 answer:
                   "We welcome volunteers! Visit our 'Volunteer With Us' page to learn about current opportunities and submit your application to join our team of dedicated volunteers.",
               },
               {
-                question: "Does OPEN Silicon Valley offer sponsorship opportunities?",
+                question: 'Does OPEN Silicon Valley offer sponsorship opportunities?',
                 answer:
-                  "Yes, we offer various sponsorship packages for organizations interested in supporting our mission and connecting with our community. Contact us for more information.",
+                  'Yes, we offer various sponsorship packages for organizations interested in supporting our mission and connecting with our community. Contact us for more information.',
               },
               {
-                question: "Is OPEN Silicon Valley only for Pakistani professionals?",
+                question: 'Is OPEN Silicon Valley only for Pakistani professionals?',
                 answer:
-                  "While our organization was founded to support Pakistani professionals, we welcome members from all backgrounds who are interested in our mission and programs.",
+                  'While our organization was founded to support Pakistani professionals, we welcome members from all backgrounds who are interested in our mission and programs.',
               },
               {
-                question: "How can I propose a collaboration or partnership?",
+                question: 'How can I propose a collaboration or partnership?',
                 answer:
                   "We're always open to collaborations that align with our mission. Please contact us with details about your organization and proposed collaboration.",
               },

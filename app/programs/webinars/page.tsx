@@ -1,15 +1,9 @@
-import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Card, CardContent, CardHeader, CardTitle, CardFooter } from '@/components/ui/card'
+import { Button } from '@/components/ui/button'
+import { Badge } from '@/components/ui/badge'
 import {
   Calendar,
   Clock,
@@ -19,35 +13,28 @@ import {
   Download,
   Wifi,
   MessageCircle,
-  Star,
   Video,
-} from "lucide-react";
+} from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: "Webinars | OPEN Silicon Valley",
+  title: 'Webinars | OPEN Silicon Valley',
   description:
     "Join OPEN Silicon Valley's virtual learning sessions accessible from anywhere, featuring expert speakers and interactive Q&A.",
-};
+}
 
 export default function WebinarsPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
       <section className="relative py-20 bg-linear-to-b from-gray-50 to-white overflow-hidden">
-        <div
-          className="absolute inset-0 pakistani-pattern opacity-30"
-          aria-hidden="true"
-        ></div>
+        <div className="absolute inset-0 pakistani-pattern opacity-30" aria-hidden="true"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              OPEN Silicon Valley Webinars
-            </h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">OPEN Silicon Valley Webinars</h1>
             <p className="text-xl text-gray-600 mb-8">
-              Virtual learning sessions accessible from anywhere in the world.
-              Join live interactive webinars or access our extensive library of
-              on-demand content featuring expert speakers and practical
-              insights.
+              Virtual learning sessions accessible from anywhere in the world. Join live interactive
+              webinars or access our extensive library of on-demand content featuring expert
+              speakers and practical insights.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" asChild>
@@ -79,9 +66,7 @@ export default function WebinarsPage() {
                 <div className="text-gray-600">Countries Reached</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">
-                  4.9/5
-                </div>
+                <div className="text-3xl font-bold text-primary mb-2">4.9/5</div>
                 <div className="text-gray-600">Average Rating</div>
               </div>
             </div>
@@ -94,12 +79,9 @@ export default function WebinarsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Upcoming Live Webinars
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Upcoming Live Webinars</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Join our interactive live sessions and engage directly with
-                expert speakers.
+                Join our interactive live sessions and engage directly with expert speakers.
               </p>
             </div>
             <div className="space-y-6">
@@ -129,10 +111,9 @@ export default function WebinarsPage() {
                       Startup Funding Strategies: From Seed to Series A
                     </h3>
                     <p className="text-gray-600 mb-4">
-                      Comprehensive guide to fundraising including valuation,
-                      term sheets, and investor relations. Learn from Sarah
-                      Chen, Partner at Kleiner Perkins, who has led investments
-                      in 50+ startups.
+                      Comprehensive guide to fundraising including valuation, term sheets, and
+                      investor relations. Learn from Sarah Chen, Partner at Kleiner Perkins, who has
+                      led investments in 50+ startups.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                       <div className="flex items-center gap-2 text-sm text-gray-600">
@@ -166,10 +147,7 @@ export default function WebinarsPage() {
                 <Card className="border-gray-100 shadow-xs">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
-                      <Badge
-                        variant="outline"
-                        className="flex items-center gap-1"
-                      >
+                      <Badge variant="outline" className="flex items-center gap-1">
                         <Video className="h-3 w-3" />
                         Virtual
                       </Badge>
@@ -179,9 +157,8 @@ export default function WebinarsPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Advanced strategies for customer acquisition, retention,
-                      and growth hacking. Practical workshop with live campaign
-                      analysis.
+                      Advanced strategies for customer acquisition, retention, and growth hacking.
+                      Practical workshop with live campaign analysis.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -206,10 +183,7 @@ export default function WebinarsPage() {
                 <Card className="border-gray-100 shadow-xs">
                   <CardHeader>
                     <div className="flex items-center gap-2 mb-2">
-                      <Badge
-                        variant="outline"
-                        className="flex items-center gap-1"
-                      >
+                      <Badge variant="outline" className="flex items-center gap-1">
                         <Video className="h-3 w-3" />
                         Virtual
                       </Badge>
@@ -219,9 +193,8 @@ export default function WebinarsPage() {
                   </CardHeader>
                   <CardContent>
                     <p className="text-gray-600 mb-4">
-                      Hands-on session exploring ChatGPT, Claude, and other AI
-                      tools for business operations, customer service, and
-                      content creation.
+                      Hands-on session exploring ChatGPT, Claude, and other AI tools for business
+                      operations, customer service, and content creation.
                     </p>
                     <div className="space-y-2 text-sm text-gray-600">
                       <div className="flex items-center gap-2">
@@ -255,12 +228,9 @@ export default function WebinarsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                Why Choose Our Webinars?
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">Why Choose Our Webinars?</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Experience the benefits of our interactive virtual learning
-                platform.
+                Experience the benefits of our interactive virtual learning platform.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -270,8 +240,7 @@ export default function WebinarsPage() {
                 </div>
                 <h3 className="font-semibold mb-2">HD Video Quality</h3>
                 <p className="text-sm text-gray-600">
-                  Crystal clear video and audio with professional production
-                  quality.
+                  Crystal clear video and audio with professional production quality.
                 </p>
               </Card>
               <Card className="border-gray-100 text-center p-6">
@@ -311,20 +280,15 @@ export default function WebinarsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold mb-4">
-                On-Demand Webinar Library
-              </h2>
+              <h2 className="text-3xl font-bold mb-4">On-Demand Webinar Library</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Access our extensive collection of recorded webinars anytime,
-                anywhere.
+                Access our extensive collection of recorded webinars anytime, anywhere.
               </p>
             </div>
 
             {/* Featured Collection */}
             <div className="mb-12">
-              <h3 className="text-2xl font-semibold mb-6">
-                Featured Collections
-              </h3>
+              <h3 className="text-2xl font-semibold mb-6">Featured Collections</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <Card className="border-gray-100 overflow-hidden hover:shadow-md transition-all duration-300">
                   <div className="relative">
@@ -342,8 +306,8 @@ export default function WebinarsPage() {
                   <CardContent className="p-4">
                     <h3 className="font-semibold mb-2">Startup Fundamentals</h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      Complete guide from idea validation to product launch.
-                      Perfect for first-time entrepreneurs.
+                      Complete guide from idea validation to product launch. Perfect for first-time
+                      entrepreneurs.
                     </p>
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
                       <span>⏱️ 6.5 hours total</span>
@@ -369,12 +333,10 @@ export default function WebinarsPage() {
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <h3 className="font-semibold mb-2">
-                      Funding & Investment Series
-                    </h3>
+                    <h3 className="font-semibold mb-2">Funding & Investment Series</h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      Everything about raising capital from angel investors to
-                      Series A funding rounds.
+                      Everything about raising capital from angel investors to Series A funding
+                      rounds.
                     </p>
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
                       <span>⏱️ 4.2 hours total</span>
@@ -396,18 +358,14 @@ export default function WebinarsPage() {
                       className="w-full h-48 object-cover"
                     />
                     <div className="absolute top-2 right-2">
-                      <Badge className="bg-black/70 text-white">
-                        10 Videos
-                      </Badge>
+                      <Badge className="bg-black/70 text-white">10 Videos</Badge>
                     </div>
                   </div>
                   <CardContent className="p-4">
-                    <h3 className="font-semibold mb-2">
-                      Digital Marketing Mastery
-                    </h3>
+                    <h3 className="font-semibold mb-2">Digital Marketing Mastery</h3>
                     <p className="text-sm text-gray-600 mb-3">
-                      Advanced marketing strategies including SEO, social media,
-                      and growth hacking techniques.
+                      Advanced marketing strategies including SEO, social media, and growth hacking
+                      techniques.
                     </p>
                     <div className="flex items-center justify-between text-xs text-gray-500 mb-3">
                       <span>⏱️ 8.1 hours total</span>
@@ -441,12 +399,8 @@ export default function WebinarsPage() {
                     </div>
                   </div>
                   <CardContent className="p-3">
-                    <h4 className="font-medium text-sm mb-1">
-                      Visa Options for Entrepreneurs
-                    </h4>
-                    <p className="text-xs text-gray-600 mb-2">
-                      Immigration law expert Sarah Khan
-                    </p>
+                    <h4 className="font-medium text-sm mb-1">Visa Options for Entrepreneurs</h4>
+                    <p className="text-xs text-gray-600 mb-2">Immigration law expert Sarah Khan</p>
                     <div className="flex items-center justify-between text-xs text-gray-500">
                       <span>45 min</span>
                       <span>⭐ 4.9</span>
@@ -465,12 +419,8 @@ export default function WebinarsPage() {
                     />
                   </div>
                   <CardContent className="p-3">
-                    <h4 className="font-medium text-sm mb-1">
-                      AI Tools for Small Business
-                    </h4>
-                    <p className="text-xs text-gray-600 mb-2">
-                      Tech consultant Dr. Zara Khan
-                    </p>
+                    <h4 className="font-medium text-sm mb-1">AI Tools for Small Business</h4>
+                    <p className="text-xs text-gray-600 mb-2">Tech consultant Dr. Zara Khan</p>
                     <div className="flex items-center justify-between text-xs text-gray-500">
                       <span>52 min</span>
                       <span>⭐ 4.8</span>
@@ -489,12 +439,8 @@ export default function WebinarsPage() {
                     />
                   </div>
                   <CardContent className="p-3">
-                    <h4 className="font-medium text-sm mb-1">
-                      Cash Flow Management
-                    </h4>
-                    <p className="text-xs text-gray-600 mb-2">
-                      CPA Fatima Shah
-                    </p>
+                    <h4 className="font-medium text-sm mb-1">Cash Flow Management</h4>
+                    <p className="text-xs text-gray-600 mb-2">CPA Fatima Shah</p>
                     <div className="flex items-center justify-between text-xs text-gray-500">
                       <span>38 min</span>
                       <span>⭐ 4.7</span>
@@ -513,12 +459,8 @@ export default function WebinarsPage() {
                     />
                   </div>
                   <CardContent className="p-3">
-                    <h4 className="font-medium text-sm mb-1">
-                      Building High-Performance Teams
-                    </h4>
-                    <p className="text-xs text-gray-600 mb-2">
-                      Executive coach Omar Ali
-                    </p>
+                    <h4 className="font-medium text-sm mb-1">Building High-Performance Teams</h4>
+                    <p className="text-xs text-gray-600 mb-2">Executive coach Omar Ali</p>
                     <div className="flex items-center justify-between text-xs text-gray-500">
                       <span>63 min</span>
                       <span>⭐ 4.9</span>
@@ -537,8 +479,8 @@ export default function WebinarsPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-4">Start Learning Today</h2>
             <p className="text-xl mb-8 opacity-90">
-              Join thousands of entrepreneurs who have accelerated their growth
-              through our webinars.
+              Join thousands of entrepreneurs who have accelerated their growth through our
+              webinars.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
@@ -556,5 +498,5 @@ export default function WebinarsPage() {
         </div>
       </section>
     </div>
-  );
+  )
 }

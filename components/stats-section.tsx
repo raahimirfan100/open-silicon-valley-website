@@ -1,4 +1,4 @@
-import { networkStats } from "@/data/stats"
+import { networkStats } from '@/data/stats'
 
 export default function StatsSection() {
   return (
@@ -12,8 +12,8 @@ export default function StatsSection() {
             Our Network Impact
           </h2>
           <p className="text-gray-600 text-pretty">
-            OPEN Silicon Valley brings together a powerful network of entrepreneurs, investors, and professionals
-            creating significant impact in the business world.
+            OPEN Silicon Valley brings together a powerful network of entrepreneurs, investors, and
+            professionals creating significant impact in the business world.
           </p>
         </div>
 

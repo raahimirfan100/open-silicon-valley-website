@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, ExternalLink } from "lucide-react"
-import { sponsorLevels } from "@/data/sponsors"
+import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, ExternalLink } from 'lucide-react'
+import { sponsorLevels } from '@/data/sponsors'
 
 export default function SponsorsSection() {
   return (
@@ -16,13 +16,13 @@ export default function SponsorsSection() {
             Sponsors & Partners
           </h2>
           <p className="text-gray-600 text-pretty">
-            We're grateful to these organizations for their support in making our mission possible and helping us create
-            opportunities for Pakistani entrepreneurs.
+            We're grateful to these organizations for their support in making our mission possible
+            and helping us create opportunities for Pakistani entrepreneurs.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {sponsorLevels.map((level, levelIndex) => (
+          {sponsorLevels.map((level) => (
             <div key={level.level} className="mb-16">
               <div className="flex items-center justify-center mb-8">
                 <div className="h-px bg-gray-200 grow"></div>
@@ -35,7 +35,7 @@ export default function SponsorsSection() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
                 {level.sponsors.map((sponsor, index) => (
                   <div key={index} className="group relative">
-                    <Link
+                    <a
                       href={sponsor.url}
                       className="flex items-center justify-center p-6 bg-white rounded-xl shadow-xs hover:shadow-md transition-all duration-300 h-24 w-full border border-gray-100"
                       target="_blank"
@@ -43,7 +43,7 @@ export default function SponsorsSection() {
                       aria-label={`${sponsor.name} website`}
                     >
                       <Image
-                        src={sponsor.image || "/placeholder.svg"}
+                        src={sponsor.image || '/placeholder.svg'}
                         alt={`${sponsor.name} logo`}
                         width={150}
                         height={75}
@@ -55,7 +55,7 @@ export default function SponsorsSection() {
                           <ExternalLink className="h-3 w-3" />
                         </div>
                       </div>
-                    </Link>
+                    </a>
                   </div>
                 ))}
               </div>
