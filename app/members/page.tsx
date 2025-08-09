@@ -19,61 +19,46 @@ export const metadata: Metadata = {
 export default function MembersPage() {
   const membershipTypes = [
     {
-      title: 'Charter Members',
-      description: 'Established entrepreneurs and professionals',
-      price: '$500',
+      title: 'Executive Member',
+      description: 'For senior executives and founders',
+      price: '$350',
       period: 'per year',
-      benefits: [
-        'Access to exclusive networking events',
-        'Opportunity to mentor other members',
-        'Priority access to all OPEN events',
-        'Voting rights in OPEN elections',
-        'Recognition on the OPEN website',
-        'Opportunity to speak at OPEN events',
-        'Access to the Charter Members directory',
-      ],
+      benefits: ['All member benefits, plus VIP opportunities', 'Member-only events and discounts'],
       featured: true,
     },
     {
-      title: 'Youth Members',
-      description: 'Students and young entrepreneurs',
-      price: '$50',
+      title: 'Member',
+      description: 'For professionals and entrepreneurs',
+      price: '$75',
       period: 'per year',
       benefits: [
-        'Mentorship from experienced professionals',
-        'Access to youth-focused events and workshops',
-        'Networking opportunities with peers',
-        'Discounted access to OPEN events',
-        'Internship and job opportunities',
+        'Member-only events and discounted registration',
+        'Access to networking and programs',
       ],
       featured: false,
     },
     {
-      title: 'Young Professionals',
-      description: 'Early to mid-career professionals',
-      price: '$100',
+      title: 'Student Member',
+      description: 'For students starting their careers',
+      price: '$30',
       period: 'per year',
-      benefits: [
-        'Career development resources',
-        'Networking with industry leaders',
-        'Access to professional development workshops',
-        'Mentorship opportunities',
-        'Job and advancement opportunities',
-      ],
+      benefits: ['Discounted event registration', 'Access to member-only events'],
       featured: false,
     },
     {
-      title: 'Rising Stars',
-      description: 'Emerging entrepreneurs and leaders',
-      price: '$250',
+      title: 'Volunteer Member',
+      description: 'Support OPEN SV as a volunteer',
+      price: '$25',
       period: 'per year',
-      benefits: [
-        'Specialized mentorship from successful entrepreneurs',
-        'Pitch opportunities to investors',
-        'Networking with potential partners and customers',
-        'Access to resources for scaling businesses',
-        'Recognition in OPEN publications',
-      ],
+      benefits: ['Access to member benefits', 'Support community events'],
+      featured: false,
+    },
+    {
+      title: 'Guest',
+      description: 'Become a guest to make registration easier',
+      price: 'Free',
+      period: 'unlimited',
+      benefits: ['Easier registration for events'],
       featured: false,
     },
   ]
@@ -110,13 +95,12 @@ export default function MembersPage() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Membership Types</h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                OPEN Silicon Valley offers different membership types to cater to professionals at
-                various stages of their careers. Each membership type comes with specific benefits
-                designed to support your growth and success.
+                You can become a member to attend member-only events and get discounts on paid
+                events.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
               {membershipTypes.map((type, index) => (
                 <Card
                   key={index}
@@ -153,7 +137,9 @@ export default function MembersPage() {
                       asChild
                       className={`w-full ${type.featured ? '' : 'bg-gray-700 hover:bg-gray-800'}`}
                     >
-                      <a href="https://opensv.wildapricot.org/join-us">Apply Now</a>
+                      <a href="https://opensv.wildapricot.org/join-us">
+                        {type.title === 'Guest' ? 'Sign Up' : 'Apply Now'}
+                      </a>
                     </Button>
                   </CardFooter>
                 </Card>
@@ -312,9 +298,8 @@ export default function MembersPage() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">What are the membership fees?</h3>
                   <p className="text-gray-600">
-                    Membership fees vary depending on the type of membership. Charter Members pay
-                    $500 per year, Rising Stars pay $250 per year, Young Professionals pay $100 per
-                    year, and Youth Members pay $50 per year.
+                    Executive Member: $350/year. Member: $75/year. Student Member: $30/year.
+                    Volunteer Member: $25/year. Guest: Free (unlimited period).
                   </p>
                 </CardContent>
               </Card>
@@ -323,8 +308,8 @@ export default function MembersPage() {
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">How long does membership last?</h3>
                   <p className="text-gray-600">
-                    Membership is annual and renews on the anniversary of your join date. You'll
-                    receive a reminder email before your membership is due for renewal.
+                    Paid memberships are annual (1 year) and do not renew automatically. Guest
+                    registrations are free and have an unlimited period.
                   </p>
                 </CardContent>
               </Card>
