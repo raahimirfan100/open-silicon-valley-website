@@ -9,7 +9,7 @@ import {
   CardFooter,
 } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Check } from 'lucide-react'
+import { ArrowRight, Check, Star } from 'lucide-react'
 import { membershipOptions } from '@/data/memberships'
 
 export const metadata: Metadata = {
@@ -58,55 +58,80 @@ export default function MembersPage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {membershipTypes.map((type, index) => (
-                <Card
-                  key={index}
-                  className={`border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden h-full flex flex-col ${
-                    type.featured ? 'border-primary/50 shadow-md' : ''
-                  }`}
-                >
-                  {type.featured && (
-                    <div className="bg-primary text-white text-center py-1 text-sm font-medium">
-                      Most Popular
-                    </div>
-                  )}
-                  <CardHeader>
-                    <CardTitle className="text-xl">{type.title}</CardTitle>
-                    <CardDescription>{type.description}</CardDescription>
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <div className="mb-6 text-center">
-                      <div className="text-3xl font-bold text-primary">
-                        {type.priceDisplay}
-                        {type.priceUSD !== null && <span className="text-gray-600">/year</span>}
+              {membershipTypes
+                .filter((t) => t.id !== 'guest')
+                .map((type, index) => (
+                  <Card
+                    key={index}
+                    className={`relative border-gray-100 shadow-xs hover:shadow-md transition-all duration-300 overflow-hidden h-full flex flex-col ${
+                      type.featured ? 'border-primary/50 shadow-md' : ''
+                    }`}
+                  >
+                    {type.featured && (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                        <span className="inline-flex items-center rounded-md bg-primary px-2 py-1 text-xs font-medium text-white">
+                          Most Popular
+                        </span>
                       </div>
-                      <div className="text-sm text-gray-500">{type.subscriptionNote}</div>
-                      {type.recurringNote && (
-                        <div className="text-xs text-gray-500 mt-1">{type.recurringNote}</div>
-                      )}
+                    )}
+                    <CardHeader className="flex flex-col gap-2 pb-0">
+                      <CardTitle className="text-xl">{type.title}</CardTitle>
+                      <CardDescription>{type.description}</CardDescription>
+                    </CardHeader>
+                    <CardContent className="flex-1 pt-0 -mt-2">
+                      <div className="mb-6 text-center">
+                        <div className="text-3xl font-bold text-primary">
+                          {type.priceDisplay}
+                          {type.priceUSD !== null && <span className="text-gray-600">/year</span>}
+                        </div>
+                        <div className="text-sm text-gray-500">{type.subscriptionNote}</div>
+                        {type.recurringNote && (
+                          <div className="text-xs text-gray-500 mt-1">{type.recurringNote}</div>
+                        )}
+                      </div>
+                      <h3 className="font-medium mb-4">Benefits:</h3>
+                      <ul className="space-y-2 mb-6">
+                        {type.benefits.map((benefit, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                            <span className="text-gray-600 text-sm">{benefit}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                    <CardFooter className="mt-auto">
+                      <Button
+                        asChild
+                        className={`w-full ${type.featured ? '' : 'bg-gray-700 hover:bg-gray-800'}`}
+                      >
+                        <a href="https://opensv.wildapricot.org/join-us">
+                          {type.id === 'guest' ? 'Sign Up' : 'Apply Now'}
+                        </a>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+            </div>
+            {/* Guest CTA */}
+            <div className="mt-6">
+              <Card className="border-gray-200 bg-gray-50">
+                <CardContent className="p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 text-center sm:text-left">
+                    <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+                      <Star className="h-5 w-5 text-gray-600" />
                     </div>
-                    <h3 className="font-medium mb-4">Benefits:</h3>
-                    <ul className="space-y-2 mb-6">
-                      {type.benefits.map((benefit, i) => (
-                        <li key={i} className="flex items-start gap-2">
-                          <Check className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                          <span className="text-gray-600 text-sm">{benefit}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  <CardFooter className="mt-auto">
-                    <Button
-                      asChild
-                      className={`w-full ${type.featured ? '' : 'bg-gray-700 hover:bg-gray-800'}`}
-                    >
-                      <a href="https://opensv.wildapricot.org/join-us">
-                        {type.title === 'Guest' ? 'Sign Up' : 'Apply Now'}
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ))}
+                    <div>
+                      <div className="font-medium">Just browsing?</div>
+                      <p className="text-sm text-gray-600">
+                        Create a free guest account to simplify event registrations.
+                      </p>
+                    </div>
+                  </div>
+                  <Button asChild className="rounded-full">
+                    <a href="https://opensv.wildapricot.org/join-us">Sign up as Guest</a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>

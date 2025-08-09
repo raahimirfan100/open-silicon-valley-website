@@ -183,70 +183,93 @@ export default function JoinUsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {membershipOptions.map((option) => (
-                <Card key={option.id} className="border-gray-100 relative h-full flex flex-col">
-                  {option.featured && (
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                      <Badge className="bg-primary">Most Popular</Badge>
-                    </div>
-                  )}
-                  <CardHeader className="text-center">
-                    <div
-                      className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 ${
-                        option.icon === 'building2'
-                          ? 'bg-purple-100'
-                          : option.icon === 'users'
-                            ? 'bg-blue-100'
-                            : option.icon === 'bookOpen'
-                              ? 'bg-green-100'
-                              : option.icon === 'heart'
-                                ? 'bg-orange-100'
-                                : 'bg-gray-100'
-                      }`}
-                    >
-                      {option.icon === 'building2' && (
-                        <Building2 className="h-6 w-6 text-purple-600" />
-                      )}
-                      {option.icon === 'users' && <Users className="h-6 w-6 text-blue-600" />}
-                      {option.icon === 'bookOpen' && (
-                        <BookOpen className="h-6 w-6 text-green-600" />
-                      )}
-                      {option.icon === 'heart' && <Heart className="h-6 w-6 text-orange-600" />}
-                      {option.icon === 'star' && <Star className="h-6 w-6 text-gray-700" />}
-                    </div>
-                    <CardTitle>{option.title}</CardTitle>
-                    <div className="text-2xl font-bold">
-                      {option.priceDisplay}
-                      {option.priceUSD !== null && <span className="text-gray-600">/year</span>}
-                    </div>
-                    <p className="text-sm text-gray-600">{option.subscriptionNote}</p>
-                    {option.recurringNote && (
-                      <p className="text-xs text-gray-500 mt-1">{option.recurringNote}</p>
+              {membershipOptions
+                .filter((option) => option.id !== 'guest')
+                .map((option) => (
+                  <Card key={option.id} className="border-gray-100 relative h-full flex flex-col">
+                    {option.featured && (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-10">
+                        <Badge className="bg-primary">Most Popular</Badge>
+                      </div>
                     )}
-                  </CardHeader>
-                  <CardContent className="flex-1">
-                    <ul className="space-y-2 text-sm">
-                      {option.benefits.map((b, i) => (
-                        <li key={i} className="flex items-center gap-2">
-                          <Check className="h-4 w-4 text-primary" />
-                          <span>{b}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                  <CardFooter className="mt-auto">
-                    <Button
-                      className="w-full"
-                      variant={option.id === 'guest' ? 'outline' : 'default'}
-                      asChild
-                    >
-                      <a href="https://opensv.wildapricot.org/join-us">
-                        {option.id === 'guest' ? 'Sign Up' : 'Select Plan'}
-                      </a>
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ))}
+                    <CardHeader className="text-center flex flex-col items-center gap-2 min-h-[180px]">
+                      <div
+                        className={`w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 ${
+                          option.icon === 'building2'
+                            ? 'bg-purple-100'
+                            : option.icon === 'users'
+                              ? 'bg-blue-100'
+                              : option.icon === 'bookOpen'
+                                ? 'bg-green-100'
+                                : option.icon === 'heart'
+                                  ? 'bg-orange-100'
+                                  : 'bg-gray-100'
+                        }`}
+                      >
+                        {option.icon === 'building2' && (
+                          <Building2 className="h-6 w-6 text-purple-600" />
+                        )}
+                        {option.icon === 'users' && <Users className="h-6 w-6 text-blue-600" />}
+                        {option.icon === 'bookOpen' && (
+                          <BookOpen className="h-6 w-6 text-green-600" />
+                        )}
+                        {option.icon === 'heart' && <Heart className="h-6 w-6 text-orange-600" />}
+                        {option.icon === 'star' && <Star className="h-6 w-6 text-gray-700" />}
+                      </div>
+                      <CardTitle>{option.title}</CardTitle>
+                      <div className="text-2xl font-bold">
+                        {option.priceDisplay}
+                        {option.priceUSD !== null && <span className="text-gray-600">/year</span>}
+                      </div>
+                      <p className="text-sm text-gray-600">{option.subscriptionNote}</p>
+                      {option.recurringNote && (
+                        <p className="text-xs text-gray-500 mt-1">{option.recurringNote}</p>
+                      )}
+                    </CardHeader>
+                    <CardContent className="flex-1">
+                      <ul className="space-y-2 text-sm">
+                        {option.benefits.map((b, i) => (
+                          <li key={i} className="flex items-center gap-2">
+                            <Check className="h-4 w-4 text-primary" />
+                            <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                    <CardFooter className="mt-auto">
+                      <Button
+                        className="w-full"
+                        variant={option.id === 'guest' ? 'outline' : 'default'}
+                        asChild
+                      >
+                        <a href="https://opensv.wildapricot.org/join-us">
+                          {option.id === 'guest' ? 'Sign Up' : 'Select Plan'}
+                        </a>
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+            </div>
+            {/* Guest CTA */}
+            <div className="mt-6">
+              <Card className="border-primary/20 bg-primary/5">
+                <CardContent className="p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+                  <div className="flex items-center gap-3 text-center sm:text-left">
+                    <div className="w-9 h-9 rounded-full bg-gray-100 flex items-center justify-center">
+                      <Star className="h-5 w-5 text-gray-600" />
+                    </div>
+                    <div>
+                      <div className="font-medium">Just browsing?</div>
+                      <p className="text-sm text-gray-600">
+                        Create a free guest account to simplify event registrations.
+                      </p>
+                    </div>
+                  </div>
+                  <Button variant="outline" asChild>
+                    <a href="https://opensv.wildapricot.org/join-us">Sign up as Guest</a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
