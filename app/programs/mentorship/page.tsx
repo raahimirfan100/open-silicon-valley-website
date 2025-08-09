@@ -11,10 +11,8 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
-  Users,
   Target,
   Lightbulb,
-  GraduationCap,
   Briefcase,
 } from "lucide-react";
 

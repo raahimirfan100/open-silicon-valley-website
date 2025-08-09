@@ -17,7 +17,6 @@ import {
   Building2,
   Star,
   Check,
-  DollarSign,
   Award,
   Globe,
   Target,

@@ -22,7 +22,7 @@ export default function SponsorsSection() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          {sponsorLevels.map((level, levelIndex) => (
+          {sponsorLevels.map((level) => (
             <div key={level.level} className="mb-16">
               <div className="flex items-center justify-center mb-8">
                 <div className="h-px bg-gray-200 grow"></div>

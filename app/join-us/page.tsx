@@ -15,7 +15,6 @@ import {
   Star,
   Check,
   ArrowRight,
-  Calendar,
   BookOpen,
   Network,
   Award,

@@ -11,9 +11,7 @@ import {
 import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
-  Briefcase,
   Scale,
-  FileText,
   Users,
   Building2,
   Target,

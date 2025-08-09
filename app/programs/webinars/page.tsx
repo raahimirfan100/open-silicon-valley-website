@@ -19,7 +19,6 @@ import {
   Download,
   Wifi,
   MessageCircle,
-  Star,
   Video,
 } from "lucide-react";
 

@@ -15,8 +15,6 @@ import {
   MapPin,
   Users,
   Clock,
-  ArrowRight,
-  Star,
   Mic,
   Award,
   Building2,

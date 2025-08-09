@@ -15,8 +15,6 @@ import {
   GraduationCap,
   Target,
   Users,
-  Building2,
-  Rocket,
 } from "lucide-react";
 
 export const metadata: Metadata = {
