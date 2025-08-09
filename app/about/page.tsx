@@ -77,8 +77,8 @@ export default function AboutPage() {
                 <div className="md:w-1/2">
                   <div className="relative rounded-xl overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=400&width=600&text=OPEN+SV+History"
-                      alt="OPEN Silicon Valley history"
+                      src="/images/about/sal-khan-keynote.jpg"
+                      alt="Sal Khan delivering a keynote at an OPEN Silicon Valley event"
                       width={600}
                       height={400}
                       className="w-full h-auto"

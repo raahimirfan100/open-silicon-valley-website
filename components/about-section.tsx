@@ -14,8 +14,8 @@ export default function AboutSection() {
                 <div className="absolute -inset-4 bg-primary/10 rounded-3xl rotate-3" aria-hidden="true"></div>
                 <div className="relative rounded-2xl overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=800&text=About+OPEN+SV"
-                    alt="OPEN Silicon Valley team members collaborating"
+                    src="/images/about/sal-khan-keynote.jpg"
+                    alt="Sal Khan delivering a keynote at an OPEN Silicon Valley event"
                     width={600}
                     height={400}
                     className="w-full h-auto object-cover"
